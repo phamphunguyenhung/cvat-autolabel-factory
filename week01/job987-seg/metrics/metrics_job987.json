@@ -1,0 +1,378 @@
+{
+ "job": 987,
+ "frames": 20,
+ "score": 0.875,
+ "parts": {
+  "no_polygon": 1.0,
+  "overlap_ok": 0.75
+ },
+ "warn": {
+  "sky_missing": [],
+  "no_lane": [
+   63,
+   68,
+   77
+  ]
+ },
+ "dup_candidates": [
+  {
+   "frame": 60,
+   "label": "car",
+   "ids": [
+    222629,
+    222637
+   ],
+   "contain": 0.96
+  },
+  {
+   "frame": 61,
+   "label": "car",
+   "ids": [
+    222661,
+    222645
+   ],
+   "contain": 1.0
+  },
+  {
+   "frame": 61,
+   "label": "car",
+   "ids": [
+    222657,
+    222647
+   ],
+   "contain": 1.0
+  },
+  {
+   "frame": 63,
+   "label": "car",
+   "ids": [
+    222674,
+    222675
+   ],
+   "contain": 0.88
+  },
+  {
+   "frame": 63,
+   "label": "car",
+   "ids": [
+    222674,
+    222683
+   ],
+   "contain": 0.94
+  },
+  {
+   "frame": 63,
+   "label": "car",
+   "ids": [
+    222675,
+    222683
+   ],
+   "contain": 0.86
+  },
+  {
+   "frame": 67,
+   "label": "car",
+   "ids": [
+    222724,
+    222717
+   ],
+   "contain": 1.0
+  },
+  {
+   "frame": 69,
+   "label": "car",
+   "ids": [
+    222745,
+    222748
+   ],
+   "contain": 0.94
+  },
+  {
+   "frame": 69,
+   "label": "car",
+   "ids": [
+    222747,
+    222748
+   ],
+   "contain": 0.93
+  },
+  {
+   "frame": 73,
+   "label": "car",
+   "ids": [
+    222787,
+    222801
+   ],
+   "contain": 0.99
+  },
+  {
+   "frame": 73,
+   "label": "car",
+   "ids": [
+    222800,
+    222806
+   ],
+   "contain": 1.0
+  },
+  {
+   "frame": 73,
+   "label": "traffic light",
+   "ids": [
+    222802,
+    222805
+   ],
+   "contain": 0.98
+  },
+  {
+   "frame": 78,
+   "label": "traffic light",
+   "ids": [
+    222875,
+    222865
+   ],
+   "contain": 0.89
+  }
+ ],
+ "labels": {
+  "bicycle": 2,
+  "bus": 3,
+  "car": 165,
+  "lane/crosswalk": 3,
+  "lane/double white": 5,
+  "lane/double yellow": 1,
+  "lane/road curb": 8,
+  "lane/single white": 34,
+  "lane/single yellow": 7,
+  "motorcycle": 1,
+  "pedestrian": 13,
+  "rider": 1,
+  "sky": 20,
+  "traffic light": 11,
+  "traffic sign": 29,
+  "traffic_light": 5,
+  "traffic_sign": 2,
+  "truck": 5
+ },
+ "rows": [
+  {
+   "frame": 60,
+   "shapes": 22,
+   "n_poly": 0,
+   "n_mask": 17,
+   "lane_polylines": 5,
+   "sky_missing": false,
+   "no_lane": false,
+   "coverage": 12.2,
+   "overlap": 0.05
+  },
+  {
+   "frame": 61,
+   "shapes": 26,
+   "n_poly": 0,
+   "n_mask": 18,
+   "lane_polylines": 8,
+   "sky_missing": false,
+   "no_lane": false,
+   "coverage": 11.3,
+   "overlap": 1.55
+  },
+  {
+   "frame": 62,
+   "shapes": 11,
+   "n_poly": 0,
+   "n_mask": 9,
+   "lane_polylines": 2,
+   "sky_missing": false,
+   "no_lane": false,
+   "coverage": 31.5,
+   "overlap": 0.04
+  },
+  {
+   "frame": 63,
+   "shapes": 13,
+   "n_poly": 0,
+   "n_mask": 13,
+   "lane_polylines": 0,
+   "sky_missing": false,
+   "no_lane": true,
+   "coverage": 17.5,
+   "overlap": 1.5
+  },
+  {
+   "frame": 64,
+   "shapes": 12,
+   "n_poly": 0,
+   "n_mask": 11,
+   "lane_polylines": 1,
+   "sky_missing": false,
+   "no_lane": false,
+   "coverage": 18.7,
+   "overlap": 0.02
+  },
+  {
+   "frame": 65,
+   "shapes": 13,
+   "n_poly": 0,
+   "n_mask": 11,
+   "lane_polylines": 2,
+   "sky_missing": false,
+   "no_lane": false,
+   "coverage": 11.6,
+   "overlap": 0.02
+  },
+  {
+   "frame": 66,
+   "shapes": 8,
+   "n_poly": 0,
+   "n_mask": 7,
+   "lane_polylines": 1,
+   "sky_missing": false,
+   "no_lane": false,
+   "coverage": 61.3,
+   "overlap": 0.59
+  },
+  {
+   "frame": 67,
+   "shapes": 20,
+   "n_poly": 0,
+   "n_mask": 19,
+   "lane_polylines": 1,
+   "sky_missing": false,
+   "no_lane": false,
+   "coverage": 38.0,
+   "overlap": 1.51
+  },
+  {
+   "frame": 68,
+   "shapes": 10,
+   "n_poly": 0,
+   "n_mask": 10,
+   "lane_polylines": 0,
+   "sky_missing": false,
+   "no_lane": true,
+   "coverage": 11.1,
+   "overlap": 0.13
+  },
+  {
+   "frame": 69,
+   "shapes": 19,
+   "n_poly": 0,
+   "n_mask": 12,
+   "lane_polylines": 7,
+   "sky_missing": false,
+   "no_lane": false,
+   "coverage": 37.2,
+   "overlap": 0.13
+  },
+  {
+   "frame": 70,
+   "shapes": 7,
+   "n_poly": 0,
+   "n_mask": 6,
+   "lane_polylines": 1,
+   "sky_missing": false,
+   "no_lane": false,
+   "coverage": 18.4,
+   "overlap": 0.03
+  },
+  {
+   "frame": 71,
+   "shapes": 21,
+   "n_poly": 0,
+   "n_mask": 17,
+   "lane_polylines": 4,
+   "sky_missing": false,
+   "no_lane": false,
+   "coverage": 18.3,
+   "overlap": 0.03
+  },
+  {
+   "frame": 72,
+   "shapes": 17,
+   "n_poly": 0,
+   "n_mask": 10,
+   "lane_polylines": 7,
+   "sky_missing": false,
+   "no_lane": false,
+   "coverage": 32.1,
+   "overlap": 0.02
+  },
+  {
+   "frame": 73,
+   "shapes": 33,
+   "n_poly": 0,
+   "n_mask": 30,
+   "lane_polylines": 3,
+   "sky_missing": false,
+   "no_lane": false,
+   "coverage": 13.4,
+   "overlap": 1.0
+  },
+  {
+   "frame": 74,
+   "shapes": 13,
+   "n_poly": 0,
+   "n_mask": 12,
+   "lane_polylines": 1,
+   "sky_missing": false,
+   "no_lane": false,
+   "coverage": 20.5,
+   "overlap": 0.03
+  },
+  {
+   "frame": 75,
+   "shapes": 18,
+   "n_poly": 0,
+   "n_mask": 16,
+   "lane_polylines": 2,
+   "sky_missing": false,
+   "no_lane": false,
+   "coverage": 7.8,
+   "overlap": 0.05
+  },
+  {
+   "frame": 76,
+   "shapes": 11,
+   "n_poly": 0,
+   "n_mask": 8,
+   "lane_polylines": 3,
+   "sky_missing": false,
+   "no_lane": false,
+   "coverage": 28.5,
+   "overlap": 0.07
+  },
+  {
+   "frame": 77,
+   "shapes": 11,
+   "n_poly": 0,
+   "n_mask": 11,
+   "lane_polylines": 0,
+   "sky_missing": false,
+   "no_lane": true,
+   "coverage": 16.2,
+   "overlap": 0.17
+  },
+  {
+   "frame": 78,
+   "shapes": 16,
+   "n_poly": 0,
+   "n_mask": 13,
+   "lane_polylines": 3,
+   "sky_missing": false,
+   "no_lane": false,
+   "coverage": 22.8,
+   "overlap": 0.42
+  },
+  {
+   "frame": 79,
+   "shapes": 14,
+   "n_poly": 0,
+   "n_mask": 10,
+   "lane_polylines": 4,
+   "sky_missing": false,
+   "no_lane": false,
+   "coverage": 41.6,
+   "overlap": 0.05
+  }
+ ]
+}
