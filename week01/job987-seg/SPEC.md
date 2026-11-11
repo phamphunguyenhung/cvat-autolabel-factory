@@ -7,6 +7,7 @@ URL: https://cvat.edufun.ai/tasks/227/jobs/987
 - `traffic sign`, `sky`: **mask**.
 - Đối tượng: car, truck, bus, motorcycle, bicycle, pedestrian, rider, traffic light: **mask** (từng instance).
 - `vegetation`: **mask**, người dùng yêu cầu vẽ thêm (11/11 21:38). KHÔNG thuộc job này: road, sidewalk, building, terrain...
+- Cố ý KHÔNG làm (ghi trong `skipped_labels` của metric): `area/drivable`, `area/alternative` (chưa có model), `person`, `traffic_light`, `traffic_sign` (trùng nghĩa).
 - Lưu ý label trùng nghĩa: `traffic light`/`traffic_light`, `traffic sign`/`traffic_sign` (31 label, phân trang API).
 
 ## Trạng thái đo được (11/11/2026)
