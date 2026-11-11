@@ -1,0 +1,269 @@
+{
+ "job": 285,
+ "frames": 20,
+ "boxes": 138,
+ "per_label": {
+  "car": 136,
+  "motorcycle": 1,
+  "truck": 1
+ },
+ "per_frame": {
+  "60": 7,
+  "61": 10,
+  "62": 8,
+  "63": 17,
+  "64": 1,
+  "65": 3,
+  "66": 4,
+  "67": 9,
+  "68": 6,
+  "69": 7,
+  "70": 8,
+  "71": 10,
+  "72": 5,
+  "73": 13,
+  "74": 10,
+  "75": 3,
+  "76": 5,
+  "77": 4,
+  "78": 4,
+  "79": 4
+ },
+ "geometry": {
+  "DUP": [],
+  "TINY": [],
+  "OOB": [],
+  "AUTO": []
+ },
+ "confusion_gt_x_yolo": {
+  "car": {
+   "car": 92,
+   "(YOLO không thấy)": 39,
+   "truck": 4,
+   "bus": 1
+  },
+  "motorcycle": {
+   "(YOLO không thấy)": 1
+  },
+  "truck": {
+   "(YOLO không thấy)": 1
+  }
+ },
+ "classification_accuracy_on_matched": 0.948,
+ "matched": 97,
+ "gt_without_yolo": [
+  {
+   "frame": 60,
+   "id": 56441,
+   "label": "motorcycle"
+  },
+  {
+   "frame": 60,
+   "id": 56440,
+   "label": "car"
+  },
+  {
+   "frame": 60,
+   "id": 56437,
+   "label": "car"
+  },
+  {
+   "frame": 61,
+   "id": 56451,
+   "label": "car"
+  },
+  {
+   "frame": 61,
+   "id": 56452,
+   "label": "car"
+  },
+  {
+   "frame": 62,
+   "id": 56455,
+   "label": "car"
+  },
+  {
+   "frame": 62,
+   "id": 56456,
+   "label": "car"
+  },
+  {
+   "frame": 62,
+   "id": 56457,
+   "label": "car"
+  },
+  {
+   "frame": 62,
+   "id": 56459,
+   "label": "car"
+  },
+  {
+   "frame": 62,
+   "id": 56460,
+   "label": "car"
+  },
+  {
+   "frame": 63,
+   "id": 56469,
+   "label": "car"
+  },
+  {
+   "frame": 63,
+   "id": 56822,
+   "label": "car"
+  },
+  {
+   "frame": 64,
+   "id": 56866,
+   "label": "truck"
+  },
+  {
+   "frame": 65,
+   "id": 56869,
+   "label": "car"
+  },
+  {
+   "frame": 67,
+   "id": 56875,
+   "label": "car"
+  },
+  {
+   "frame": 67,
+   "id": 56877,
+   "label": "car"
+  },
+  {
+   "frame": 67,
+   "id": 56878,
+   "label": "car"
+  },
+  {
+   "frame": 68,
+   "id": 56883,
+   "label": "car"
+  },
+  {
+   "frame": 68,
+   "id": 56884,
+   "label": "car"
+  },
+  {
+   "frame": 68,
+   "id": 56885,
+   "label": "car"
+  },
+  {
+   "frame": 68,
+   "id": 56886,
+   "label": "car"
+  },
+  {
+   "frame": 68,
+   "id": 56887,
+   "label": "car"
+  },
+  {
+   "frame": 68,
+   "id": 56888,
+   "label": "car"
+  },
+  {
+   "frame": 70,
+   "id": 57054,
+   "label": "car"
+  },
+  {
+   "frame": 72,
+   "id": 57065,
+   "label": "car"
+  },
+  {
+   "frame": 72,
+   "id": 57066,
+   "label": "car"
+  },
+  {
+   "frame": 72,
+   "id": 57068,
+   "label": "car"
+  },
+  {
+   "frame": 73,
+   "id": 57079,
+   "label": "car"
+  },
+  {
+   "frame": 73,
+   "id": 57081,
+   "label": "car"
+  },
+  {
+   "frame": 73,
+   "id": 57082,
+   "label": "car"
+  },
+  {
+   "frame": 74,
+   "id": 57088,
+   "label": "car"
+  },
+  {
+   "frame": 74,
+   "id": 57090,
+   "label": "car"
+  },
+  {
+   "frame": 75,
+   "id": 57094,
+   "label": "car"
+  },
+  {
+   "frame": 75,
+   "id": 57095,
+   "label": "car"
+  },
+  {
+   "frame": 75,
+   "id": 57093,
+   "label": "car"
+  },
+  {
+   "frame": 76,
+   "id": 57098,
+   "label": "car"
+  },
+  {
+   "frame": 76,
+   "id": 57099,
+   "label": "car"
+  },
+  {
+   "frame": 76,
+   "id": 57100,
+   "label": "car"
+  },
+  {
+   "frame": 77,
+   "id": 57102,
+   "label": "car"
+  },
+  {
+   "frame": 79,
+   "id": 57110,
+   "label": "car"
+  },
+  {
+   "frame": 79,
+   "id": 57112,
+   "label": "car"
+  }
+ ],
+ "yolo_missing_candidates": {
+  "traffic light": 10,
+  "car": 20,
+  "pedestrian": 5,
+  "truck": 1
+ },
+ "yolo_conf": 0.35,
+ "missing_draft": "D:\\06-Learning\\AIA-VINGROUP\\learning\\cvat\\week01\\job285-bbox\\drafts\\missingboxes_20261111_221205.json"
+}
