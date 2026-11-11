@@ -1,10 +1,10 @@
 {
  "job": 987,
  "frames": 20,
- "score": 0.725,
+ "score": 0.975,
  "parts": {
   "no_polygon": 1.0,
-  "overlap_ok": 0.45
+  "overlap_ok": 0.95
  },
  "warn": {
   "sky_missing": [],
@@ -22,80 +22,16 @@
   "traffic_light": "trùng nghĩa traffic light",
   "traffic_sign": "trùng nghĩa traffic sign"
  },
- "dup_candidates": [
-  {
-   "frame": 63,
-   "label": "car",
-   "ids": [
-    222674,
-    222675
-   ],
-   "contain": 0.88
-  },
-  {
-   "frame": 63,
-   "label": "car",
-   "ids": [
-    222674,
-    222683
-   ],
-   "contain": 0.94
-  },
-  {
-   "frame": 63,
-   "label": "car",
-   "ids": [
-    222675,
-    222683
-   ],
-   "contain": 0.86
-  },
-  {
-   "frame": 69,
-   "label": "car",
-   "ids": [
-    222745,
-    222748
-   ],
-   "contain": 0.94
-  },
-  {
-   "frame": 69,
-   "label": "car",
-   "ids": [
-    222747,
-    222748
-   ],
-   "contain": 0.93
-  },
-  {
-   "frame": 73,
-   "label": "traffic light",
-   "ids": [
-    222802,
-    222805
-   ],
-   "contain": 0.98
-  },
-  {
-   "frame": 78,
-   "label": "traffic light",
-   "ids": [
-    222875,
-    222865
-   ],
-   "contain": 0.89
-  }
- ],
+ "dup_candidates": [],
  "labels": {
   "bicycle": 2,
   "building": 39,
   "bus": 3,
-  "car": 168,
-  "lane/crosswalk": 8,
+  "car": 167,
+  "lane/crosswalk": 9,
   "lane/double white": 3,
   "lane/double yellow": 3,
-  "lane/road curb": 8,
+  "lane/road curb": 7,
   "lane/single white": 19,
   "lane/single yellow": 6,
   "motorcycle": 1,
@@ -103,9 +39,9 @@
   "rider": 1,
   "sidewalk": 1,
   "sky": 20,
-  "traffic light": 13,
-  "traffic sign": 29,
-  "traffic_light": 6,
+  "traffic light": 12,
+  "traffic sign": 28,
+  "traffic_light": 3,
   "traffic_sign": 2,
   "truck": 5,
   "vegetation": 56
@@ -124,14 +60,14 @@
   },
   {
    "frame": 61,
-   "shapes": 31,
+   "shapes": 30,
    "n_poly": 0,
-   "n_mask": 24,
+   "n_mask": 23,
    "lane_polylines": 7,
    "sky_missing": false,
    "no_lane": false,
    "coverage": 42.0,
-   "overlap": 0.69
+   "overlap": 0.01
   },
   {
    "frame": 62,
@@ -142,7 +78,7 @@
    "sky_missing": false,
    "no_lane": false,
    "coverage": 73.1,
-   "overlap": 0.06
+   "overlap": 0.0
   },
   {
    "frame": 63,
@@ -152,8 +88,8 @@
    "lane_polylines": 0,
    "sky_missing": false,
    "no_lane": true,
-   "coverage": 53.5,
-   "overlap": 1.55
+   "coverage": 53.4,
+   "overlap": 0.52
   },
   {
    "frame": 64,
@@ -164,7 +100,7 @@
    "sky_missing": false,
    "no_lane": false,
    "coverage": 50.2,
-   "overlap": 2.21
+   "overlap": 0.0
   },
   {
    "frame": 65,
@@ -175,7 +111,7 @@
    "sky_missing": false,
    "no_lane": false,
    "coverage": 45.2,
-   "overlap": 0.07
+   "overlap": 0.01
   },
   {
    "frame": 66,
@@ -186,7 +122,7 @@
    "sky_missing": false,
    "no_lane": false,
    "coverage": 64.3,
-   "overlap": 0.96
+   "overlap": 0.19
   },
   {
    "frame": 67,
@@ -197,7 +133,7 @@
    "sky_missing": false,
    "no_lane": false,
    "coverage": 64.5,
-   "overlap": 0.61
+   "overlap": 0.01
   },
   {
    "frame": 68,
@@ -208,40 +144,40 @@
    "sky_missing": false,
    "no_lane": true,
    "coverage": 42.3,
-   "overlap": 1.29
+   "overlap": 0.09
   },
   {
    "frame": 69,
-   "shapes": 19,
+   "shapes": 18,
    "n_poly": 0,
-   "n_mask": 18,
+   "n_mask": 17,
    "lane_polylines": 1,
    "sky_missing": false,
    "no_lane": false,
    "coverage": 61.0,
-   "overlap": 22.41
+   "overlap": 0.01
   },
   {
    "frame": 70,
-   "shapes": 17,
+   "shapes": 16,
    "n_poly": 0,
-   "n_mask": 17,
+   "n_mask": 16,
    "lane_polylines": 0,
    "sky_missing": false,
    "no_lane": true,
    "coverage": 52.8,
-   "overlap": 0.69
+   "overlap": 0.02
   },
   {
    "frame": 71,
    "shapes": 29,
    "n_poly": 0,
-   "n_mask": 27,
-   "lane_polylines": 2,
+   "n_mask": 28,
+   "lane_polylines": 1,
    "sky_missing": false,
    "no_lane": false,
-   "coverage": 47.0,
-   "overlap": 0.27
+   "coverage": 47.3,
+   "overlap": 0.02
   },
   {
    "frame": 72,
@@ -252,29 +188,29 @@
    "sky_missing": false,
    "no_lane": false,
    "coverage": 62.3,
-   "overlap": 0.27
+   "overlap": 0.02
   },
   {
    "frame": 73,
-   "shapes": 36,
+   "shapes": 34,
    "n_poly": 0,
-   "n_mask": 36,
+   "n_mask": 34,
    "lane_polylines": 0,
    "sky_missing": false,
    "no_lane": false,
    "coverage": 40.1,
-   "overlap": 0.8
+   "overlap": 0.01
   },
   {
    "frame": 74,
-   "shapes": 21,
+   "shapes": 20,
    "n_poly": 0,
-   "n_mask": 20,
+   "n_mask": 19,
    "lane_polylines": 1,
    "sky_missing": false,
    "no_lane": false,
    "coverage": 75.3,
-   "overlap": 1.28
+   "overlap": 0.0
   },
   {
    "frame": 75,
@@ -285,7 +221,7 @@
    "sky_missing": false,
    "no_lane": false,
    "coverage": 27.1,
-   "overlap": 1.05
+   "overlap": 0.03
   },
   {
    "frame": 76,
@@ -296,7 +232,7 @@
    "sky_missing": false,
    "no_lane": false,
    "coverage": 69.7,
-   "overlap": 0.07
+   "overlap": 0.0
   },
   {
    "frame": 77,
@@ -307,7 +243,7 @@
    "sky_missing": false,
    "no_lane": true,
    "coverage": 49.5,
-   "overlap": 0.17
+   "overlap": 0.15
   },
   {
    "frame": 78,
@@ -318,7 +254,7 @@
    "sky_missing": false,
    "no_lane": false,
    "coverage": 52.7,
-   "overlap": 0.42
+   "overlap": 0.26
   },
   {
    "frame": 79,
@@ -329,7 +265,7 @@
    "sky_missing": false,
    "no_lane": false,
    "coverage": 56.7,
-   "overlap": 0.05
+   "overlap": 0.01
   }
  ]
 }
