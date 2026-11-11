@@ -25,3 +25,4 @@ URL: https://cvat.edufun.ai/tasks/227/jobs/987
 - Bản nháp luôn lưu ở `drafts/` (draftstore.py); áp lại bằng `--apply-draft latest`.
 - 11/11 22:32: scripts/stuff_draft.py thêm 216 mask: sidewalk 37, terrain 22, wall 5, fence 20, pole 132 (frame chưa có label đó, trừ phần đã có shape khác). Backup `tools/cvat-seg-copilot/backups/job987_stuff_20261111_223231.json`, đọc lại 400 -> 616. TTA (đa tỉ lệ + lật) đo IoU 0.564 vs gốc 0.567 trên mask building tay: không hơn nên bỏ.
 - `road` CHƯA ghi: SegFormer gán cả capo/taplo xe mình thành đường (frame 60, 61, 75...). Nháp `drafts/road_pending_hood_*.json` (29 mask), cần cắt capo trước khi ghi.
+- 11/11 22:57: ghi 29 mask road đã cắt capo/taplo bằng quy hoạch động (stuff_draft.py), backup `backups/job987_stuff_20261111_225711.json`, đọc lại 616 -> 645, điểm 0.975. Viền building: scripts/edge_refine_eval.py, trên 11 frame mask tay IoU gốc 0.603, làm sạch 0.608, GrabCut vành biên 0.620 (tăng nhỏ, chưa áp lên server).

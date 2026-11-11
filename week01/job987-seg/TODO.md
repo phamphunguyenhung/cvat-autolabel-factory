@@ -7,7 +7,7 @@
 - [x] Label trùng nghĩa (`person`, `traffic_light`, `traffic_sign`) và `area/drivable`, `area/alternative` (chưa có model): KHÔNG làm, đã ghi `skipped_labels` trong metric.
 - [ ] Soát cuối bằng mắt trên CVAT (F5), rồi chạy lại `scripts/mask_metrics.py --job 987`.
 
-- [ ] `road`: nháp có sẵn nhưng dính capo/taplo xe mình; cắt capo rồi ghi (`drafts/road_pending_hood_*.json`).
+- [x] `road`: đã cắt capo (stuff_draft.py hood_top) và ghi 29 mask.
 - [ ] 31 mục audit cần mắt người: `metrics/audit_job987.json`.
 - [ ] `lane/single other`, `area/*`, `train`: không có shape (area/* cố ý không làm).
 
