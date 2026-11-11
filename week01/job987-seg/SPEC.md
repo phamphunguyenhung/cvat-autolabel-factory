@@ -20,3 +20,4 @@ URL: https://cvat.edufun.ai/tasks/227/jobs/987
 - 11/11 18:54 (giờ máy): to-mask 260 polygon -> mask (backup `backups/job987_tomask_20261111_185433.json`, đã đọc lại khớp).
 - 11/11 19:16: scripts/dedupe_masks.py xóa 5 mask car trùng hẳn (contain >=0.99), backup `tools/cvat-seg-copilot/backups/job987_dedupe_20261111_191634.json`, đọc lại khớp.
 - 11/11 21:38: scripts/vegetation_draft.py thêm 55 mask vegetation (SegFormer, 19 frame; frame 72 đã có sẵn), backup `tools/cvat-seg-copilot/backups/job987_vegetation_20261111_213817.json`, đọc lại 56 khớp.
+- 11/11 22:05: scripts/building_draft.py thêm 19 mask building (SegFormer) cho frame 60-63, 76-79 (SAM 2.1b so sánh: viền không tốt hơn, IoU với mask tay 0.56 vs 0.60 của SegFormer nên không dùng). Backup `backups/job987_building_20261111_220523.json`. Xóa 3 shape thừa frame 64 do trùng bản vẽ tay (backup `job987_building64_removed.json`).

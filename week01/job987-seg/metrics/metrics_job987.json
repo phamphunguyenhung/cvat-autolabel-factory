@@ -1,10 +1,10 @@
 {
  "job": 987,
  "frames": 20,
- "score": 0.75,
+ "score": 0.725,
  "parts": {
   "no_polygon": 1.0,
-  "overlap_ok": 0.5
+  "overlap_ok": 0.45
  },
  "warn": {
   "sky_missing": [],
@@ -27,19 +27,10 @@
    "frame": 63,
    "label": "car",
    "ids": [
-    222675,
-    222674
+    222674,
+    222675
    ],
    "contain": 0.88
-  },
-  {
-   "frame": 63,
-   "label": "car",
-   "ids": [
-    222675,
-    222683
-   ],
-   "contain": 0.86
   },
   {
    "frame": 63,
@@ -51,22 +42,31 @@
    "contain": 0.94
   },
   {
-   "frame": 69,
+   "frame": 63,
    "label": "car",
    "ids": [
-    222748,
-    222747
+    222675,
+    222683
    ],
-   "contain": 0.93
+   "contain": 0.86
   },
   {
    "frame": 69,
    "label": "car",
    "ids": [
-    222748,
-    222745
+    222745,
+    222748
    ],
    "contain": 0.94
+  },
+  {
+   "frame": 69,
+   "label": "car",
+   "ids": [
+    222747,
+    222748
+   ],
+   "contain": 0.93
   },
   {
    "frame": 73,
@@ -89,21 +89,21 @@
  ],
  "labels": {
   "bicycle": 2,
-  "building": 19,
+  "building": 39,
   "bus": 3,
   "car": 168,
-  "lane/crosswalk": 7,
+  "lane/crosswalk": 8,
   "lane/double white": 3,
   "lane/double yellow": 3,
   "lane/road curb": 8,
-  "lane/single white": 20,
+  "lane/single white": 19,
   "lane/single yellow": 6,
   "motorcycle": 1,
   "pedestrian": 13,
   "rider": 1,
   "sidewalk": 1,
   "sky": 20,
-  "traffic light": 12,
+  "traffic light": 13,
   "traffic sign": 29,
   "traffic_light": 6,
   "traffic_sign": 2,
@@ -113,58 +113,58 @@
  "rows": [
   {
    "frame": 60,
-   "shapes": 22,
+   "shapes": 23,
    "n_poly": 0,
-   "n_mask": 18,
+   "n_mask": 19,
    "lane_polylines": 4,
    "sky_missing": false,
    "no_lane": false,
-   "coverage": 44.6,
+   "coverage": 45.1,
    "overlap": 0.02
   },
   {
    "frame": 61,
-   "shapes": 28,
+   "shapes": 31,
    "n_poly": 0,
-   "n_mask": 20,
-   "lane_polylines": 8,
+   "n_mask": 24,
+   "lane_polylines": 7,
    "sky_missing": false,
    "no_lane": false,
-   "coverage": 39.7,
-   "overlap": 0.79
+   "coverage": 42.0,
+   "overlap": 0.69
   },
   {
    "frame": 62,
-   "shapes": 16,
+   "shapes": 19,
    "n_poly": 0,
-   "n_mask": 14,
-   "lane_polylines": 2,
+   "n_mask": 18,
+   "lane_polylines": 1,
    "sky_missing": false,
    "no_lane": false,
-   "coverage": 59.4,
-   "overlap": 0.05
+   "coverage": 73.1,
+   "overlap": 0.06
   },
   {
    "frame": 63,
-   "shapes": 15,
+   "shapes": 17,
    "n_poly": 0,
-   "n_mask": 15,
+   "n_mask": 17,
    "lane_polylines": 0,
    "sky_missing": false,
    "no_lane": true,
-   "coverage": 37.2,
+   "coverage": 53.5,
    "overlap": 1.55
   },
   {
    "frame": 64,
-   "shapes": 16,
+   "shapes": 17,
    "n_poly": 0,
-   "n_mask": 15,
+   "n_mask": 16,
    "lane_polylines": 1,
    "sky_missing": false,
    "no_lane": false,
-   "coverage": 45.5,
-   "overlap": 0.03
+   "coverage": 50.2,
+   "overlap": 2.21
   },
   {
    "frame": 65,
@@ -201,36 +201,36 @@
   },
   {
    "frame": 68,
-   "shapes": 13,
+   "shapes": 12,
    "n_poly": 0,
-   "n_mask": 13,
+   "n_mask": 12,
    "lane_polylines": 0,
    "sky_missing": false,
    "no_lane": true,
-   "coverage": 42.6,
+   "coverage": 42.3,
    "overlap": 1.29
   },
   {
    "frame": 69,
-   "shapes": 17,
+   "shapes": 19,
    "n_poly": 0,
-   "n_mask": 16,
+   "n_mask": 18,
    "lane_polylines": 1,
    "sky_missing": false,
    "no_lane": false,
-   "coverage": 58.8,
-   "overlap": 0.51
+   "coverage": 61.0,
+   "overlap": 22.41
   },
   {
    "frame": 70,
-   "shapes": 16,
+   "shapes": 17,
    "n_poly": 0,
-   "n_mask": 16,
+   "n_mask": 17,
    "lane_polylines": 0,
    "sky_missing": false,
    "no_lane": true,
    "coverage": 52.8,
-   "overlap": 0.65
+   "overlap": 0.69
   },
   {
    "frame": 71,
@@ -289,46 +289,46 @@
   },
   {
    "frame": 76,
-   "shapes": 11,
+   "shapes": 13,
    "n_poly": 0,
-   "n_mask": 10,
+   "n_mask": 12,
    "lane_polylines": 1,
    "sky_missing": false,
    "no_lane": false,
-   "coverage": 31.7,
+   "coverage": 69.7,
    "overlap": 0.07
   },
   {
    "frame": 77,
-   "shapes": 17,
+   "shapes": 21,
    "n_poly": 0,
-   "n_mask": 17,
+   "n_mask": 21,
    "lane_polylines": 0,
    "sky_missing": false,
    "no_lane": true,
-   "coverage": 42.2,
+   "coverage": 49.5,
    "overlap": 0.17
   },
   {
    "frame": 78,
-   "shapes": 16,
+   "shapes": 18,
    "n_poly": 0,
-   "n_mask": 13,
+   "n_mask": 15,
    "lane_polylines": 3,
    "sky_missing": false,
    "no_lane": false,
-   "coverage": 22.8,
+   "coverage": 52.7,
    "overlap": 0.42
   },
   {
    "frame": 79,
-   "shapes": 19,
+   "shapes": 20,
    "n_poly": 0,
-   "n_mask": 15,
+   "n_mask": 16,
    "lane_polylines": 4,
    "sky_missing": false,
    "no_lane": false,
-   "coverage": 48.8,
+   "coverage": 56.7,
    "overlap": 0.05
   }
  ]
