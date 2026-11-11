@@ -1,56 +1,126 @@
 {
  "job": 285,
  "frames": 20,
- "boxes": 138,
+ "boxes": 218,
  "per_label": {
-  "car": 136,
+  "car": 166,
   "motorcycle": 1,
-  "truck": 1
+  "traffic light": 22,
+  "traffic sign": 18,
+  "truck": 3,
+  "pedestrian": 8
  },
  "per_frame": {
-  "60": 7,
-  "61": 10,
-  "62": 8,
-  "63": 17,
+  "60": 10,
+  "61": 14,
+  "62": 14,
+  "63": 21,
   "64": 1,
-  "65": 3,
-  "66": 4,
+  "65": 10,
+  "66": 7,
   "67": 9,
-  "68": 6,
-  "69": 7,
-  "70": 8,
-  "71": 10,
-  "72": 5,
-  "73": 13,
-  "74": 10,
+  "68": 9,
+  "69": 12,
+  "70": 13,
+  "71": 17,
+  "72": 8,
+  "73": 19,
+  "74": 13,
   "75": 3,
-  "76": 5,
-  "77": 4,
-  "78": 4,
-  "79": 4
+  "76": 7,
+  "77": 14,
+  "78": 10,
+  "79": 7
  },
  "geometry": {
   "DUP": [],
-  "TINY": [],
+  "TINY": [
+   {
+    "frame": 62,
+    "id": 227398,
+    "label": "traffic light",
+    "wh": [
+     11,
+     13
+    ]
+   },
+   {
+    "frame": 63,
+    "id": 227403,
+    "label": "car",
+    "wh": [
+     13,
+     12
+    ]
+   },
+   {
+    "frame": 63,
+    "id": 227402,
+    "label": "traffic light",
+    "wh": [
+     10,
+     12
+    ]
+   },
+   {
+    "frame": 73,
+    "id": 227438,
+    "label": "traffic light",
+    "wh": [
+     10,
+     15
+    ]
+   },
+   {
+    "frame": 77,
+    "id": 227451,
+    "label": "traffic light",
+    "wh": [
+     10,
+     17
+    ]
+   },
+   {
+    "frame": 77,
+    "id": 227452,
+    "label": "pedestrian",
+    "wh": [
+     12,
+     22
+    ]
+   }
+  ],
   "OOB": [],
   "AUTO": []
  },
  "confusion_gt_x_yolo": {
   "car": {
-   "car": 92,
-   "(YOLO không thấy)": 39,
+   "car": 111,
+   "(YOLO không thấy)": 50,
    "truck": 4,
    "bus": 1
   },
   "motorcycle": {
    "(YOLO không thấy)": 1
   },
+  "traffic light": {
+   "traffic light": 10,
+   "(YOLO không thấy)": 12
+  },
+  "traffic sign": {
+   "(YOLO không thấy)": 18
+  },
   "truck": {
-   "(YOLO không thấy)": 1
+   "(YOLO không thấy)": 2,
+   "truck": 1
+  },
+  "pedestrian": {
+   "(YOLO không thấy)": 3,
+   "pedestrian": 5
   }
  },
- "classification_accuracy_on_matched": 0.948,
- "matched": 97,
+ "classification_accuracy_on_matched": 0.962,
+ "matched": 132,
  "gt_without_yolo": [
   {
    "frame": 60,
@@ -64,7 +134,17 @@
   },
   {
    "frame": 60,
+   "id": 227389,
+   "label": "traffic light"
+  },
+  {
+   "frame": 60,
    "id": 56437,
+   "label": "car"
+  },
+  {
+   "frame": 61,
+   "id": 227391,
    "label": "car"
   },
   {
@@ -78,8 +158,38 @@
    "label": "car"
   },
   {
+   "frame": 61,
+   "id": 227392,
+   "label": "traffic sign"
+  },
+  {
+   "frame": 61,
+   "id": 227393,
+   "label": "traffic sign"
+  },
+  {
    "frame": 62,
    "id": 56455,
+   "label": "car"
+  },
+  {
+   "frame": 62,
+   "id": 227396,
+   "label": "traffic light"
+  },
+  {
+   "frame": 62,
+   "id": 227397,
+   "label": "car"
+  },
+  {
+   "frame": 62,
+   "id": 227398,
+   "label": "traffic light"
+  },
+  {
+   "frame": 62,
+   "id": 227399,
    "label": "car"
   },
   {
@@ -113,14 +223,59 @@
    "label": "car"
   },
   {
+   "frame": 63,
+   "id": 227403,
+   "label": "car"
+  },
+  {
+   "frame": 63,
+   "id": 227402,
+   "label": "traffic light"
+  },
+  {
+   "frame": 63,
+   "id": 227401,
+   "label": "car"
+  },
+  {
    "frame": 64,
    "id": 56866,
    "label": "truck"
   },
   {
    "frame": 65,
+   "id": 227406,
+   "label": "pedestrian"
+  },
+  {
+   "frame": 65,
+   "id": 227407,
+   "label": "traffic light"
+  },
+  {
+   "frame": 65,
+   "id": 227408,
+   "label": "car"
+  },
+  {
+   "frame": 65,
+   "id": 227409,
+   "label": "traffic sign"
+  },
+  {
+   "frame": 65,
+   "id": 227410,
+   "label": "traffic sign"
+  },
+  {
+   "frame": 65,
    "id": 56869,
    "label": "car"
+  },
+  {
+   "frame": 65,
+   "id": 227405,
+   "label": "traffic light"
   },
   {
    "frame": 67,
@@ -129,32 +284,17 @@
   },
   {
    "frame": 67,
-   "id": 56877,
+   "id": 56878,
    "label": "car"
   },
   {
    "frame": 67,
-   "id": 56878,
+   "id": 56877,
    "label": "car"
   },
   {
    "frame": 68,
    "id": 56883,
-   "label": "car"
-  },
-  {
-   "frame": 68,
-   "id": 56884,
-   "label": "car"
-  },
-  {
-   "frame": 68,
-   "id": 56885,
-   "label": "car"
-  },
-  {
-   "frame": 68,
-   "id": 56886,
    "label": "car"
   },
   {
@@ -168,13 +308,73 @@
    "label": "car"
   },
   {
+   "frame": 68,
+   "id": 56886,
+   "label": "car"
+  },
+  {
+   "frame": 68,
+   "id": 56885,
+   "label": "car"
+  },
+  {
+   "frame": 68,
+   "id": 56884,
+   "label": "car"
+  },
+  {
+   "frame": 68,
+   "id": 227416,
+   "label": "traffic sign"
+  },
+  {
+   "frame": 68,
+   "id": 227415,
+   "label": "traffic light"
+  },
+  {
+   "frame": 69,
+   "id": 227421,
+   "label": "car"
+  },
+  {
+   "frame": 70,
+   "id": 227425,
+   "label": "traffic sign"
+  },
+  {
+   "frame": 70,
+   "id": 227426,
+   "label": "traffic sign"
+  },
+  {
    "frame": 70,
    "id": 57054,
    "label": "car"
   },
   {
+   "frame": 71,
+   "id": 227433,
+   "label": "traffic sign"
+  },
+  {
+   "frame": 71,
+   "id": 227431,
+   "label": "truck"
+  },
+  {
+   "frame": 71,
+   "id": 227432,
+   "label": "traffic sign"
+  },
+  {
    "frame": 72,
    "id": 57065,
+   "label": "car"
+  },
+  {
+   "frame": 72,
+   "id": 227435,
    "label": "car"
   },
   {
@@ -184,12 +384,37 @@
   },
   {
    "frame": 72,
+   "id": 227436,
+   "label": "traffic sign"
+  },
+  {
+   "frame": 72,
    "id": 57068,
    "label": "car"
   },
   {
    "frame": 73,
-   "id": 57079,
+   "id": 227440,
+   "label": "traffic sign"
+  },
+  {
+   "frame": 73,
+   "id": 227441,
+   "label": "traffic sign"
+  },
+  {
+   "frame": 73,
+   "id": 227442,
+   "label": "traffic sign"
+  },
+  {
+   "frame": 73,
+   "id": 227439,
+   "label": "car"
+  },
+  {
+   "frame": 73,
+   "id": 57082,
    "label": "car"
   },
   {
@@ -199,17 +424,27 @@
   },
   {
    "frame": 73,
-   "id": 57082,
+   "id": 57079,
    "label": "car"
   },
   {
    "frame": 74,
-   "id": 57088,
+   "id": 227444,
+   "label": "traffic light"
+  },
+  {
+   "frame": 74,
+   "id": 227445,
    "label": "car"
   },
   {
    "frame": 74,
    "id": 57090,
+   "label": "car"
+  },
+  {
+   "frame": 74,
+   "id": 57088,
    "label": "car"
   },
   {
@@ -219,17 +454,17 @@
   },
   {
    "frame": 75,
-   "id": 57095,
-   "label": "car"
-  },
-  {
-   "frame": 75,
    "id": 57093,
    "label": "car"
   },
   {
+   "frame": 75,
+   "id": 57095,
+   "label": "car"
+  },
+  {
    "frame": 76,
-   "id": 57098,
+   "id": 57100,
    "label": "car"
   },
   {
@@ -239,13 +474,63 @@
   },
   {
    "frame": 76,
-   "id": 57100,
+   "id": 57098,
    "label": "car"
+  },
+  {
+   "frame": 76,
+   "id": 227447,
+   "label": "traffic sign"
+  },
+  {
+   "frame": 77,
+   "id": 227452,
+   "label": "pedestrian"
+  },
+  {
+   "frame": 77,
+   "id": 227453,
+   "label": "pedestrian"
+  },
+  {
+   "frame": 77,
+   "id": 227454,
+   "label": "traffic sign"
   },
   {
    "frame": 77,
    "id": 57102,
    "label": "car"
+  },
+  {
+   "frame": 77,
+   "id": 227457,
+   "label": "traffic sign"
+  },
+  {
+   "frame": 77,
+   "id": 227456,
+   "label": "traffic sign"
+  },
+  {
+   "frame": 77,
+   "id": 227455,
+   "label": "traffic sign"
+  },
+  {
+   "frame": 78,
+   "id": 227463,
+   "label": "traffic light"
+  },
+  {
+   "frame": 78,
+   "id": 227462,
+   "label": "car"
+  },
+  {
+   "frame": 78,
+   "id": 227461,
+   "label": "traffic light"
   },
   {
    "frame": 79,
@@ -256,14 +541,19 @@
    "frame": 79,
    "id": 57112,
    "label": "car"
+  },
+  {
+   "frame": 79,
+   "id": 227466,
+   "label": "traffic light"
+  },
+  {
+   "frame": 79,
+   "id": 227465,
+   "label": "traffic light"
   }
  ],
- "yolo_missing_candidates": {
-  "traffic light": 10,
-  "car": 20,
-  "pedestrian": 5,
-  "truck": 1
- },
+ "yolo_missing_candidates": {},
  "yolo_conf": 0.35,
- "missing_draft": "D:\\06-Learning\\AIA-VINGROUP\\learning\\cvat\\week01\\job285-bbox\\drafts\\missingboxes_20261111_221205.json"
+ "missing_draft": "D:\\06-Learning\\AIA-VINGROUP\\learning\\cvat\\week01\\job285-bbox\\drafts\\missingboxes_20261111_222223.json"
 }

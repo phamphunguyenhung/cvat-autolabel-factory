@@ -18,3 +18,5 @@ URL: https://cvat.edufun.ai/tasks/87/jobs/285
 
 ## Nhật ký thay đổi trên server
 - 11/11 22:11: xóa 23 rectangle trùng hệt (IoU 1.0), backup `tools/cvat-seg-copilot/backups/job285_dedupe_20261111_221117.json`, đọc lại 161 -> 138.
+- 11/11 22:22: ghi 80 rectangle từ nháp (YOLO: car 30, pedestrian 8, traffic light 22, truck 2; SegFormer: traffic sign 18), source manual. Backup `tools/cvat-seg-copilot/backups/job285_bboxobj_*.json`, đọc lại 138 -> 218. Chưa ghi: pole 48 + nhóm stuff (building, road, sky, vegetation...) vẫn ở `drafts/bboxall_*.json`, chờ quyết định.
+- Metric mới có 6 hộp TINY (<12px, đèn/biển xa) cần mắt người.
