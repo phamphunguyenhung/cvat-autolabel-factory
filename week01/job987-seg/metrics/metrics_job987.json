@@ -1,10 +1,10 @@
 {
  "job": 987,
  "frames": 20,
- "score": 0.875,
+ "score": 0.925,
  "parts": {
   "no_polygon": 1.0,
-  "overlap_ok": 0.75
+  "overlap_ok": 0.85
  },
  "warn": {
   "sky_missing": [],
@@ -25,22 +25,22 @@
    "contain": 0.96
   },
   {
-   "frame": 61,
+   "frame": 63,
    "label": "car",
    "ids": [
-    222661,
-    222645
+    222683,
+    222674
    ],
-   "contain": 1.0
+   "contain": 0.94
   },
   {
-   "frame": 61,
+   "frame": 63,
    "label": "car",
    "ids": [
-    222657,
-    222647
+    222683,
+    222675
    ],
-   "contain": 1.0
+   "contain": 0.86
   },
   {
    "frame": 63,
@@ -50,33 +50,6 @@
     222675
    ],
    "contain": 0.88
-  },
-  {
-   "frame": 63,
-   "label": "car",
-   "ids": [
-    222674,
-    222683
-   ],
-   "contain": 0.94
-  },
-  {
-   "frame": 63,
-   "label": "car",
-   "ids": [
-    222675,
-    222683
-   ],
-   "contain": 0.86
-  },
-  {
-   "frame": 67,
-   "label": "car",
-   "ids": [
-    222724,
-    222717
-   ],
-   "contain": 1.0
   },
   {
    "frame": 69,
@@ -95,24 +68,6 @@
     222748
    ],
    "contain": 0.93
-  },
-  {
-   "frame": 73,
-   "label": "car",
-   "ids": [
-    222787,
-    222801
-   ],
-   "contain": 0.99
-  },
-  {
-   "frame": 73,
-   "label": "car",
-   "ids": [
-    222800,
-    222806
-   ],
-   "contain": 1.0
   },
   {
    "frame": 73,
@@ -136,7 +91,7 @@
  "labels": {
   "bicycle": 2,
   "bus": 3,
-  "car": 165,
+  "car": 160,
   "lane/crosswalk": 3,
   "lane/double white": 5,
   "lane/double yellow": 1,
@@ -167,14 +122,14 @@
   },
   {
    "frame": 61,
-   "shapes": 26,
+   "shapes": 24,
    "n_poly": 0,
-   "n_mask": 18,
+   "n_mask": 16,
    "lane_polylines": 8,
    "sky_missing": false,
    "no_lane": false,
    "coverage": 11.3,
-   "overlap": 1.55
+   "overlap": 0.78
   },
   {
    "frame": 62,
@@ -233,14 +188,14 @@
   },
   {
    "frame": 67,
-   "shapes": 20,
+   "shapes": 19,
    "n_poly": 0,
-   "n_mask": 19,
+   "n_mask": 18,
    "lane_polylines": 1,
    "sky_missing": false,
    "no_lane": false,
    "coverage": 38.0,
-   "overlap": 1.51
+   "overlap": 0.11
   },
   {
    "frame": 68,
@@ -299,14 +254,14 @@
   },
   {
    "frame": 73,
-   "shapes": 33,
+   "shapes": 31,
    "n_poly": 0,
-   "n_mask": 30,
+   "n_mask": 28,
    "lane_polylines": 3,
    "sky_missing": false,
    "no_lane": false,
    "coverage": 13.4,
-   "overlap": 1.0
+   "overlap": 0.38
   },
   {
    "frame": 74,
