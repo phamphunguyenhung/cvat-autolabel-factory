@@ -198,3 +198,26 @@ def test_windows_path_with_spaces_and_unicode(tmp_path):
     c = Cache("t", tmp_path / "thu muc có dấu")
     c.put("k", {"x": 1})
     assert c.get("k")["value"] == {"x": 1}
+
+
+def test_reid_evidence_never_relabels_and_osnet_blocked(tmp_path):
+    from cvat_tools.tracking import reid
+
+    class Src:
+        def image(self, f):
+            return np.full((200, 100, 3), 120 + f, np.uint8)
+    tracks = {1: {0: [0, 0, 50, 100]}, 2: {5: [10, 0, 60, 100]}}
+    ev = reid.evidence_for_events(tracks, [{"kind": "handoff", "frame_a": 0, "track_a": 1, "frame_b": 5, "track_b": 2},
+                                           {"kind": "handoff", "frame_a": 0, "track_a": 1, "frame_b": 9, "track_b": 2}],
+                                  reid.HsvEmbedder(), Src(), Cache("emb", tmp_path))
+    assert ev[0]["auto_relabel"] is False and ev[0]["reid_cosine"] is not None and ev[1]["verdict"] == "khong ro"
+    with pytest.raises(reid.Blocked):
+        reid.OSNetEmbedder(tmp_path / "none.onnx")
+
+
+def test_adaptive_hard_frames():
+    from cvat_tools.detection.adaptive import hard_frames
+    d = {f: [[0, 0, 40, 150, 0.9]] for f in range(10)}
+    d[5] = [[0, 0, 40, 150, 0.3], [100, 0, 140, 40, 0.9]]
+    h = hard_frames(d)
+    assert 5 in h and 0 not in h

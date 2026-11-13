@@ -1,0 +1,8 @@
+ts,id,model,tracker,resolution,backend,frames,det_fps,e2e_fps,peak_ram_mb,pseudo_recall_vs_A,pseudo_recall_small_vs_A,IDF1,anchor_continuity,anchors_shared_track,frag,idsw_cand,keyframes_opt,keyframes_dp,adaptive_rerun_frac,cpu_load,noisy,status,note
+2026-11-13 18:54:44,A,yolo26l,botsort,1920,pytorch,60,0.3,0.3,1223,,,n/a (no GT),1.0,0,0,0,50,63,,86.6,True,measured,
+2026-11-13 18:56:10,B,yolo26n,bytetrack,640,openvino,60,11.58,11.402,728,0.843,0.0,n/a (no GT),0.887,0,6,0,54,62,,48.4,True,measured,
+2026-11-13 18:56:32,C,yolo26s,tracktrack,640,openvino,60,7.5,6.509,843,0.887,0.0,n/a (no GT),1.0,0,0,0,56,67,,43.4,True,measured,
+2026-11-13 18:56:37,D,yolo26s,ocsort,640,openvino,60,7.5,7.386,238,0.887,0.0,n/a (no GT),0.927,0,0,0,52,59,,43.4,True,measured,
+2026-11-13 18:56:42,E,yolo26s,fasttrack,640,openvino,60,7.5,7.418,238,0.887,0.0,n/a (no GT),0.875,0,0,0,45,51,,43.4,True,measured,
+2026-11-13 18:56:44,F,yolo26s,tracktrack,640,openvino,60,,,,,,,,,,,,,,,,BLOCKED,"ReID chon loc can OSNet x0.25 (thieu trong so, khong cai lan man); xem tracking/reid.py. Chay nhu C neu bo ReID."
+2026-11-13 18:57:58,G,yolo26s,tracktrack,640,openvino,60,7.5,1.046,1782,0.965,0.5,n/a (no GT),1.0,0,0,0,72,81,0.783,43.4,True,measured,47 frame kho chay lai bang yolo26l/openvino/1280

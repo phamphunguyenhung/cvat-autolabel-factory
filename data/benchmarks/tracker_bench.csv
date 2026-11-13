@@ -1,0 +1,7 @@
+ts,det_cache,tracker,n_frames,assoc_median_ms,assoc_p95_ms,assoc_total_s,assoc_fps,peak_ram_mb,raw_tracks,long_tracks_ge30,top5_coverage,fragmentation,id_switch_candidates,anchors_found,anchors_shared_track,anchor_continuity_mean,ai_provenance,noisy,status,note
+2026-11-13 18:58:16,38695348e5f7b9cd9474,bytetrack,60,1.22,1.85,0.077,775.0,238,15,6,1.0,0,0,5,0,0.897,ai_draft (khong dung lam nhan nop),False,measured,
+2026-11-13 18:58:20,38695348e5f7b9cd9474,tracktrack,60,18.56,23.14,1.172,51.2,244,8,5,0.98,0,0,4,0,1.0,ai_draft (khong dung lam nhan nop),False,measured,
+2026-11-13 18:58:22,38695348e5f7b9cd9474,ocsort,60,1.82,2.72,0.115,521.3,244,15,7,1.0,0,0,5,0,0.927,ai_draft (khong dung lam nhan nop),False,measured,
+2026-11-13 18:58:23,38695348e5f7b9cd9474,fasttrack,60,1.37,1.86,0.085,703.3,244,16,6,1.0,0,0,5,0,0.875,ai_draft (khong dung lam nhan nop),False,measured,
+2026-11-13 18:58:24,38695348e5f7b9cd9474,botsort,60,19.06,25.99,1.218,49.3,245,15,6,1.0,0,0,5,0,0.897,ai_draft (khong dung lam nhan nop),False,measured,
+2026-11-13 18:58:26,38695348e5f7b9cd9474,deepocsort,60,1.95,3.25,0.125,480.7,245,13,7,1.0,0,0,5,0,0.943,ai_draft (khong dung lam nhan nop),False,measured,

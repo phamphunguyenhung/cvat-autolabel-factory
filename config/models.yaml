@@ -1,5 +1,4 @@
-# Registry model. Chi 'supported' sau khi smoke test khoi tao + suy luan dat (cvat_tools detect smoke).
-# Trang thai backend duoc cap nhat boi `python -m cvat_tools models smoke`.
+# Registry model. Trang thai backend: supported chi sau smoke test (khoi tao + suy luan) dat.
 models:
   yolo26n:
     task: detect
@@ -9,15 +8,20 @@ models:
     source: https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26n.pt
     license: AGPL-3.0 (Ultralytics)
     hardware: CPU, RAM >= 4GB (nano)
-    classes: [person]
-    inference: {imgsz: 640, conf: 0.25, iou: 0.7}
+    classes:
+    - person
+    inference:
+      imgsz: 640
+      conf: 0.25
+      iou: 0.7
     backends:
-      pytorch: unverified
-      onnx: unverified
-      openvino: unverified
+      pytorch: supported (smoke 640px dat, 2026-11-13)
+      onnx: supported (smoke 640px dat, 2026-11-13)
+      openvino: supported (smoke 640px dat, 2026-11-13)
       openvino_fp16: unverified
-      openvino_int8: unverified
-    benchmark: data/benchmarks/detector_bench.csv
+      openvino_int8: 'BLOCKED: can du lieu calibration dai dien + GT de kiem tra mat
+        nguoi'
+    benchmark: data/benchmarks/detector_bench.csv (30 frame MOT17-09)
   yolo26s:
     task: detect
     version: yolo26s (ultralytics 8.4.x)
@@ -26,15 +30,21 @@ models:
     source: https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26s.pt
     license: AGPL-3.0 (Ultralytics)
     hardware: CPU, RAM >= 4GB (small)
-    classes: [person]
-    inference: {imgsz: 640, conf: 0.25, iou: 0.7}
+    classes:
+    - person
+    inference:
+      imgsz: 640
+      conf: 0.25
+      iou: 0.7
     backends:
-      pytorch: unverified
-      onnx: unverified
-      openvino: unverified
-      openvino_fp16: unverified
-      openvino_int8: unverified
-    benchmark: data/benchmarks/detector_bench.csv
+      pytorch: supported (smoke 640px dat, 2026-11-13)
+      onnx: supported (smoke 640px dat, 2026-11-13)
+      openvino: supported (smoke 640px dat, 2026-11-13)
+      openvino_fp16: supported (bench 640px chay duoc; chat luong chua danh gia -
+        khong GT)
+      openvino_int8: 'BLOCKED: can du lieu calibration dai dien + GT de kiem tra mat
+        nguoi'
+    benchmark: data/benchmarks/detector_bench.csv (30 frame MOT17-09)
   yolo26l:
     task: detect
     version: yolo26l (ultralytics 8.4.x)
@@ -43,12 +53,17 @@ models:
     source: https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26l.pt
     license: AGPL-3.0 (Ultralytics)
     hardware: CPU, RAM >= 4GB (large)
-    classes: [person]
-    inference: {imgsz: 640, conf: 0.25, iou: 0.7}
+    classes:
+    - person
+    inference:
+      imgsz: 640
+      conf: 0.25
+      iou: 0.7
     backends:
-      pytorch: unverified
-      onnx: unverified
-      openvino: unverified
-      openvino_fp16: unverified
-      openvino_int8: unverified
-    benchmark: data/benchmarks/detector_bench.csv
+      pytorch: supported (bench 640 va 1920)
+      onnx: unverified (chua export/smoke)
+      openvino: unverified (chua export/smoke)
+      openvino_fp16: unverified (chua export/smoke)
+      openvino_int8: 'BLOCKED: can du lieu calibration dai dien + GT de kiem tra mat
+        nguoi'
+    benchmark: data/benchmarks/detector_bench.csv (30 frame MOT17-09)

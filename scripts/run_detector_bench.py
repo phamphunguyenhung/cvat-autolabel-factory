@@ -9,6 +9,7 @@ from cvat_tools.core import paths
 ap = argparse.ArgumentParser()
 ap.add_argument("--limit", type=int, default=30)
 ap.add_argument("--frames", default=str(paths.REPO / "day05/labs/K5-L2-MOTTracking/.lab-local/mot17-09"))
+ap.add_argument("--idle-wait", type=float, default=0, help="giay cho CPU roi truoc moi cau hinh")
 ap.add_argument("--only", nargs="*", help="vd yolo26l:pytorch:1920")
 a = ap.parse_args()
 CONFIGS = [("yolo26l", "pytorch", 1920), ("yolo26l", "pytorch", 640),
@@ -18,5 +19,5 @@ CONFIGS = [("yolo26l", "pytorch", 1920), ("yolo26l", "pytorch", 640),
 if a.only:
     CONFIGS = [tuple(x.split(":")[:2]) + (int(x.split(":")[2]),) for x in a.only]
 for m, b, sz in CONFIGS:
-    r = bench(m, b, sz, a.frames, 0, a.limit)
+    r = bench(m, b, sz, a.frames, 0, a.limit, idle_wait=a.idle_wait)
     print({k: r.get(k) for k in ("model", "backend", "imgsz", "median_ms", "p95_ms", "fps", "peak_ram_mb", "cpu_load_before", "noisy", "status", "note")}, flush=True)

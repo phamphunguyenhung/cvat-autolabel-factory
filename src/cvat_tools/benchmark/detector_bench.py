@@ -23,6 +23,16 @@ def cpu_load() -> float:
     return psutil.cpu_percent(interval=1.0)
 
 
+def wait_idle(max_wait: float = 0, thr: float = 35.0) -> float:
+    """Cho CPU roi (<thr %) toi da max_wait giay; tra ve tai CPU cuoi cung. Khong ep: het gio van chay va danh dau noisy."""
+    t0 = time.time()
+    load = cpu_load()
+    while load > thr and time.time() - t0 < max_wait:
+        time.sleep(5)
+        load = cpu_load()
+    return load
+
+
 def run_one(model: str, backend: str, imgsz: int, frames_dir: str, start: int, limit: int, conf: float, threads: int | None) -> dict:
     import psutil
 
@@ -45,8 +55,8 @@ def run_one(model: str, backend: str, imgsz: int, frames_dir: str, start: int, l
 
 
 def bench(model: str, backend: str, imgsz: int, frames_dir: str, start: int = 0, limit: int = 30, conf: float = 0.25,
-          threads: int | None = None, timeout: int = 3600) -> dict:
-    load = cpu_load()
+          threads: int | None = None, timeout: int = 3600, idle_wait: float = 0) -> dict:
+    load = wait_idle(idle_wait)
     row = {"ts": time.strftime("%Y-%m-%d %H:%M:%S"), "model": model, "backend": backend, "imgsz": imgsz, "n_frames": limit,
            "cpu_load_before": load, "noisy": load > 35}
     cmd = [sys.executable, "-m", "cvat_tools.benchmark.detector_bench", "--child", model, backend, str(imgsz), frames_dir,

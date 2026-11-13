@@ -2,7 +2,7 @@
 # limits: gioi han tai nguyen cau hinh duoc (threads = so luong torch/ORT/OpenVINO, ram_mb = canh bao khi peak vuot).
 profiles:
   fast:
-    detector: {model: yolo26n, backend: openvino, imgsz: 640, conf: 0.25}
+    detector: {model: yolo26n, backend: onnx, imgsz: 640, conf: 0.25}   # onnx = pytorch ~56ms, openvino cham hon cho n (bench sach)
     tracker: {name: bytetrack, reid: false}
     limits: {threads: 4, workers: 1, ram_mb: 2500}
   balanced:
