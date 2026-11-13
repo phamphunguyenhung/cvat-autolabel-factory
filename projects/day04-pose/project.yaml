@@ -1,0 +1,4 @@
+name: day04-pose
+description: Day 4 pose (tools/skeleton-pose-manager)
+status: inventory_only   # adapter mong, chua hop nhat
+cvat: {profile: local}

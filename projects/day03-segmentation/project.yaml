@@ -1,0 +1,4 @@
+name: day03-segmentation
+description: Day 3 segmentation (tools/cvat-seg-copilot), job285 bbox + job987 seg
+status: inventory_only   # adapter mong, chua hop nhat
+cvat: {profile: local}

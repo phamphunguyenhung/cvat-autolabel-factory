@@ -1,0 +1,54 @@
+# Registry model. Chi 'supported' sau khi smoke test khoi tao + suy luan dat (cvat_tools detect smoke).
+# Trang thai backend duoc cap nhat boi `python -m cvat_tools models smoke`.
+models:
+  yolo26n:
+    task: detect
+    version: yolo26n (ultralytics 8.4.x)
+    checkpoint: yolo26n.pt
+    sha256_16: 9b09cc8bf347f0fc
+    source: https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26n.pt
+    license: AGPL-3.0 (Ultralytics)
+    hardware: CPU, RAM >= 4GB (nano)
+    classes: [person]
+    inference: {imgsz: 640, conf: 0.25, iou: 0.7}
+    backends:
+      pytorch: unverified
+      onnx: unverified
+      openvino: unverified
+      openvino_fp16: unverified
+      openvino_int8: unverified
+    benchmark: data/benchmarks/detector_bench.csv
+  yolo26s:
+    task: detect
+    version: yolo26s (ultralytics 8.4.x)
+    checkpoint: yolo26s.pt
+    sha256_16: 646f8bc3fe0a6568
+    source: https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26s.pt
+    license: AGPL-3.0 (Ultralytics)
+    hardware: CPU, RAM >= 4GB (small)
+    classes: [person]
+    inference: {imgsz: 640, conf: 0.25, iou: 0.7}
+    backends:
+      pytorch: unverified
+      onnx: unverified
+      openvino: unverified
+      openvino_fp16: unverified
+      openvino_int8: unverified
+    benchmark: data/benchmarks/detector_bench.csv
+  yolo26l:
+    task: detect
+    version: yolo26l (ultralytics 8.4.x)
+    checkpoint: yolo26l.pt
+    sha256_16: 9fe3c544f2b19beb
+    source: https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26l.pt
+    license: AGPL-3.0 (Ultralytics)
+    hardware: CPU, RAM >= 4GB (large)
+    classes: [person]
+    inference: {imgsz: 640, conf: 0.25, iou: 0.7}
+    backends:
+      pytorch: unverified
+      onnx: unverified
+      openvino: unverified
+      openvino_fp16: unverified
+      openvino_int8: unverified
+    benchmark: data/benchmarks/detector_bench.csv

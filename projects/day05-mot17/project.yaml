@@ -1,0 +1,17 @@
+name: day05-mot17
+description: Lab Day 5 MOT17-09, 5 nguoi P1-P5, 150 frame
+dataset:
+  id: mot17-09
+  frames_dir: day05/labs/K5-L2-MOTTracking/.lab-local/mot17-09   # tuong doi so voi thu muc learning/ (REPO)
+  n_frames: 150
+  ground_truth: null            # KHONG co gt.txt -> khong bao IDF1/MOTA/HOTA
+cvat:
+  profile: local
+  job_id: 15                    # task 17 DAY05-MOT17-09-B (tra bang `inspect`)
+labels: {person: person}
+identities: [P1, P2, P3, P4, P5]    # anh xa P1-P5 -> track do NGUOI luu (data/review/), tach khoi tracker id
+anchors_file: tools/mot-track-manager/config/anchors_B.json
+rules_file: day05/labs/K5-L2-MOTTracking/RULES.md   # chi doc; cam nop box/track AI nhu nhan cua minh
+ai_draft_allowed: false         # bat --allow-ai-draft chi khi giang vien cho phep
+profile: balanced
+export: {mot_gt: data/exports/day05-mot17/gt.txt}
