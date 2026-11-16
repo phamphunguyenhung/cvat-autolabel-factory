@@ -83,10 +83,18 @@ def cmd_projects(a):
 
 
 def cmd_models_list(a):
+    from cvat_tools.core.model_registry import ModelRegistry
+    reg = ModelRegistry.from_config()
+    if getattr(a, "json", False):
+        print(json.dumps({"models": [m.to_metadata() for m in reg.list()], "status": reg.status()}, ensure_ascii=False, indent=1))
+        return 0
     prof = load_profiles()
     for n, s in load_models().items():
-        have = (paths.CHECKPOINTS / s["checkpoint"]).exists()
-        print(f"{n}: {s['task']} · ckpt {'co' if have else 'THIEU'} ({s['sha256_16']}) · " + ", ".join(f"{b}={v}" for b, v in s["backends"].items()))
+        ckpt = s.get("checkpoint", "")
+        have = (paths.CHECKPOINTS / ckpt).exists() or (paths.WORKSPACE / ckpt).exists()
+        sha = s.get("sha256_16", "-")
+        backends = ", ".join(f"{b}={v}" for b, v in (s.get("backends") or {}).items())
+        print(f"{n}: {s.get('task', '?')} · ckpt {'co' if have else 'THIEU/HF'} ({sha}) · {backends}")
     print("profiles:", {k: f"{v['detector']['model']}/{v['detector']['backend']}/{v['detector']['imgsz']}+{v['tracker']['name']}" for k, v in prof.items()})
     return 0
 
@@ -283,11 +291,120 @@ def cmd_export(a):
     return 0
 
 
+def cmd_job_preflight(a):
+    from cvat_tools.core.client import Cvat
+    from cvat_tools.job import report
+    rep = report.run(a.job, Cvat.from_env(a.profile), out_dir=a.out)
+    if getattr(a, "json", False):
+        print(json.dumps(rep, ensure_ascii=False, indent=1))
+    else:
+        print(report.to_markdown(rep))
+        print("Da luu:", *rep["files"], sep="\n  ")
+    return 0  # preflight KHONG tu choi job
+
+
+def cmd_tools_list(a):
+    from cvat_tools.core.registry import build_default_registry
+    reg = build_default_registry()
+    if getattr(a, "json", False):
+        print(json.dumps([t.to_metadata() for t in reg.list()], ensure_ascii=False, indent=1))
+        return 0
+    for t in reg.list():
+        perms = ",".join(p.value for p in t.permissions)
+        print(f"{t.tool_id:<24} v{t.version:<6} [{perms}]  {t.description}")
+    return 0
+
+
+def cmd_tools_info(a):
+    from cvat_tools.core.registry import build_default_registry
+    spec = build_default_registry().get(a.tool_id)
+    if getattr(a, "json", False):
+        print(json.dumps(spec.to_metadata(), ensure_ascii=False, indent=1))
+    else:
+        meta = spec.to_metadata()
+        print(f"{meta['tool_id']} ({meta['name']} v{meta['version']})")
+        print(f"  desc: {meta['description']}")
+        print(f"  permissions: {meta['permissions']}")
+        print(f"  resources: {meta['resources']}")
+        print(f"  input_schema: {meta['input_schema']}")
+    return 0
+
+
+def cmd_full_bbox(a):
+    import subprocess
+    script = paths.WORKSPACE / "scripts" / "export_full_bbox_job285.py"
+    if not script.exists():
+        raise FileNotFoundError(f"Khong tim thay script: {script}")
+    if a.job != 285:
+        raise ValueError(f"full-bbox hien tai ho tro --job 285 (nhan duoc --job {a.job}).")
+    rc = subprocess.call([sys.executable, str(script)])
+    if rc != 0:
+        return rc
+    out_dir = paths.WORKSPACE / "week01" / "job285-bbox" / "previews_full_bbox"
+    out_json = out_dir / "full_bbox_job285.json"
+    if getattr(a, "json", False) and out_json.exists():
+        data = json.loads(out_json.read_text(encoding="utf-8"))
+        print(json.dumps({"job": data.get("job"), "frames": len(data.get("frames", {})), "label_totals": data.get("label_totals", {}), "out_dir": str(out_dir)}, ensure_ascii=False, indent=1))
+    if a.open:
+        grid = out_dir / "summary_grid_20frames.jpg"
+        if grid.exists():
+            subprocess.Popen(["code", str(grid)], shell=(sys.platform == "win32"))
+    return 0
+
+
+def cmd_week(a):
+    from cvat_tools.job import weekly
+    if a.wcmd == "list":
+        print("\n".join(weekly.list_weeks()) or "(chua co tuan nao)")
+    elif a.wcmd == "new":
+        print("Da tao", weekly.new_week(a.week))
+    else:
+        wk = a.week or weekly.current_week()
+        rows = weekly.status(wk)
+        print(f"== {wk}: {len(rows)} job")
+        for r in rows:
+            tail = r.get("error") or f"state={r['state']} stage={r['stage']} task={r['task']} frames={r['frames']} dir={r['dir']}"
+            print(f"  {r['profile']:<6} job {r['id']:>5} [{r['kind']}] due={r['due'] or '-'} local={r['local']}  {tail}")
+
+
+def cmd_pose(a):
+    from cvat_tools.pose import week2
+    if a.pcmd == "draft":
+        r = week2.draft_job(a.job, a.profile, a.all)
+        print(f"job {r['job']} [{r['kind']}] nhap {r['drafted']} frame (co nhan san {len(r['skipped_existing'])}, ve tay {r['by_hand']}) · model {r['model']}")
+        print("nhap:", r["file"])
+    elif a.pcmd == "apply":
+        r = week2.apply_draft(a.job, a.profile, a.file, yes=a.yes, replace_auto=a.replace_auto)
+        print(json.dumps(r, ensure_ascii=False, indent=1))
+        if not a.yes:
+            print("DRY-RUN: chua ghi gi. Them --yes de ghi (them skeleton source=auto, co backup + rollback).")
+    else:
+        r = week2.rollback(a.run, yes=a.yes)
+        print(json.dumps(r, ensure_ascii=False, indent=1))
+        if not a.yes:
+            print("DRY-RUN: chua xoa gi. Them --yes de xoa.")
+
+
 def main(argv=None) -> int:
     for st in (sys.stdout, sys.stderr):
         if hasattr(st, "reconfigure"):
             st.reconfigure(encoding="utf-8")
-    p = argparse.ArgumentParser(prog="cvat_tools", description="CVAT Engineering Toolkit")
+    epilog = (
+        "Vi du:\n"
+        "  cvat-tools doctor\n"
+        "  cvat-tools store capture --job 285\n"
+        "  cvat-tools store push --job 285            # dry-run mac dinh\n"
+        "  cvat-tools store rollback --latest --job 285\n"
+        "  cvat-tools full-bbox --job 285 --open\n"
+    )
+    p = argparse.ArgumentParser(
+        prog="cvat-tools",
+        description="CVAT Engineering Toolkit (dry-run mac dinh; chi ghi CVAT khi co --yes)",
+        epilog=epilog,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+    p.add_argument("--json", action="store_true", help="xuat JSON sach (cho script/agent)")
+    p.add_argument("--traceback", action="store_true", help="in full traceback khi co loi")
     sub = p.add_subparsers(dest="cmd", required=True)
 
     def add(parent, name, fn, **kw):
@@ -322,8 +439,58 @@ def main(argv=None) -> int:
     s.add_argument("--project", default=None); s.add_argument("--job", type=int); s.add_argument("--json", help="JSON annotation thay vi doc CVAT")
     s = add(sub, "export", cmd_export, help="Xuat tu CVAT (chi doc)"); proj(s); s.add_argument("--format", choices=["cvat", "mot"], default="cvat"); s.add_argument("--out")
 
+    jb = add(sub, "job", lambda a: 0, help="preflight").add_subparsers(dest="jcmd", required=True)
+    s = add(jb, "preflight", cmd_job_preflight, help="GAP REPORT cho job (chi doc CVAT, khong tu choi job)")
+    s.add_argument("--job", type=int, required=True); s.add_argument("--profile", default="local"); s.add_argument("--out")
+
+    wk = add(sub, "week", lambda a: 0, help="Job theo tuan: new | status | list").add_subparsers(dest="wcmd", required=True)
+    for n in ("new", "status", "list"):
+        s = add(wk, n, cmd_week); s.set_defaults(wcmd=n)
+        if n != "list":
+            s.add_argument("--week", default=None, help="vd 2026-W47 (mac dinh: tuan hien tai)")
+
+    ps = add(sub, "pose", lambda a: 0, help="Week 2 face50/person17: draft (local) | apply (ghi CVAT, can --yes) | rollback").add_subparsers(dest="pcmd", required=True)
+    s = add(ps, "draft", cmd_pose)
+    s.add_argument("--job", type=int, required=True); s.add_argument("--profile", default="edufun")
+    s.add_argument("--all", action="store_true", help="ca frame da co nhan (mac dinh chi frame trong)")
+    s = add(ps, "apply", cmd_pose)
+    s.add_argument("--job", type=int, required=True); s.add_argument("--profile", default="edufun")
+    s.add_argument("--file", default=None, help="file nhap (mac dinh: moi nhat trong drafts/)"); s.add_argument("--yes", action="store_true")
+    s.add_argument("--replace-auto", action="store_true", help="xoa skeleton auto cu cua tool tren frame ban CHUA sua roi tao lai tu nhap moi")
+    s = add(ps, "rollback", cmd_pose)
+    s.add_argument("--run", required=True, help="backups/run_*.json"); s.add_argument("--yes", action="store_true")
+
+    from cvat_tools.sync.cli_store import register as _register_store
+    _register_store(sub, add)
+    from cvat_tools.pipeline.cli_run import register as _register_run
+    _register_run(sub, add)
+    from harness.cli_v3 import register as _register_harness
+    _register_harness(sub, add)
+
+    fb = add(sub, "full-bbox", cmd_full_bbox, help="xuat preview FULL BBOX (things + lanes + areas + stuff) cho job")
+    fb.add_argument("--job", type=int, default=285, help="CVAT job ID (mac dinh 285)")
+    fb.add_argument("--open", action="store_true", help="mo summary_grid_20frames.jpg trong VS Code sau khi xong")
+
+    tl = add(sub, "tools", lambda a: 0, help="Tool kernel registry: list | info").add_subparsers(dest="tcmd", required=True)
+    add(tl, "list", cmd_tools_list, help="liet ke cac tool da dang ky trong kernel")
+    ti = add(tl, "info", cmd_tools_info, help="xem schema va quyen cua 1 tool")
+    ti.add_argument("tool_id", help="vi du: segmentation.prelabel, store.push")
+
     a = p.parse_args(argv)
-    return a.fn(a) or 0
+    try:
+        return a.fn(a) or 0
+    except KeyboardInterrupt:
+        print("ERROR: Da huy boi nguoi dung.", file=sys.stderr)
+        return 130
+    except Exception as exc:
+        if getattr(a, "traceback", False):
+            raise
+        from cvat_tools.core.client import CvatError, WriteNotAuthorized
+        if isinstance(exc, (CvatError, WriteNotAuthorized, FileNotFoundError, ValueError, KeyError)):
+            print(f"ERROR: {exc}", file=sys.stderr)
+            return 2
+        print(f"ERROR ({type(exc).__name__}): {exc}", file=sys.stderr)
+        return 1
 
 
 if __name__ == "__main__":

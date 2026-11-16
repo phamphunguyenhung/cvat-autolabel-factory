@@ -12,7 +12,7 @@ import requests
 
 from cvat_tools.core import paths
 
-ENV_KEYS = ("CVAT_HOST", "CVAT_PAT", "CVAT_ORG", "MOT_MODEL", "POSE_MODEL")
+ENV_KEYS = ("CVAT_HOST", "CVAT_PAT", "CVAT_ORG", "CVAT_EDUFUN_PAT", "MOT_MODEL", "POSE_MODEL")
 
 
 class CvatError(RuntimeError):
@@ -23,16 +23,27 @@ class WriteNotAuthorized(CvatError):
     pass
 
 
-def load_env(path: Path | None = None) -> dict:
-    env: dict = {}
-    for p in ([path] if path else paths.ENV_CANDIDATES):
-        if p and p.exists():
-            for line in p.read_text(encoding="utf8").splitlines():
-                line = line.strip()
-                if line and not line.startswith("#") and "=" in line:
-                    k, v = line.split("=", 1)
-                    env.setdefault(k.strip(), v.strip())
-            break
+def _parse(p: Path) -> dict:
+    out: dict = {}
+    for line in p.read_text(encoding="utf-8-sig").splitlines():
+        line = line.strip()
+        if line and not line.startswith("#") and "=" in line:
+            k, v = line.split("=", 1)
+            out[k.strip()] = v.strip().strip("\"'")
+    return out
+
+
+def load_env(path: Path | None = None, candidates=None) -> dict:
+    """Fallback theo thu tu file. File DAU TIEN co CVAT_PAT la goc (host/org cung file de khong tron instance);
+    khoa con thieu duoc dien tu file sau. Bien moi truong thang the. Khong in gia tri."""
+    files = [path] if path else list(candidates if candidates is not None else paths.ENV_CANDIDATES)
+    parsed = [_parse(p) for p in files if p and Path(p).exists()]
+    base = next((d for d in parsed if d.get("CVAT_PAT")), parsed[0] if parsed else {})
+    env = dict(base)
+    for d in parsed:
+        for k, v in d.items():
+            if k in ENV_KEYS:
+                env.setdefault(k, v)
     for k in ENV_KEYS:
         if os.environ.get(k):
             env[k] = os.environ[k]
@@ -58,6 +69,8 @@ class Cvat:
     @classmethod
     def from_env(cls, profile: str = "local", write_enabled: bool = False) -> "Cvat":
         e, prof = load_env(), load_profile(profile)
+        if prof.get("pat_env"):  # profile rieng (vd edufun): host/org/PAT khong lan voi CVAT_HOST/CVAT_PAT local
+            return cls(prof["host"], e.get(prof["pat_env"], ""), prof.get("org", "") or "", write_enabled)
         host = e.get("CVAT_HOST") or prof.get("host") or "http://localhost:8080"
         return cls(host, e.get("CVAT_PAT", ""), e.get("CVAT_ORG", prof.get("org", "") or ""), write_enabled)
 

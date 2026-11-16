@@ -9,3 +9,4 @@
    khai báo nhãn AI là nhãn người.
 6. PAT chỉ đọc từ `.env` (gitignored) hoặc biến môi trường, không in. `*.pt`, `*.onnx`, `models/`, `data/` bị gitignore.
 7. Ground truth: không có `gt.txt` thì không báo IDF1/MOTA/HOTA; chỉ số heuristic được gắn nhãn "heuristic".
+8. Kho shape cục bộ (`data/store/shapes.sqlite`, gitignore): `python -m cvat_tools store push` dry-run mặc định, ghi thật cần `--yes` (client write_enabled); chỉ thêm, dedupe, backup + run log (`kind: shapes`), rollback giữ shape người đã sửa. `store capture` chỉ đọc CVAT.

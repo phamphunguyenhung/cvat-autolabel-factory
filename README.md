@@ -9,8 +9,14 @@ cd D:\06-Learning\AIA-VINGROUP\learning\cvat
 pip install -e . --no-deps          # cần sẵn: requests numpy pyyaml opencv ultralytics (openvino/onnxruntime tùy backend)
 copy .env.example .env              # CVAT_PAT (hoặc dùng sẵn tools\mot-track-manager\.env làm fallback)
 python -m cvat_tools doctor
+python -m cvat_tools tools list
+python -m cvat_tools --json tools info segmentation.prelabel
 python -m cvat_tools projects list
 python -m cvat_tools models list
+python -m cvat_tools store capture --job 285
+python -m cvat_tools store push --job 285          # dry-run mặc định; thêm --yes để ghi
+python -m cvat_tools store rollback --latest --job 285
+python -m cvat_tools full-bbox --job 285 --open
 python -m cvat_tools inspect --project day05-mot17                # chỉ đọc
 python -m cvat_tools track assist --project day05-mot17           # manual-assist, không cần AI, chỉ đọc
 python -m cvat_tools detect --project day05-mot17 --profile balanced --limit 60 --allow-ai-draft

@@ -7,7 +7,7 @@ name = "cvat-tools"
 version = "0.1.0"
 description = "CVAT Engineering Toolkit (CET): client, an toan ghi, tracking, benchmark CPU-first"
 requires-python = ">=3.11"
-dependencies = ["requests", "numpy", "pyyaml"]
+dependencies = ["requests", "numpy", "pyyaml", "opencv-python", "psutil"]
 
 [project.optional-dependencies]
 vision = ["opencv-python", "ultralytics"]

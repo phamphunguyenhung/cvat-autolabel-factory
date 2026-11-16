@@ -18,5 +18,6 @@ data/*.log
 data/*.err
 data/backups/
 data/runs/
+data/store/
 data/drafts/
 *.log

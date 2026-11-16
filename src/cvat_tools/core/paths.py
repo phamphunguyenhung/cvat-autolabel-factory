@@ -14,4 +14,11 @@ PROJECTS = WORKSPACE / "projects"
 LEGACY_MTM = REPO / "tools" / "mot-track-manager"
 
 # noi tim .env, theo thu tu (chi doc, khong in gia tri)
-ENV_CANDIDATES = [WORKSPACE / ".env", LEGACY_MTM / ".env"]
+COPILOT = REPO / "tools" / "cvat-seg-copilot"
+ENV_CANDIDATES = [WORKSPACE / ".env", COPILOT / ".env.local", COPILOT / ".env", LEGACY_MTM / ".env"]
+
+
+def job_dir(profile: str, job_id: int) -> Path:
+    """Du lieu 1 job. Job id 2 server co the trung nhau -> edufun (va profile khac local) tach thu muc rieng.
+    local giu dung cho cu data/jobs/<id> (vd 285)."""
+    return DATA / "jobs" / (str(job_id) if profile == "local" else f"{profile}/{job_id}")

@@ -30,6 +30,17 @@ def write_run_log(job_id: int, info: dict) -> str:
     return str(p)
 
 
+def rollback_shapes(cv: Cvat, run_file, keep_ids=()) -> dict:
+    """Xoa dung shape co id trong run log (`created_ids`); `keep_ids` = id can giu lai (vd nguoi da sua)."""
+    run = json.loads(open(run_file, encoding="utf8").read())
+    ids = set(run["created_ids"]) - set(keep_ids)
+    mine = [s for s in cv.annotations(run["job"])["shapes"] if s["id"] in ids]
+    if mine:
+        cv.delete_shapes(run["job"], mine)
+    return {"job": run["job"], "deleted": len(mine), "deleted_ids": [s["id"] for s in mine],
+            "kept": sorted(set(run["created_ids"]) & set(keep_ids)), "remaining": len(cv.annotations(run["job"])["shapes"])}
+
+
 def rollback_tracks(cv: Cvat, run_file) -> dict:
     run = json.loads(open(run_file, encoding="utf8").read())
     ann = cv.annotations(run["job"])
