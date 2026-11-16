@@ -1,0 +1,14 @@
+# Job duoc giao tuan 2026-W47. KHONG ghi PAT/secret o day.
+week: "2026-W47"
+profile: edufun
+jobs:
+  - id: 1975
+    kind: pose             # face landmark 50 diem (7 skeleton), task 473 W2-FACE-G6-T1, frame 90-119
+    note: "Face50. Leader task 473 (5 job 1972-1976). Guideline: weeks/guidelines/w2-face50-pose17.md"
+    due: ""
+    local_status: todo
+  - id: 1623
+    kind: pose             # person_vf17 (COCO 17), task 402 week2-human-pose/G06, frame 90-119
+    note: "Pose17. Chi thay job nay (task 402 tra 403)."
+    due: ""
+    local_status: todo

@@ -1,0 +1,10 @@
+# Job duoc giao tuan {week}. Sua tay, them dong khi co job moi. KHONG ghi PAT/secret o day.
+week: "{week}"
+profile: edufun            # mac dinh cua tuan: edufun (online BTC cap) | local (docker localhost:8080)
+jobs:
+  - id: 0                  # CVAT job id (so giang vien giao)
+    # profile: local       # (tuy chon) job nay nam tren CVAT docker local thay vi mac dinh cua tuan
+    kind: seg              # seg | det | pose | mot
+    note: ""               # de bai / luu y ngan
+    due: ""                # YYYY-MM-DD
+    local_status: todo     # todo | doing | submitted | done (ghi chu cua rieng minh, khong dong bo CVAT)

@@ -1,0 +1,4 @@
+{
+ "skip_frames": [99, 100, 106, 112, 118],
+ "skip_reason": "f99 qua toi, f100 nhoe, f106/f112 nam ngang fisheye (nham trai/phai), f118 guc mat -> ve tay"
+}
