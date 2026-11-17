@@ -127,6 +127,49 @@ def person_frame(model, img, frame, sub_names: list) -> dict:
     return {"frame": frame, "width": fr["width"], "height": fr["height"], "people": out, "skipped": fr["skipped"]}
 
 
+class _OfflineCvat:
+    """Mất mạng: đọc cache local data/jobs/<profile>/<job>/{job_info.json,labels.json} và ảnh frames_dir (do draft online ghi lại)."""
+
+    def __init__(self, job_id: int, profile: str):
+        self.d = paths.DATA / "jobs" / profile / str(job_id)
+        self.info = json.loads((self.d / "job_info.json").read_text(encoding="utf8"))
+        self.frames_dir = paths.WORKSPACE / self.info["frames_dir"]
+
+    def labels(self, job_id): return json.loads((self.d / "labels.json").read_text(encoding="utf8"))
+    def job(self, job_id): return {"start_frame": self.info["start_frame"], "assignee": None}
+    def annotations(self, job_id): return {"shapes": [], "tracks": [], "tags": []}
+    def meta(self, job_id): return {"frames": [{"name": n} for n in self.info["names"]]}
+
+    def frame(self, job_id, n):
+        return (self.frames_dir / self.info["names"][n - self.info["start_frame"]].split("/")[-1]).read_bytes()
+
+
+def _cache_job(c, job_id: int, profile: str, labels: list, job: dict, meta: list) -> Path:
+    """Ghi cache job (labels, thông tin frame) để lần sau chạy --offline được."""
+    d = paths.DATA / "jobs" / profile / str(job_id)
+    (d / "frames").mkdir(parents=True, exist_ok=True)
+    (d / "labels.json").write_text(json.dumps(labels, ensure_ascii=False), encoding="utf8")
+    info = {"start_frame": job["start_frame"], "names": [m["name"] for m in meta], "frames_dir": f"data/jobs/{profile}/{job_id}/frames"}
+    old = d / "job_info.json"
+    if old.exists():                                   # giữ frames_dir đã trỏ tay (vd cache dùng chung của task)
+        info["frames_dir"] = json.loads(old.read_text(encoding="utf8")).get("frames_dir", info["frames_dir"])
+    old.write_text(json.dumps(info, ensure_ascii=False), encoding="utf8")
+    return d / "frames"
+
+
+def _person17_frame(img, n, backend, sub_names) -> dict:
+    """Pose 17 điểm: xoay 4 hướng nếu cần, chọn tài xế, kiểm hình học; vô lý/không thấy người -> people rỗng (vẽ tay)."""
+    from cvat_tools.pose import person17
+    h, w = img.shape[:2]
+    det = person17.detect(backend, img)
+    if det is None:
+        return {"frame": n, "width": w, "height": h, "people": [], "reject": ["không thấy người"]}
+    bad = person17.plausibility_pose(det["xy"], det["conf"])
+    if bad:
+        return {"frame": n, "width": w, "height": h, "people": [], "reject": bad}
+    return {"frame": n, "width": w, "height": h, "people": person17.frame_people(det, sub_names, w, h)}
+
+
 def _face50_frame(img, n, fl, rot_frames, model, tpls) -> dict:
     """FAN (landmark thật). Không thấy mặt hoặc hình học vô lý -> people rỗng (frame để vẽ tay, KHÔNG đoán bừa bằng template)."""
     from cvat_tools.pose import face50
@@ -140,14 +183,16 @@ def _face50_frame(img, n, fl, rot_frames, model, tpls) -> dict:
     return {"frame": n, "width": w, "height": h, "people": face50.frame_people(det, w, h)}
 
 
-def draft_job(job_id: int, profile: str = "edufun", include_existing: bool = False) -> dict:
+def draft_job(job_id: int, profile: str = "edufun", include_existing: bool = False, backend: str = "auto", honor_skip: bool = True, offline: bool = False) -> dict:
     import cv2
     D, _, _ = _spm()
-    c = Cvat.from_env(profile)
+    c = _OfflineCvat(job_id, profile) if offline else Cvat.from_env(profile)
     labels, job = c.labels(job_id), c.job(job_id)
+    include_existing = include_existing or offline
     kind = detect_kind(labels)
     have = {s["frame"] for s in c.annotations(job_id)["shapes"]}
     meta = c.meta(job_id)["frames"]
+    cache = None if offline else _cache_job(c, job_id, profile, labels, job, meta)
     model, mname = D.load_model()
     by = {l["name"]: l for l in labels}
     tpls = {n: template_from_label(by[n]) for n in FACE_LABELS} if kind == "face50" else None
@@ -163,7 +208,11 @@ def draft_job(job_id: int, profile: str = "edufun", include_existing: bool = Fal
         cj = folder.parent / "cases.json"       # frame fisheye/nằm ngang -> thử cả 4 hướng
         if cj.exists():
             rot_frames = {int(k) for k, v in json.loads(cj.read_text(encoding="utf8")).items() if any("Fisheye" in c["case"] for c in v)}
-    skip_hand = set(policy.get("skip_frames", []))
+    skip_hand = set(policy.get("skip_frames", [])) if honor_skip else set()
+    pbe = None
+    if kind == "person17":
+        from cvat_tools.pose import person17
+        pbe = person17.make_backend(backend)
     qmap = {int(k): v for k, v in policy.get("q_labels", {}).items()}
     frames, done, skipped, by_hand, rejected = [], 0, [], [], {}
     for i, mf in enumerate(meta):
@@ -174,11 +223,14 @@ def draft_job(job_id: int, profile: str = "edufun", include_existing: bool = Fal
         if n in skip_hand:
             by_hand.append(n)
             continue
-        img = D.decode(c.frame(job_id, n))
+        raw = c.frame(job_id, n)
+        if cache is not None and not (cache / meta[i]["name"].split("/")[-1]).exists():
+            (cache / meta[i]["name"].split("/")[-1]).write_bytes(raw)
+        img = D.decode(raw)
         if kind == "face50":
             fr = _face50_frame(img, n, fl, rot_frames, model, tpls)
         else:
-            fr = person_frame(model, img, n, sub)
+            fr = _person17_frame(img, n, pbe, sub)
         for p in fr["people"]:
             if p["label"] in qmap.get(n, []):
                 for pt in p["points"].values():
@@ -193,8 +245,9 @@ def draft_job(job_id: int, profile: str = "edufun", include_existing: bool = Fal
         _preview(img, fr, folder / "review" / "draft_preview" / f"{mf['name'].split('/')[-1][:-4]}.jpg", kind, cv2)
         done += 1
     ts = datetime.now()
-    out = folder / "drafts" / f"{kind}_{ts:%Y%m%d_%H%M%S}.json"
-    out.write_text(json.dumps({"job": job_id, "profile": profile, "kind": kind, "model": mname, "created": ts.isoformat(timespec="seconds"),
+    tag = f"{kind}_{backend}" if kind == "person17" else kind
+    out = folder / "drafts" / f"{tag}_{ts:%Y%m%d_%H%M%S}.json"
+    out.write_text(json.dumps({"job": job_id, "profile": profile, "kind": kind, "backend": backend if kind == "person17" else "fan2d", "model": mname, "created": ts.isoformat(timespec="seconds"),
                                "status": "ai_draft_local_only", "frames": frames}, ensure_ascii=False), encoding="utf8")
     return {"job": job_id, "kind": kind, "drafted": done, "skipped_existing": skipped, "by_hand": by_hand, "rejected": rejected, "file": str(out), "model": mname}
 
@@ -254,7 +307,7 @@ def apply_draft(job_id: int, profile: str = "edufun", file: str | None = None, y
     if (job.get("assignee") or {}).get("username") != me["username"]:
         raise PermissionError(f"Job {job_id} không được gán cho bạn ({me['username']}): từ chối ghi.")
     folder = job_folder(job_id)
-    f = Path(file) if file else sorted((folder / "drafts").glob("*.json"))[-1]
+    f = Path(file) if file else max((folder / "drafts").glob("*.json"), key=lambda p: p.stat().st_mtime)   # nháp MỚI NHẤT theo thời gian
     draft = json.loads(f.read_text(encoding="utf8"))
     labels = {l["name"]: l for l in c.labels(job_id)}
     existing = c.annotations(job_id)
@@ -318,6 +371,9 @@ def rollback(run_file: str, yes: bool = False) -> dict:
         c.create_shapes(run["job"], restore[i:i + CHUNK])
     return {"job": run["job"], "deleted": len(mine), "restored": len(restore),
             "remaining": len(c.annotations(run["job"])["shapes"]), "expected": run["before"], "applied": True}
+
+
+_COLORS = [(255, 100, 100), (100, 220, 100), (60, 60, 255), (0, 200, 255), (255, 0, 255), (255, 160, 0), (160, 160, 0)]
 
 
 def _preview(img, fr, path: Path, kind: str, cv2):

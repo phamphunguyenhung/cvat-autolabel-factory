@@ -34,7 +34,9 @@ def test_map_shape_and_groups():
     p = _face68()
     q = face50.map68_to_50(p)
     assert q.shape == (50, 2)
-    assert np.allclose(q[0:10], p[17:27]) and np.allclose(q[10:14], p[27:31])
+    assert np.allclose(q[0:10], p[17:27])
+    assert np.allclose(q[10], p[27]) and np.allclose(q[13], p[27] + face50.NOSE_BASE_T * (p[30] - p[27]))   # 13 = chân sống mũi, không phải chóp
+    assert np.allclose(np.diff(q[10:14], axis=0), np.diff(q[10:14], axis=0)[0])                           # chia đều ba đoạn
     assert np.allclose(q[30:42], p[48:60]) and np.allclose(q[42:50], p[60:68])
     assert np.allclose(q[14], p[36]) and np.allclose(q[18], p[39])   # khóe mắt giữ nguyên
     assert np.allclose(q[22], p[42]) and np.allclose(q[26], p[45])
@@ -46,6 +48,21 @@ def test_lid_points_between_corners_and_collapsed_lid_ok():
     assert q[14, 0] < q[15, 0] < q[16, 0] < q[17, 0] < q[18, 0]       # mí trên đi từ khóe ngoài vào trong
     p[37] = p[38] = p[36]                                              # mí khép / điểm trùng không được làm hỏng spline
     face50.map68_to_50(p)
+
+
+def test_lid_points_at_quarter_half_threequarter_of_eye_width():
+    q = face50.map68_to_50(_face68())
+    for a, b, first in ((14, 18, 15), (22, 26, 23)):
+        ax = q[b] - q[a]
+        frac = [float((q[first + k] - q[a]) @ ax / (ax @ ax)) for k in range(3)]
+        assert np.allclose(frac, [0.25, 0.5, 0.75], atol=0.01)
+
+
+def test_rotated_face_is_flagged_for_mentor():
+    det = {"p68": _face68(), "score68": np.full(68, 0.9), "face_score": 1.0, "rot": 90}
+    assert all(p["flags"] == ["UNCERTAIN_CLASS_ROT90"] for p in face50.frame_people(det, 400, 300))
+    det["rot"] = 0
+    assert all(p["flags"] == [] for p in face50.frame_people(det, 400, 300))
 
 
 def test_wrong_shape_rejected():

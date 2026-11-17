@@ -9,7 +9,7 @@ Hai kiểu ảnh: **IR chính diện** (camera trước mặt, chân/cổ chân 
 | f91 | IR chính diện, cúi cầm túi nilon, đầu nghiêng | túi che cẳng/cổ tay: Q; cổ chân O |
 | f92 | IR, cúi sát camera, đầu sát mép trên | mũi/mắt/tai có thể vượt mép: O; thân co lại, vai gần đầu |
 | f93 | màu nghiêng, đọc sách che ngực/tay | sách che tay-ngực: Q; chân ra mép: O |
-| f94 | IR, báo trải trên đùi che hông-gối | hông, gối: Q cả nhóm |
+| f94 | IR, báo trải trên đùi che hông-gối | hông: Q nếu suy ra được; gối, cổ chân không đoán nổi: O (v0) |
 | f95 | IR, nghiêng người, tay xuống bên trái ảnh, áo sáng | cổ chân O |
 | f96 | màu nghiêng, cúi đầu, cầm đồ | đùi/gối ra mép phải: O; đầu sát mép trái |
 | f97 | màu nghiêng, gập người về trước, đầu sát mép trái | mặt cúi: mũi/mắt xác định theo hướng đầu; điểm ra mép: O |
@@ -18,7 +18,7 @@ Hai kiểu ảnh: **IR chính diện** (camera trước mặt, chân/cổ chân 
 | f100 | màu nghiêng, **nhòe chuyển động mạnh** | đặt ở tâm khớp ước lượng, Q nếu không phân biệt khớp |
 | f101 | màu nghiêng, cầm sách, laptop trên đùi | sách/laptop che đùi-gối: Q; chân ra mép: O |
 | f102 | IR chính diện, viết giấy, cúi đầu, kính | cổ chân O |
-| f103 | IR **nằm ngang**, gọi điện, đầu bên trái ảnh | **trái/phải theo người** (mục G); điện thoại che tai |
+| f103 | IR **nằm ngang**, gọi điện, đầu bên trái ảnh | **R/L theo ảnh** (mục G, UNCERTAIN_CLASS nếu hai bên cùng x); điện thoại che tai |
 | f104 | IR nằm ngả, hai tay giơ lên vô-lăng | nguy cơ nhầm trái/phải; tay cầm vô-lăng: cổ tay ở khớp |
 | f105 | màu nghiêng, đọc sách, kính | sách che tay: Q |
 | f106 | IR fisheye nằm ngang, đầu bên phải, cầm túi | trái/phải khó; gối/cổ chân thường trên vô-lăng/ghế: Q hoặc O nếu ra ảnh. Nháp YOLO đã sai ở frame này |

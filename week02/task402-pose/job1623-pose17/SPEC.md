@@ -5,12 +5,17 @@ Gán cho: mình. Trạng thái lúc đọc (16/11/2026): `new`, stage `annotatio
 
 ## Phạm vi
 - 1 skeleton `person_vf17` mỗi ảnh, 17 điểm thứ tự COCO (tên điểm trên CVAT là số 1–17). Chế độ Shape.
-- Trái/phải theo người (điểm chẵn nằm bên phải ảnh trong khung mẫu quay mặt). Ảnh trong cabin, có ảnh hồng ngoại xám.
+- R/L theo **ảnh** (BTC V1): điểm chẵn (R) luôn ở phải ảnh, điểm lẻ (L) ở trái ảnh, kể cả quay lưng/xoay 90°. Tay/chân che hẳn không suy ra được: v0 (outside); mặt luôn V hoặc Q. Ảnh trong cabin, có ảnh hồng ngoại xám.
 
 ## Hiện trạng
 - Có sẵn 10 skeleton `source=file` ở frame 91, 92, 97, 98, 103, 104, 109, 110, 115, 116, nhiều điểm lệch khỏi khớp (nháp thô).
 - 20 frame còn lại chưa có nhãn. Chưa biết được phép xóa hay sửa nháp không.
 
+## Nháp tool (17/11/2026, local, chưa đẩy lại lên CVAT)
+- `pose draft --backend auto`: YOLO11l + ViTPose-B, xoay 4 hướng cho ảnh nằm ngang (f103, f106, f112, f118 được xoay), điểm hai model bất đồng > 0.35 x thân bị đánh Q.
+- Vẽ tay (policy): f100 (nhòe), f118 (gục mặt). 15 skeleton auto cũ trên CVAT (từ yolo11l thuần) sẽ được thay khi chạy `pose apply --replace-auto --yes`.
+- Chưa có gold: sửa tay vài frame rồi `scripts/eval_pose17.py --refresh-gold`.
+
 ## Chưa làm
-- Nháp AI: chờ xác nhận được dùng AI hay không.
+- Đẩy nháp mới lên CVAT: chờ mạng tới cvat.edufun.ai (DNS/TCP đang lỗi) và bạn duyệt.
 - Xem nhãn: `python scripts/render_skeleton_overlay.py --job 1623 --profile edufun --frames 91`

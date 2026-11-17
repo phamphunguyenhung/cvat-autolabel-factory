@@ -122,3 +122,28 @@ models:
     classes: [face_landmarks_68]
     backends:
       pytorch: "supported (smoke frame 93 job 1975, 2026-11-16; loi TB 4.8 px so voi nhan sua tay)"
+  vitpose_base:
+    task: pose
+    version: "ViTPose-B simple (transformers VitPoseForPoseEstimation), COCO-17"
+    checkpoint: "usyd-community/vitpose-base-simple (Hugging Face cache)"
+    source: https://huggingface.co/usyd-community/vitpose-base-simple
+    license: Apache-2.0
+    hardware: "CPU, ~1.5 s/frame sau khi nap (hop nguoi tu YOLO)"
+    memory_mb: 900
+    heavyweight: true
+    classes: [person_keypoints_17]
+    backends:
+      pytorch: "supported (smoke f119 job 1623, 2026-11-16)"
+    used_by: cvat_tools.pose.person17
+  yolo11l_pose:
+    task: pose
+    version: "yolo11l-pose (ultralytics 8.4.x), COCO-17"
+    checkpoint: tools/skeleton-pose-manager/models/yolo11l-pose.pt
+    source: https://github.com/ultralytics/assets
+    license: AGPL-3.0 (Ultralytics)
+    hardware: "CPU, ~1 s/frame"
+    memory_mb: 600
+    heavyweight: true
+    classes: [person_keypoints_17]
+    backends:
+      pytorch: "supported (Day 4 spm + cvat_tools.pose.person17)"

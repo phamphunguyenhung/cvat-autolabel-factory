@@ -370,7 +370,7 @@ def cmd_week(a):
 def cmd_pose(a):
     from cvat_tools.pose import week2
     if a.pcmd == "draft":
-        r = week2.draft_job(a.job, a.profile, a.all)
+        r = week2.draft_job(a.job, a.profile, a.all, backend=a.backend, honor_skip=not a.no_skip, offline=a.offline)
         print(f"job {r['job']} [{r['kind']}] nhap {r['drafted']} frame (co nhan san {len(r['skipped_existing'])}, ve tay {r['by_hand']}) · model {r['model']}")
         print("nhap:", r["file"])
     elif a.pcmd == "apply":
@@ -453,6 +453,9 @@ def main(argv=None) -> int:
     s = add(ps, "draft", cmd_pose)
     s.add_argument("--job", type=int, required=True); s.add_argument("--profile", default="edufun")
     s.add_argument("--all", action="store_true", help="ca frame da co nhan (mac dinh chi frame trong)")
+    s.add_argument("--backend", default="auto", choices=["yolo", "vitpose", "auto"], help="pose17: yolo | vitpose | auto=ca hai, bat dong -> Q (face50 luon dung FAN)")
+    s.add_argument("--no-skip", action="store_true", help="bo qua skip_frames trong push_policy.json (de so sanh backend)")
+    s.add_argument("--offline", action="store_true", help="mat mang: doc cache local (labels, frames) thay vi CVAT; ngam --all")
     s = add(ps, "apply", cmd_pose)
     s.add_argument("--job", type=int, required=True); s.add_argument("--profile", default="edufun")
     s.add_argument("--file", default=None, help="file nhap (mac dinh: moi nhat trong drafts/)"); s.add_argument("--yes", action="store_true")

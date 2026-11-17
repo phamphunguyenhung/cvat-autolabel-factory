@@ -19,43 +19,12 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from cvat_tools.core.client import Cvat  # noqa: E402
-from cvat_tools.pose import week2  # noqa: E402
+from cvat_tools.pose import gold as G, week2  # noqa: E402
 
 GROUPS = week2.FACE_LABELS
 
 
-def _draft_points(path: Path) -> dict:
-    d = json.loads(path.read_text(encoding="utf8"))
-    return {fr["frame"]: {n: (pt["x"], pt["y"]) for p in fr["people"] for n, pt in p["points"].items()} for fr in d["frames"]}
-
-
-def _label_of(labels: list) -> dict:
-    return {s["name"]: l["name"] for l in labels for s in l["sublabels"]}
-
-
-def refresh_gold(c: Cvat, job: int, folder: Path, tol: float, min_moved: int) -> dict:
-    runs = sorted((folder / "backups").glob("run_*.json"))
-    if not runs:
-        raise SystemExit("Chưa có run_*.json: chưa đẩy nháp nào lên CVAT nên chưa có gì để so.")
-    run = json.loads(runs[-1].read_text(encoding="utf8"))
-    pushed = _draft_points(folder / "drafts" / run["draft"])
-    labels = c.labels(job)
-    subn = {s["id"]: s["name"] for l in labels for s in l["sublabels"]}
-    cur: dict = {}
-    for s in c.annotations(job)["shapes"]:
-        if s["id"] in set(run["created_ids"]):
-            for e in s["elements"]:
-                cur.setdefault(s["frame"], {})[subn[e["label_id"]]] = tuple(e["points"])
-    gf = folder / "metrics" / "gold.json"
-    gold = json.loads(gf.read_text(encoding="utf8")) if gf.exists() else {}
-    for fr, pts in cur.items():
-        moved = sum(1 for n, (x, y) in pts.items() if fr in pushed and math.hypot(x - pushed[fr][n][0], y - pushed[fr][n][1]) > tol)
-        if moved >= min_moved:    # chỉ lưu điểm BẠN ĐÃ SỬA (điểm không đổi có thể chỉ là nháp cũ, không phải nhãn đã duyệt)
-            gold[str(fr)] = {n: list(v) for n, v in pts.items()
-                             if math.hypot(v[0] - pushed[fr][n][0], v[1] - pushed[fr][n][1]) > tol}
-    gf.parent.mkdir(exist_ok=True)
-    gf.write_text(json.dumps(gold, ensure_ascii=False), encoding="utf8")
-    return gold
+_draft_points, _label_of, refresh_gold = G.draft_points, G.label_of, G.refresh_gold   # logic gold dùng chung: pose/gold.py
 
 
 def evaluate(gold: dict, draft: dict, grp: dict) -> dict:

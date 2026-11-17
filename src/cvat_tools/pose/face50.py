@@ -1,11 +1,12 @@
 """Landmark mặt thật (FAN 2D, iBUG-68) -> bộ 50 điểm của Week 2.
 
 Bộ 50 điểm = iBUG-68 bỏ cằm (0–16) và đáy mũi (31–35), mắt nâng từ 6 lên 8 điểm:
-  mày trái-ảnh 0–4 = iBUG 17–21 | mày phải-ảnh 5–9 = 22–26 | sống mũi 10–13 = 27–30
+  mày trái-ảnh 0–4 = iBUG 17–21 | mày phải-ảnh 5–9 = 22–26 (iBUG nằm giữa sợi lông, BTC đòi bờ trên: duyệt tay)
+  sống mũi 10–13 = đoạn iBUG 27 -> 85% tới iBUG 30 (BTC: 13 là chân sống mũi, không phải chóp), chia ba đoạn
   mắt trái-ảnh 14–21: 14=36 (khóe ngoài), 15–17 mí trên, 18=39 (khóe trong), 19–21 mí dưới (trong -> ngoài)
   mắt phải-ảnh 22–29: 22=42 (khóe trong), 23–25 mí trên, 26=45 (khóe ngoài), 27–29 mí dưới (ngoài -> trong)
   môi ngoài 30–41 = iBUG 48–59 | môi trong 42–49 = iBUG 60–67
-Mí trên/dưới của iBUG có 2 điểm giữa hai khóe; scheme cần 3 nên nội suy spline theo độ dài dây cung.
+Mí trên/dưới của iBUG có 2 điểm giữa hai khóe; scheme cần 3 nên nội suy spline tại 1/4, 1/2, 3/4 chiều rộng mắt (BTC).
 `trai` = bên TRÁI ẢNH khi mặt thẳng đứng; ảnh xoay được thử 4 hướng rồi quay ngược toạ độ.
 """
 from __future__ import annotations
@@ -20,13 +21,22 @@ EYE_L = (36, 37, 38, 39, 40, 41)   # mắt trái-ảnh: outer, upper, upper, inn
 EYE_R = (42, 43, 44, 45, 46, 47)   # mắt phải-ảnh: inner, upper, upper, outer, lower, lower
 
 
+NOSE_BASE_T = 0.85      # điểm 13 = chân sống mũi (BTC): trên lỗ mũi, chưa chạm chóp mũi (iBUG 30). 0.85 là ước lượng, chờ mẫu mentor
+
+
 def _resample(poly: np.ndarray, n: int) -> np.ndarray:
-    """n điểm bên trong (không gồm hai đầu) cách đều theo dây cung trên spline đi qua poly."""
+    """n điểm bên trong (không gồm hai đầu) trên spline qua poly, tại k/(n+1) CHIỀU RỘNG mắt (chiếu lên trục khóe a->b) như BTC
+    (1/4, 1/2, 3/4). Khóe trùng nhau (không có trục) thì rơi về cách đều theo dây cung."""
     from scipy.interpolate import CubicSpline
     d = np.r_[0.0, np.cumsum(np.maximum(np.linalg.norm(np.diff(poly, axis=0), axis=1), 1e-3))]   # mí khép: điểm trùng vẫn tăng nghiêm ngặt
     cs = CubicSpline(d, poly, bc_type="natural")
-    t = np.linspace(0, d[-1], n + 2)[1:-1]
-    return cs(t)
+    axis = poly[-1] - poly[0]
+    L2 = float(axis @ axis)
+    if L2 < 1e-6:
+        return cs(np.linspace(0, d[-1], n + 2)[1:-1])
+    t = np.linspace(0, d[-1], 400)
+    proj = np.maximum.accumulate(((cs(t) - poly[0]) @ axis) / L2) + np.arange(400) * 1e-9
+    return cs(np.interp(np.arange(1, n + 1) / (n + 1), proj, t))
 
 
 def map68_to_50(p: np.ndarray) -> np.ndarray:
@@ -36,7 +46,7 @@ def map68_to_50(p: np.ndarray) -> np.ndarray:
         raise ValueError(f"cần (68,2), nhận {p.shape}")
     out = np.zeros((50, 2))
     out[0:10] = p[17:27]
-    out[10:14] = p[27:31]
+    out[10:14] = p[27] + np.outer(np.array([0.0, 1 / 3, 2 / 3, 1.0]) * NOSE_BASE_T, p[30] - p[27])      # đỉnh sống mũi -> chân sống mũi, chia ba đoạn
     a, u1, u2, b, l1, l2 = (p[i] for i in EYE_L)           # outer -> inner trên; inner -> outer dưới
     out[14] = a
     out[15:18] = _resample(np.array([a, u1, u2, b]), 3)
@@ -129,7 +139,8 @@ def frame_people(det: dict | None, w: int, h: int, low: float = 0.3) -> list:
             x, y = float(p50[i, 0]), float(p50[i, 1])
             pts[str(i)] = {"x": float(min(max(x, 0.0), w)), "y": float(min(max(y, 0.0), h)),
                            "state": state_for(x, y, w, h, float(sc50[i]), low)}
-        people.append({"label": lab, "points": pts, "anchor": f"fan2d(rot{det['rot']},face{det['face_score']:.2f})", "flags": []})
+        people.append({"label": lab, "points": pts, "anchor": f"fan2d(rot{det['rot']},face{det['face_score']:.2f})",
+                       "flags": [f"UNCERTAIN_CLASS_ROT{det['rot']}"] if det["rot"] else []})      # mặt xoay: trai/phai theo ảnh chưa chốt (guideline mục 8)
     return people
 
 
