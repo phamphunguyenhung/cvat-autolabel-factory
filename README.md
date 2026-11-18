@@ -2,12 +2,37 @@
 
 Universal CLI (`cvat-factory`) and local-first CVAT annotation pipeline (**Face50**, **Pose17**, **Custom Skeleton**, **BBox Detection**, **Segmentation**, **Tracking**), with full backward compatibility for V2 (`cvat-tools`, `mtm`).
 
+> **Bản mới nhất** (public, cập nhật thường xuyên hơn bản trong repo này): https://github.com/phamphunguyenhung/cvat-autolabel-factory
+
+---
+
+## 0. Setup model (dùng AI agent)
+
+Thư mục `models/` không nằm trong git (weights nặng). Để AI agent (Claude Code, Antigravity...) tự setup, mở terminal trong thư mục `cvat-factory` rồi dán prompt sau:
+
+```text
+Setup môi trường và tải model cho project cvat-factory trong thư mục hiện tại. Làm tuần tự, dừng và báo lại nếu bước nào lỗi:
+
+1. Kiểm tra Python >= 3.11 (`python --version`).
+2. Cài package editable, không kéo lại dependency đã có:
+   pip install -e . --no-build-isolation --no-deps
+   Sau đó cài thêm phần vision để có ultralytics: pip install ultralytics opencv-python
+3. Tải 3 checkpoint YOLO26 detect (n/s/l) vào models/checkpoints/ bằng:
+   python scripts/fetch_checkpoints.py
+   Không sửa script, không tải từ nguồn khác.
+4. Xác minh checkpoint: đọc config/models.yaml, với mỗi model so sha256 16 ký tự đầu của file .pt (PowerShell: (Get-FileHash models\checkpoints\<file>.pt -Algorithm SHA256).Hash.ToLower().Substring(0,16)) với trường sha256_16. Khớp hết thì báo OK; lệch thì báo tên file và DỪNG, không dùng file đó.
+5. Chạy `cvat-factory doctor --offline` và `cvat-factory models list --scan`, dán output tóm tắt cho tôi.
+6. Không in, không lưu, không đụng tới file .env hay PAT. Không chạy lệnh ghi lên CVAT (sync --yes).
+```
+
+Ghi chú: nếu `doctor` báo thiếu CVAT PAT, chạy `cvat-factory setup` (xem mục 1).
+
 ---
 
 ## 1. Windows PowerShell Quickstart (`cvat-factory`)
 
 ```powershell
-cd D:\06-Learning\AIA-VINGROUP\learning\cvat
+cd D:\06-Learning\AIA-VINGROUP\a48\source-tool\cvat-factory
 
 # 1. Cài đặt editable (không tải lại dependencies đã có)
 pip install -e . --no-build-isolation --no-deps
@@ -103,7 +128,7 @@ Tham khảo chi tiết kiểm kê model & module:
 Workspace chung cho công cụ CVAT (Day 3 segmentation, Day 4 pose, Day 5 MOT). `week01/` và `guides/` là nháp/metrics cũ, **không bị đụng**.
 
 ```powershell
-cd D:\06-Learning\AIA-VINGROUP\learning\cvat
+cd D:\06-Learning\AIA-VINGROUP\a48\source-tool\cvat-factory
 python -m cvat_tools doctor
 python -m cvat_tools tools list
 python -m cvat_tools --json tools info segmentation.prelabel
