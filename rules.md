@@ -38,3 +38,21 @@
 - **Detection (`export` / `detection/`)**:
   - Lọc containment `_iomin >= 0.72` tránh box lồng nhau.
   - Loại `traffic light` giả ở nửa dưới mặt đường (`cy > 0.55 * H`) và nhiễu mui xe (`car` ở `y1 > 500`, `area < 2500`).
+
+## 6. Quy chuẩn Pose17 Proposal, Review VS Code & Sync CVAT (`pose17_sync.py`)
+- **Luôn đọc CVAT live mặc định khi `propose`**: `build_proposals` mặc định phải kéo annotation mới nhất từ CVAT qua PAT token (`offline=False`); chỉ đọc snapshot local khi truyền rõ `--offline`.
+- **Cấm tuyệt đối tự ý dời tọa độ hoặc hardcode theo frame**: `build_proposals` trên shape đã có (`action="update"`) **chỉ được sửa cờ lỗi** (`skeleton.occluded`, xung đột `Q+O`, mặt/vai/hông `O` trong khung), phải giữ nguyên 100% tọa độ `(x, y)` người dùng đã đặt (`before_el["points"] == proposed_el["points"]`). Nghiêm cấm hardcode `if fidx == ...` để đảo cổ tay/gối.
+- **Tôn trọng cờ `O` (`outside`) ở tay/chân khi gỡ xung đột `Q+O`**: `Q+O` trên tay/chân (`LIMB_IDS = {8..11, 14..17}`) luôn xóa `Q` và giữ `O` (`occluded=False, outside=True`); chỉ mặt/vai/hông (`FACE_TORSO_IDS`) nằm trong khung mới đưa về `Q`.
+- **Mở ảnh in đậm trong VS Code trước khi sync**: Luôn render ảnh Before/Proposed nét dày + contact sheet và **tự động mở ngay bằng `code.cmd --reuse-window` trong VS Code** (không bắt người dùng tự bấm mở link). **Mọi case/frame cần người dùng review (`review_frames`, `proposed_corrections`, `before_after`) BẮT BUỘC phải tự động mở ảnh trên VS Code** thì người dùng mới xem và duyệt được. Áp dụng cho mọi ảnh kiểm chứng/so sánh (Pose17, Face50, Autolabel V2).
+- **Chốt chặn chống ghi đè bản mới (Staleness Guard)**: `sync` mặc định dry-run; khi `--yes` bắt buộc đối chiếu `before_shape` với CVAT live hiện tại, nếu frame đã bị sửa trên CVAT sau lúc `propose` thì dừng và báo lỗi `Stale proposal` (không ghi đè). Luôn backup `before_sync_*.json` + `run_sync_*.json` và giữ `source="manual"`.
+
+## 7. Quy chuẩn Face50 Verification & Alignment (`face50_engine.py`)
+- **Kiểm tra hình học chặt theo tọa độ cục bộ (`validate_face50_frame`)**:
+  - **Tight Inner-Lip Containment (`F50-R11`)**: `moitrong` (`42..49`) phải nằm trong `moingoai` (`30..41`) với ngưỡng **`d >= -0.05` px** (bắt cả lỗi lọt biên sub-pixel như `f105`, `f112`).
+  - **Lip Self-Intersection (`F50-R10`, `LIP_SELF_INTERSECT`)**: Cấm các cạnh không kề nhau của `moingoai` (`30..41`) và `moitrong` (`42..49`) tự cắt nhau.
+  - **Brow Local Geometry (`BROW_BELOW_EYE`, `BROW_NON_MONOTONIC_LOCAL`)**: Trong hệ tọa độ cục bộ khuôn mặt `(u, v)`, mọi điểm lông mày (`0..4`, `5..9`) phải có `u` đơn điệu tăng và nằm phía trên mí mắt trên (`15..17`, `23..25`).
+- **Chuẩn hóa căn chỉnh ảnh tối / IR / xoay (`align_face50_clahe_fan`)**:
+  - Tự động áp dụng **Gamma (`0.55` khi mean luma < 90) + LAB CLAHE (`clipLimit=2.5`)** trước khi chạy `FaceLandmarker(try_rotations=True)`.
+  - Bắt buộc qua hậu xử lý **`BrowEdgeSnap`** (`F50-R09`: bám biên gradient Sobel quanh lông mày, giữ đơn điệu `u` và nằm trên mí mắt) và **`InnerLipClamp`** (ép `42..49` vào trong `moingoai`).
+- **An toàn Sync (`sync_face50_eligible`)**:
+  - Hỗ trợ cả `action="update"` (minimal PATCH) và `action="create"` (`cv.create_shapes`), bắt buộc dry-run mặc định, staleness guard chống ghi đè/trùng frame, giữ `source="manual"` trên mọi shape & element, backup trước ghi và read-back verification sau ghi.

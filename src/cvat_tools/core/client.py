@@ -127,6 +127,9 @@ class Cvat:
     def create_shapes(self, job_id: int, shapes: list) -> dict:
         return self._patch(job_id, "create", {"shapes": shapes, "tracks": [], "tags": []}).json()
 
+    def update_shapes(self, job_id: int, shapes: list) -> dict:
+        return self._patch(job_id, "update", {"shapes": shapes, "tracks": [], "tags": []}).json()
+
     def delete_shapes(self, job_id: int, shapes: list) -> None:
         if any(s.get("id") is None for s in shapes):
             raise CvatError("delete_shapes chi nhan shape co id.")

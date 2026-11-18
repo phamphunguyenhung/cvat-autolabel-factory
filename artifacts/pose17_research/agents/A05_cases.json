@@ -1,0 +1,2156 @@
+{
+  "job_id": 1623,
+  "frame_range": [
+    90,
+    119
+  ],
+  "total_frames": 30,
+  "resolution_distribution": {
+    "1280x1024": 15,
+    "960x540": 12,
+    "512x424": 3
+  },
+  "modality_distribution": {
+    "IR": 18,
+    "RGB": 12
+  },
+  "severity_distribution": {
+    "critical": 8,
+    "high": 12,
+    "medium": 8,
+    "low": 2
+  },
+  "taxonomy_counts": {
+    "SITTING_POSE": 30,
+    "OCCLUSION": 29,
+    "JOINT_INFERENCE": 28,
+    "VISIBILITY_CONFLICT": 25,
+    "KEYPOINT_MISPLACEMENT": 24,
+    "LOW_LIGHT": 18,
+    "RESOLUTION_MISMATCH": 18,
+    "SELF_OCCLUSION": 18,
+    "FISHEYE_ROTATION": 17,
+    "LEFT_RIGHT_AMBIGUITY": 17,
+    "OUT_OF_FRAME": 14,
+    "HAND_OVERLAP": 11,
+    "TRUNCATION": 9,
+    "CROSS_LIMB": 7,
+    "FORESHORTENING": 4,
+    "MOTION_BLUR": 4,
+    "MISSING_ANNOTATION": 2
+  },
+  "cases": [
+    {
+      "frame": 90,
+      "image_name": "G06_091.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f090_G06_091.jpg",
+      "camera_view": "IR_frontal",
+      "severity": "low",
+      "taxonomy": [
+        "SITTING_POSE",
+        "LOW_LIGHT",
+        "RESOLUTION_MISMATCH",
+        "OCCLUSION",
+        "OUT_OF_FRAME",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 1280,
+        "height": 1024,
+        "is_btc_960x540": false,
+        "is_ir": true,
+        "mean_luma": 35.91,
+        "dark_fraction": 0.7921,
+        "mean_saturation": 0.0,
+        "laplacian_var": 25.35
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 14,
+          "occluded": 2,
+          "outside": 1
+        },
+        "inside_outside_kps": [],
+        "close_pairs": [],
+        "rl_x_inverted": [],
+        "vertical_sep_pairs": [],
+        "knee_ankle_inverted": []
+      },
+      "vlm_status": "pass",
+      "vlm_reason": "Một người lái. R ở phải ảnh (2,4,6,8,10,12,14,16), L ở trái ảnh (3,5,7,9,11,13,15,17). Đầu, vai, khuỷu, cổ tay, hông nằm đúng vùng. Điểm 16 outside hợp lý (cổ chân phải ngoài khung dưới cùng bên phải). Không thấy lỗi thô; sai số ±5 px không kiểm chứng được ở độ phân giải này.",
+      "visual_findings": "Cleanest IR frontal baseline. Reaching left hand to plastic bag on passenger seat. 14Q occluded behind steering wheel, 17Q occluded at bottom edge, 16O genuinely at bottom edge (1102, 1024)."
+    },
+    {
+      "frame": 91,
+      "image_name": "G06_092.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f091_G06_092.jpg",
+      "camera_view": "IR_frontal",
+      "severity": "high",
+      "taxonomy": [
+        "SITTING_POSE",
+        "LOW_LIGHT",
+        "RESOLUTION_MISMATCH",
+        "OCCLUSION",
+        "CROSS_LIMB",
+        "HAND_OVERLAP",
+        "VISIBILITY_CONFLICT",
+        "KEYPOINT_MISPLACEMENT",
+        "OUT_OF_FRAME",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 1280,
+        "height": 1024,
+        "is_btc_960x540": false,
+        "is_ir": true,
+        "mean_luma": 28.06,
+        "dark_fraction": 0.8199,
+        "mean_saturation": 0.0,
+        "laplacian_var": 7.8
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 14,
+          "occluded": 1,
+          "outside": 2
+        },
+        "inside_outside_kps": [
+          16,
+          14
+        ],
+        "close_pairs": [
+          {
+            "pair": [
+              3,
+              5
+            ],
+            "dist_px": 6.52,
+            "states": [
+              "visible",
+              "visible"
+            ]
+          }
+        ],
+        "rl_x_inverted": [],
+        "vertical_sep_pairs": [],
+        "knee_ankle_inverted": []
+      },
+      "vlm_status": "refine",
+      "vlm_reason": "Skeleton đúng người lái nhưng có lỗi rõ: tai phải visible trong tóc, tai trái trùng mắt trái, vai trái lệch vào trong thân, hai hông nằm trên cẳng tay.",
+      "visual_findings": "Right arm reaches across lap to white bag; 3 and 5 collapsed ~2 px; 7 placed inward on torso; 12/13 placed high near forearm; 4 marked visible despite hair occlusion; 14O/16O marked outside inside frame on steering wheel/lower dark region."
+    },
+    {
+      "frame": 92,
+      "image_name": "G06_093.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f092_G06_093.jpg",
+      "camera_view": "IR_frontal",
+      "severity": "high",
+      "taxonomy": [
+        "SITTING_POSE",
+        "LOW_LIGHT",
+        "RESOLUTION_MISMATCH",
+        "FORESHORTENING",
+        "OUT_OF_FRAME",
+        "TRUNCATION",
+        "OCCLUSION",
+        "VISIBILITY_CONFLICT",
+        "KEYPOINT_MISPLACEMENT",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 1280,
+        "height": 1024,
+        "is_btc_960x540": false,
+        "is_ir": true,
+        "mean_luma": 22.94,
+        "dark_fraction": 0.8496,
+        "mean_saturation": 0.0,
+        "laplacian_var": 18.63
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 11,
+          "occluded": 4,
+          "outside": 2
+        },
+        "inside_outside_kps": [
+          11,
+          10
+        ],
+        "close_pairs": [],
+        "rl_x_inverted": [],
+        "vertical_sep_pairs": [],
+        "knee_ankle_inverted": []
+      },
+      "vlm_status": "refine",
+      "vlm_reason": "Mũi lệch khoảng 35 px. Chuỗi gối-cổ chân trái bị đảo thứ tự. Khuỷu phải và cổ tay trái nằm ngoài vùng người.",
+      "visual_findings": "Driver leaning very close to camera (strong foreshortening, torso compressed). Nose (1) placed ~35 px low on chin/beard; 8Q/10O float outside right edge of body; 11O placed on passenger seat inside frame; 17Q near bottom edge."
+    },
+    {
+      "frame": 93,
+      "image_name": "G06_094.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f093_G06_094.jpg",
+      "camera_view": "RGB_side_left_head",
+      "severity": "critical",
+      "taxonomy": [
+        "SITTING_POSE",
+        "FISHEYE_ROTATION",
+        "LEFT_RIGHT_AMBIGUITY",
+        "OCCLUSION",
+        "SELF_OCCLUSION",
+        "CROSS_LIMB",
+        "OUT_OF_FRAME",
+        "TRUNCATION",
+        "VISIBILITY_CONFLICT",
+        "KEYPOINT_MISPLACEMENT",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 960,
+        "height": 540,
+        "is_btc_960x540": true,
+        "is_ir": false,
+        "mean_luma": 72.14,
+        "dark_fraction": 0.513,
+        "mean_saturation": 110.71,
+        "laplacian_var": 325.4
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 0,
+          "occluded": 14,
+          "outside": 3
+        },
+        "inside_outside_kps": [
+          2,
+          16,
+          17
+        ],
+        "close_pairs": [],
+        "rl_x_inverted": [
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ]
+        ],
+        "vertical_sep_pairs": [
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            16,
+            17
+          ]
+        ],
+        "knee_ankle_inverted": []
+      },
+      "vlm_status": "refine",
+      "vlm_reason": "Người lái đúng. Vai trái có vẻ thấp hơn đáng kể so với vai thực. Cổ chân được gán outside dù nằm dưới táp-lô, cần kiểm tra thuộc tính.",
+      "visual_findings": "Severe bulk-visibility bug: V/Q/O = 0/14/3 (all visible upper-body/face/arm joints marked occluded). Left shoulder (7Q) ~80 px low on sleeve; 2O marked outside on forehead; 14->16 and 15->17 cross onto console/gearshift (16O/17O inside frame)."
+    },
+    {
+      "frame": 94,
+      "image_name": "G06_095.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f094_G06_095.jpg",
+      "camera_view": "IR_frontal",
+      "severity": "critical",
+      "taxonomy": [
+        "SITTING_POSE",
+        "LOW_LIGHT",
+        "RESOLUTION_MISMATCH",
+        "OCCLUSION",
+        "CROSS_LIMB",
+        "VISIBILITY_CONFLICT",
+        "KEYPOINT_MISPLACEMENT",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 1280,
+        "height": 1024,
+        "is_btc_960x540": false,
+        "is_ir": true,
+        "mean_luma": 33.92,
+        "dark_fraction": 0.6816,
+        "mean_saturation": 0.0,
+        "laplacian_var": 9.65
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 12,
+          "occluded": 1,
+          "outside": 4
+        },
+        "inside_outside_kps": [
+          17,
+          16,
+          14,
+          15
+        ],
+        "close_pairs": [],
+        "rl_x_inverted": [],
+        "vertical_sep_pairs": [],
+        "knee_ankle_inverted": [
+          [
+            15,
+            17
+          ]
+        ]
+      },
+      "vlm_status": "refine",
+      "vlm_reason": "Cổ chân trái đặt trên tay cầm báo và gán outside là sai. Vai trái và vai phải lệch vài chục px.",
+      "visual_findings": "Large newspaper spread across lap occluding thighs/knees/ankles. 17O (left ankle) severely misplaced ON LEFT HAND holding newspaper (324, 729); 14O/15O/16O marked outside while inside frame; 7 inward on chest; 4Q close to 2."
+    },
+    {
+      "frame": 95,
+      "image_name": "G06_096.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f095_G06_096.jpg",
+      "camera_view": "IR_frontal",
+      "severity": "medium",
+      "taxonomy": [
+        "SITTING_POSE",
+        "LOW_LIGHT",
+        "RESOLUTION_MISMATCH",
+        "OUT_OF_FRAME",
+        "TRUNCATION",
+        "VISIBILITY_CONFLICT",
+        "KEYPOINT_MISPLACEMENT"
+      ],
+      "objective_metrics": {
+        "width": 1280,
+        "height": 1024,
+        "is_btc_960x540": false,
+        "is_ir": true,
+        "mean_luma": 31.68,
+        "dark_fraction": 0.7921,
+        "mean_saturation": 0.0,
+        "laplacian_var": 18.4
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 15,
+          "occluded": 0,
+          "outside": 2
+        },
+        "inside_outside_kps": [
+          16,
+          17
+        ],
+        "close_pairs": [],
+        "rl_x_inverted": [],
+        "vertical_sep_pairs": [
+          [
+            16,
+            17
+          ]
+        ],
+        "knee_ankle_inverted": [
+          [
+            14,
+            16
+          ]
+        ]
+      },
+      "vlm_status": "refine",
+      "vlm_reason": "Skeleton đúng người lái và hầu hết khớp đúng. Cổ chân phải nằm sai vị trí trên đùi, không đề xuất tọa độ mới vì không nhìn rõ chân phải. Cổ chân trái cần kiểm tra trạng thái.",
+      "visual_findings": "Driver leaning slightly left. 16O (right ankle) misplaced ON RIGHT THIGH inside frame (888, 738); 17O at bottom edge on visible shin."
+    },
+    {
+      "frame": 96,
+      "image_name": "G06_097.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f096_G06_097.jpg",
+      "camera_view": "RGB_side_left_head",
+      "severity": "high",
+      "taxonomy": [
+        "SITTING_POSE",
+        "FISHEYE_ROTATION",
+        "LEFT_RIGHT_AMBIGUITY",
+        "OCCLUSION",
+        "SELF_OCCLUSION",
+        "CROSS_LIMB",
+        "OUT_OF_FRAME",
+        "TRUNCATION",
+        "VISIBILITY_CONFLICT",
+        "KEYPOINT_MISPLACEMENT",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 960,
+        "height": 540,
+        "is_btc_960x540": true,
+        "is_ir": false,
+        "mean_luma": 71.13,
+        "dark_fraction": 0.5091,
+        "mean_saturation": 80.83,
+        "laplacian_var": 262.49
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 13,
+          "occluded": 1,
+          "outside": 3
+        },
+        "inside_outside_kps": [
+          14,
+          16,
+          17
+        ],
+        "close_pairs": [],
+        "rl_x_inverted": [
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            16,
+            17
+          ]
+        ],
+        "vertical_sep_pairs": [
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            16,
+            17
+          ]
+        ],
+        "knee_ankle_inverted": []
+      },
+      "vlm_status": "uncertain",
+      "vlm_reason": "Người lái đúng, nhưng ảnh xoay 90 độ làm quy tắc R/L không kiểm chứng được theo trục x và chân bị che. Không đề xuất tọa độ, cần mentor.",
+      "visual_findings": "Side-view laptop on lap occluding hands/waist; 90-deg orientation causes R/L x-inversion (rlInv=3). 14O marked outside directly on visible knee; 16O/17O cross and mark outside inside frame near dashboard."
+    },
+    {
+      "frame": 97,
+      "image_name": "G06_098.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f097_G06_098.jpg",
+      "camera_view": "RGB_side_left_head",
+      "severity": "high",
+      "taxonomy": [
+        "SITTING_POSE",
+        "FISHEYE_ROTATION",
+        "LEFT_RIGHT_AMBIGUITY",
+        "FORESHORTENING",
+        "OCCLUSION",
+        "SELF_OCCLUSION",
+        "OUT_OF_FRAME",
+        "TRUNCATION",
+        "VISIBILITY_CONFLICT",
+        "KEYPOINT_MISPLACEMENT",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 960,
+        "height": 540,
+        "is_btc_960x540": true,
+        "is_ir": false,
+        "mean_luma": 54.64,
+        "dark_fraction": 0.6015,
+        "mean_saturation": 99.24,
+        "laplacian_var": 253.72
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 13,
+          "occluded": 3,
+          "outside": 1
+        },
+        "inside_outside_kps": [
+          16
+        ],
+        "close_pairs": [],
+        "rl_x_inverted": [
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ]
+        ],
+        "vertical_sep_pairs": [
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ]
+        ],
+        "knee_ankle_inverted": []
+      },
+      "vlm_status": "uncertain",
+      "vlm_reason": "Người lái đúng và phần thân trên hợp lý. Chân không thấy trong khung, các điểm gối và cổ chân nằm trên ghế và cửa, không đề xuất tọa độ.",
+      "visual_findings": "Driver deeply hunched forward, head near left edge. 14/15/16O/17Q misplaced on dashboard/door trim rather than occluded leg path; 11Q at bottom edge; 5Q near 3."
+    },
+    {
+      "frame": 98,
+      "image_name": "G06_099.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f098_G06_099.jpg",
+      "camera_view": "RGB_side_left_head",
+      "severity": "medium",
+      "taxonomy": [
+        "SITTING_POSE",
+        "FISHEYE_ROTATION",
+        "LEFT_RIGHT_AMBIGUITY",
+        "OCCLUSION",
+        "SELF_OCCLUSION",
+        "OUT_OF_FRAME",
+        "TRUNCATION",
+        "VISIBILITY_CONFLICT",
+        "KEYPOINT_MISPLACEMENT",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 960,
+        "height": 540,
+        "is_btc_960x540": true,
+        "is_ir": false,
+        "mean_luma": 91.41,
+        "dark_fraction": 0.4627,
+        "mean_saturation": 102.84,
+        "laplacian_var": 378.77
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 14,
+          "occluded": 2,
+          "outside": 1
+        },
+        "inside_outside_kps": [
+          4
+        ],
+        "close_pairs": [],
+        "rl_x_inverted": [
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ]
+        ],
+        "vertical_sep_pairs": [
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            16,
+            17
+          ]
+        ],
+        "knee_ankle_inverted": [
+          [
+            14,
+            16
+          ]
+        ]
+      },
+      "vlm_status": "refine",
+      "vlm_reason": "Người lái và khớp trên thân đúng. Hai cổ chân nằm trên cửa phải, sai vị trí, cần đặt lại ở vùng bàn đạp dưới táp-lô.",
+      "visual_findings": "Arms raised to steering wheel. 16Q/17Q misplaced far right on door panel (x=789); 4O marked outside on forehead right next to 2."
+    },
+    {
+      "frame": 99,
+      "image_name": "G06_100.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f099_G06_100.jpg",
+      "camera_view": "IR_frontal",
+      "severity": "high",
+      "taxonomy": [
+        "SITTING_POSE",
+        "LOW_LIGHT",
+        "RESOLUTION_MISMATCH",
+        "OCCLUSION",
+        "SELF_OCCLUSION",
+        "HAND_OVERLAP",
+        "VISIBILITY_CONFLICT",
+        "KEYPOINT_MISPLACEMENT",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 1280,
+        "height": 1024,
+        "is_btc_960x540": false,
+        "is_ir": true,
+        "mean_luma": 18.85,
+        "dark_fraction": 0.9255,
+        "mean_saturation": 0.0,
+        "laplacian_var": 7.22
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 12,
+          "occluded": 1,
+          "outside": 4
+        },
+        "inside_outside_kps": [
+          17,
+          14,
+          15,
+          16
+        ],
+        "close_pairs": [],
+        "rl_x_inverted": [],
+        "vertical_sep_pairs": [],
+        "knee_ankle_inverted": []
+      },
+      "vlm_status": "refine",
+      "vlm_reason": "Người lái đúng. Chân trái được gán outside sai. Vai trái lệch vào trong ngực, gối phải nằm xa đùi.",
+      "visual_findings": "Very dark IR (L=18.9, Dark=0.93, Lap=7.2). Hands clasped over lap; 15O and 17O collapsed close together on left thigh and marked outside; 14O/16O marked outside inside frame; 7 inward on chest."
+    },
+    {
+      "frame": 100,
+      "image_name": "G06_101.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f100_G06_101.jpg",
+      "camera_view": "RGB_side_left_head",
+      "severity": "critical",
+      "taxonomy": [
+        "SITTING_POSE",
+        "MISSING_ANNOTATION",
+        "MOTION_BLUR",
+        "FISHEYE_ROTATION",
+        "LEFT_RIGHT_AMBIGUITY",
+        "OCCLUSION",
+        "SELF_OCCLUSION",
+        "OUT_OF_FRAME",
+        "TRUNCATION",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 960,
+        "height": 540,
+        "is_btc_960x540": true,
+        "is_ir": false,
+        "mean_luma": 90.74,
+        "dark_fraction": 0.3989,
+        "mean_saturation": 91.11,
+        "laplacian_var": 192.83
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 0,
+        "state_counts": {
+          "visible": 0,
+          "occluded": 0,
+          "outside": 0
+        },
+        "inside_outside_kps": [],
+        "close_pairs": [],
+        "rl_x_inverted": [],
+        "vertical_sep_pairs": [],
+        "knee_ankle_inverted": []
+      },
+      "vlm_status": "refine",
+      "vlm_reason": "Thiếu annotation cho người lái trong frame 100. Cần vẽ mới 17 điểm. Không đề xuất tọa độ vì ảnh mờ chuyển động.",
+      "visual_findings": "MISSING SKELETON (0 shapes). Strong motion blur on foreground left arm/hand (Lap=192.8); side-view sitting driver with lower legs under dashboard."
+    },
+    {
+      "frame": 101,
+      "image_name": "G06_102.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f101_G06_102.jpg",
+      "camera_view": "RGB_side_left_head",
+      "severity": "high",
+      "taxonomy": [
+        "SITTING_POSE",
+        "FISHEYE_ROTATION",
+        "LEFT_RIGHT_AMBIGUITY",
+        "OCCLUSION",
+        "SELF_OCCLUSION",
+        "VISIBILITY_CONFLICT",
+        "KEYPOINT_MISPLACEMENT",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 960,
+        "height": 540,
+        "is_btc_960x540": true,
+        "is_ir": false,
+        "mean_luma": 72.62,
+        "dark_fraction": 0.4434,
+        "mean_saturation": 81.1,
+        "laplacian_var": 305.98
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 15,
+          "occluded": 1,
+          "outside": 1
+        },
+        "inside_outside_kps": [
+          17
+        ],
+        "close_pairs": [
+          {
+            "pair": [
+              2,
+              4
+            ],
+            "dist_px": 0.27,
+            "states": [
+              "visible",
+              "occluded"
+            ]
+          }
+        ],
+        "rl_x_inverted": [
+          [
+            10,
+            11
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ]
+        ],
+        "vertical_sep_pairs": [
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            16,
+            17
+          ]
+        ],
+        "knee_ankle_inverted": []
+      },
+      "vlm_status": "refine",
+      "vlm_reason": "Người lái đúng và hầu hết khớp hợp lý. Mắt phải và tai phải trùng tọa độ là lỗi rõ, cần tách.",
+      "visual_findings": "Exact duplicate coordinates: 2 (visible) and 4 (occluded) both at (265, 141), dist=0.0 px. 17O misplaced on gearshift boot inside frame; book/object near lap."
+    },
+    {
+      "frame": 102,
+      "image_name": "G06_103.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f102_G06_103.jpg",
+      "camera_view": "IR_frontal",
+      "severity": "low",
+      "taxonomy": [
+        "SITTING_POSE",
+        "LOW_LIGHT",
+        "RESOLUTION_MISMATCH",
+        "OCCLUSION",
+        "HAND_OVERLAP",
+        "OUT_OF_FRAME",
+        "TRUNCATION",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 1280,
+        "height": 1024,
+        "is_btc_960x540": false,
+        "is_ir": true,
+        "mean_luma": 32.95,
+        "dark_fraction": 0.8081,
+        "mean_saturation": 0.0,
+        "laplacian_var": 17.02
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 14,
+          "occluded": 1,
+          "outside": 2
+        },
+        "inside_outside_kps": [],
+        "close_pairs": [],
+        "rl_x_inverted": [],
+        "vertical_sep_pairs": [],
+        "knee_ankle_inverted": []
+      },
+      "vlm_status": "uncertain",
+      "vlm_reason": "Thân trên và tay đúng, hông và gối trái hợp lý. Chân phải nằm trong vùng tối dưới vô lăng, không xác nhận được visible/occluded/outside, nên ghi uncertain.",
+      "visual_findings": "Writing on notepad on lap; 11 near 13 (hand at lap); 14 in dark shadow under steering wheel; 16O/17O near bottom border (y~1010-1020)."
+    },
+    {
+      "frame": 103,
+      "image_name": "G06_104.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f103_G06_104.jpg",
+      "camera_view": "IR_side_512",
+      "severity": "high",
+      "taxonomy": [
+        "SITTING_POSE",
+        "LOW_LIGHT",
+        "RESOLUTION_MISMATCH",
+        "FISHEYE_ROTATION",
+        "LEFT_RIGHT_AMBIGUITY",
+        "OCCLUSION",
+        "SELF_OCCLUSION",
+        "HAND_OVERLAP",
+        "VISIBILITY_CONFLICT",
+        "KEYPOINT_MISPLACEMENT",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 512,
+        "height": 424,
+        "is_btc_960x540": false,
+        "is_ir": true,
+        "mean_luma": 21.12,
+        "dark_fraction": 0.8141,
+        "mean_saturation": 0.0,
+        "laplacian_var": 35.57
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 13,
+          "occluded": 3,
+          "outside": 1
+        },
+        "inside_outside_kps": [
+          4
+        ],
+        "close_pairs": [
+          {
+            "pair": [
+              2,
+              4
+            ],
+            "dist_px": 4.33,
+            "states": [
+              "occluded",
+              "outside"
+            ]
+          }
+        ],
+        "rl_x_inverted": [
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            16,
+            17
+          ]
+        ],
+        "vertical_sep_pairs": [
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            16,
+            17
+          ]
+        ],
+        "knee_ankle_inverted": []
+      },
+      "vlm_status": "uncertain",
+      "vlm_reason": "Ảnh tối và xoay, khó đánh giá chính xác. Có lỗi trùng điểm 2/4 và nghi ngờ đảo R/L ở hông và gối, không đề xuất tọa độ.",
+      "visual_findings": "512x424 dark IR (L=21.1), reclined side-view phone call. 2Q and 4O ~4.5 px apart on forehead; 11 holding phone to ear/chest; R/L pairs separated vertically with rlInv=3; 16Q near knee-hip axis."
+    },
+    {
+      "frame": 104,
+      "image_name": "G06_105.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f104_G06_105.jpg",
+      "camera_view": "IR_side_512",
+      "severity": "high",
+      "taxonomy": [
+        "SITTING_POSE",
+        "LOW_LIGHT",
+        "RESOLUTION_MISMATCH",
+        "FISHEYE_ROTATION",
+        "LEFT_RIGHT_AMBIGUITY",
+        "OCCLUSION",
+        "SELF_OCCLUSION",
+        "FORESHORTENING",
+        "VISIBILITY_CONFLICT",
+        "KEYPOINT_MISPLACEMENT",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 512,
+        "height": 424,
+        "is_btc_960x540": false,
+        "is_ir": true,
+        "mean_luma": 23.91,
+        "dark_fraction": 0.7698,
+        "mean_saturation": 0.0,
+        "laplacian_var": 62.78
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 15,
+          "occluded": 1,
+          "outside": 1
+        },
+        "inside_outside_kps": [
+          4
+        ],
+        "close_pairs": [
+          {
+            "pair": [
+              2,
+              4
+            ],
+            "dist_px": 4.9,
+            "states": [
+              "visible",
+              "outside"
+            ]
+          }
+        ],
+        "rl_x_inverted": [
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            16,
+            17
+          ]
+        ],
+        "vertical_sep_pairs": [
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            16,
+            17
+          ]
+        ],
+        "knee_ankle_inverted": []
+      },
+      "vlm_status": "uncertain",
+      "vlm_reason": "Người lái nằm ngả, tay nắm vô lăng. Eye/ear trùng và có khả năng người thứ hai trong khung, cần mentor. Không đề xuất tọa độ.",
+      "visual_findings": "512x424 dark IR (L=23.9), reclined hands on steering wheel. 2 and 4O ~2.2 px apart on forehead; 10 placed on sleeve cuff short of actual hand gripping wheel top; rlInv=5."
+    },
+    {
+      "frame": 105,
+      "image_name": "G06_106.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f105_G06_106.jpg",
+      "camera_view": "RGB_side_left_head",
+      "severity": "medium",
+      "taxonomy": [
+        "SITTING_POSE",
+        "FISHEYE_ROTATION",
+        "LEFT_RIGHT_AMBIGUITY",
+        "OCCLUSION",
+        "SELF_OCCLUSION",
+        "VISIBILITY_CONFLICT",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 960,
+        "height": 540,
+        "is_btc_960x540": true,
+        "is_ir": false,
+        "mean_luma": 66.88,
+        "dark_fraction": 0.5409,
+        "mean_saturation": 108.08,
+        "laplacian_var": 308.33
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 13,
+          "occluded": 3,
+          "outside": 1
+        },
+        "inside_outside_kps": [
+          4
+        ],
+        "close_pairs": [
+          {
+            "pair": [
+              1,
+              2
+            ],
+            "dist_px": 10.26,
+            "states": [
+              "visible",
+              "visible"
+            ]
+          },
+          {
+            "pair": [
+              2,
+              4
+            ],
+            "dist_px": 4.99,
+            "states": [
+              "visible",
+              "outside"
+            ]
+          }
+        ],
+        "rl_x_inverted": [
+          [
+            10,
+            11
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            16,
+            17
+          ]
+        ],
+        "vertical_sep_pairs": [
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            16,
+            17
+          ]
+        ],
+        "knee_ankle_inverted": []
+      },
+      "vlm_status": "uncertain",
+      "vlm_reason": "Ảnh xoay 90°, không chắc R/L theo trái/phải ảnh và vị trí tai/mặt; cần mentor quyết định.",
+      "visual_findings": "Reading book occluding right elbow (8Q) and hand area; 2/3/4O/1 tightly clustered on rotated profile face; 4O marked outside on forehead; rlInv=4; 16Q/17Q under dashboard."
+    },
+    {
+      "frame": 106,
+      "image_name": "G06_107.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f106_G06_107.jpg",
+      "camera_view": "IR_fisheye_right_head",
+      "severity": "critical",
+      "taxonomy": [
+        "SITTING_POSE",
+        "LOW_LIGHT",
+        "RESOLUTION_MISMATCH",
+        "FISHEYE_ROTATION",
+        "LEFT_RIGHT_AMBIGUITY",
+        "OCCLUSION",
+        "OUT_OF_FRAME",
+        "VISIBILITY_CONFLICT",
+        "KEYPOINT_MISPLACEMENT",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 1280,
+        "height": 1024,
+        "is_btc_960x540": false,
+        "is_ir": true,
+        "mean_luma": 26.88,
+        "dark_fraction": 0.8209,
+        "mean_saturation": 0.0,
+        "laplacian_var": 14.01
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 13,
+          "occluded": 0,
+          "outside": 4
+        },
+        "inside_outside_kps": [
+          17,
+          16,
+          5,
+          3
+        ],
+        "close_pairs": [],
+        "rl_x_inverted": [
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            16,
+            17
+          ]
+        ],
+        "vertical_sep_pairs": [
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            16,
+            17
+          ]
+        ],
+        "knee_ankle_inverted": []
+      },
+      "vlm_status": "uncertain",
+      "vlm_reason": "Ảnh tối, người xoay ngang, R/L theo trục x có thể bị đảo; không đề xuất tọa độ khi chưa chắc.",
+      "visual_findings": "Horizontal fisheye IR with HEAD ON RIGHT, feet on left. All 7 R/L body pairs x-inverted (rlInv=7). 3O and 5O marked outside on visible face; 16O/17O marked outside inside frame on steering wheel."
+    },
+    {
+      "frame": 107,
+      "image_name": "G06_108.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f107_G06_108.jpg",
+      "camera_view": "IR_frontal",
+      "severity": "medium",
+      "taxonomy": [
+        "SITTING_POSE",
+        "LOW_LIGHT",
+        "RESOLUTION_MISMATCH",
+        "OCCLUSION",
+        "HAND_OVERLAP",
+        "VISIBILITY_CONFLICT",
+        "KEYPOINT_MISPLACEMENT",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 1280,
+        "height": 1024,
+        "is_btc_960x540": false,
+        "is_ir": true,
+        "mean_luma": 33.92,
+        "dark_fraction": 0.7928,
+        "mean_saturation": 0.0,
+        "laplacian_var": 22.7
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 14,
+          "occluded": 1,
+          "outside": 2
+        },
+        "inside_outside_kps": [
+          16,
+          17
+        ],
+        "close_pairs": [],
+        "rl_x_inverted": [],
+        "vertical_sep_pairs": [],
+        "knee_ankle_inverted": []
+      },
+      "vlm_status": "refine",
+      "vlm_reason": "Skeleton đúng người lái, trái/phải nhất quán theo x, mặt và tay khớp; cần sửa trạng thái gối phải và cổ chân.",
+      "visual_findings": "Small object in hands near lap (11 near 13); 14 marked visible in deep shadow behind steering wheel; 16O/17O marked outside well inside frame."
+    },
+    {
+      "frame": 108,
+      "image_name": "G06_109.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f108_G06_109.jpg",
+      "camera_view": "RGB_side_left_head",
+      "severity": "medium",
+      "taxonomy": [
+        "SITTING_POSE",
+        "FISHEYE_ROTATION",
+        "LEFT_RIGHT_AMBIGUITY",
+        "MOTION_BLUR",
+        "OCCLUSION",
+        "SELF_OCCLUSION",
+        "VISIBILITY_CONFLICT",
+        "KEYPOINT_MISPLACEMENT",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 960,
+        "height": 540,
+        "is_btc_960x540": true,
+        "is_ir": false,
+        "mean_luma": 74.52,
+        "dark_fraction": 0.4274,
+        "mean_saturation": 78.78,
+        "laplacian_var": 283.5
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 14,
+          "occluded": 1,
+          "outside": 2
+        },
+        "inside_outside_kps": [
+          17,
+          16
+        ],
+        "close_pairs": [],
+        "rl_x_inverted": [
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            16,
+            17
+          ]
+        ],
+        "vertical_sep_pairs": [
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ]
+        ],
+        "knee_ankle_inverted": []
+      },
+      "vlm_status": "uncertain",
+      "vlm_reason": "Thân trên và tay khớp; phần chân bị che, cặp R/L gối và cổ chân mâu thuẫn quy ước x nhưng chưa đủ chắc để sửa.",
+      "visual_findings": "Left hand reaching toward console shows motion blur; 16O/17O misplaced on gearshift/console and marked outside; rlInv=3."
+    },
+    {
+      "frame": 109,
+      "image_name": "G06_110.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f109_G06_110.jpg",
+      "camera_view": "IR_frontal",
+      "severity": "medium",
+      "taxonomy": [
+        "SITTING_POSE",
+        "LOW_LIGHT",
+        "RESOLUTION_MISMATCH",
+        "OCCLUSION",
+        "OUT_OF_FRAME",
+        "VISIBILITY_CONFLICT",
+        "KEYPOINT_MISPLACEMENT",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 1280,
+        "height": 1024,
+        "is_btc_960x540": false,
+        "is_ir": true,
+        "mean_luma": 27.78,
+        "dark_fraction": 0.8148,
+        "mean_saturation": 0.0,
+        "laplacian_var": 19.9
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 14,
+          "occluded": 2,
+          "outside": 1
+        },
+        "inside_outside_kps": [
+          16
+        ],
+        "close_pairs": [],
+        "rl_x_inverted": [],
+        "vertical_sep_pairs": [],
+        "knee_ankle_inverted": []
+      },
+      "vlm_status": "uncertain",
+      "vlm_reason": "Mặt, vai, khuỷu, cổ tay, hông trái và gối trái khớp với ảnh; chân phải chưa chắc nên không đề xuất tọa độ.",
+      "visual_findings": "Large package/bag held across abdomen/hips (12/13 occluded/obscured); 16O placed high near steering wheel center (818, 796) inside frame; 17Q at bottom edge."
+    },
+    {
+      "frame": 110,
+      "image_name": "G06_111.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f110_G06_111.jpg",
+      "camera_view": "IR_fisheye_right_head",
+      "severity": "critical",
+      "taxonomy": [
+        "SITTING_POSE",
+        "LOW_LIGHT",
+        "RESOLUTION_MISMATCH",
+        "FISHEYE_ROTATION",
+        "LEFT_RIGHT_AMBIGUITY",
+        "SELF_OCCLUSION",
+        "CROSS_LIMB",
+        "HAND_OVERLAP",
+        "OCCLUSION",
+        "VISIBILITY_CONFLICT",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 1280,
+        "height": 1024,
+        "is_btc_960x540": false,
+        "is_ir": true,
+        "mean_luma": 16.98,
+        "dark_fraction": 0.8862,
+        "mean_saturation": 0.0,
+        "laplacian_var": 5.31
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 13,
+          "occluded": 2,
+          "outside": 2
+        },
+        "inside_outside_kps": [
+          17,
+          16
+        ],
+        "close_pairs": [],
+        "rl_x_inverted": [
+          [
+            6,
+            7
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            16,
+            17
+          ]
+        ],
+        "vertical_sep_pairs": [
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            16,
+            17
+          ]
+        ],
+        "knee_ankle_inverted": [
+          [
+            14,
+            16
+          ]
+        ]
+      },
+      "vlm_status": "uncertain",
+      "vlm_reason": "Vai, khuỷu, cổ tay khớp hướng tay; phần chân dưới và R/L của hông-gối-cổ chân không chắc trong ảnh xoay và tối.",
+      "visual_findings": "Extremely dark horizontal fisheye IR (L=17.0, Dark=0.89, Lap=5.3), HEAD ON RIGHT. Arms folded/crossed over chest (7-9-11 across 6-8-10); rlInv=4; 16O/17O marked outside inside frame on steering wheel."
+    },
+    {
+      "frame": 111,
+      "image_name": "G06_112.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f111_G06_112.jpg",
+      "camera_view": "IR_frontal",
+      "severity": "medium",
+      "taxonomy": [
+        "SITTING_POSE",
+        "LOW_LIGHT",
+        "RESOLUTION_MISMATCH",
+        "OCCLUSION",
+        "VISIBILITY_CONFLICT",
+        "KEYPOINT_MISPLACEMENT",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 1280,
+        "height": 1024,
+        "is_btc_960x540": false,
+        "is_ir": true,
+        "mean_luma": 32.76,
+        "dark_fraction": 0.7875,
+        "mean_saturation": 0.0,
+        "laplacian_var": 12.75
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 12,
+          "occluded": 3,
+          "outside": 2
+        },
+        "inside_outside_kps": [
+          16,
+          17
+        ],
+        "close_pairs": [],
+        "rl_x_inverted": [],
+        "vertical_sep_pairs": [],
+        "knee_ankle_inverted": []
+      },
+      "vlm_status": "pass",
+      "vlm_reason": "Mặt (2/3 trên gọng kính, 1 mũi), tai trái 5, vai, khuỷu, cổ tay theo đúng vị trí; R phải ảnh, L trái ảnh nhất quán; cổ chân 16/17 gán outside do chân ra khỏi đáy khung (độ tin cậy trung bình).",
+      "visual_findings": "Book/magazine on lap occluding right wrist (10Q) and right thigh; 16O/17O marked outside well inside frame on steering wheel/shin."
+    },
+    {
+      "frame": 112,
+      "image_name": "G06_113.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f112_G06_113.jpg",
+      "camera_view": "IR_side_512",
+      "severity": "critical",
+      "taxonomy": [
+        "SITTING_POSE",
+        "LOW_LIGHT",
+        "RESOLUTION_MISMATCH",
+        "FISHEYE_ROTATION",
+        "LEFT_RIGHT_AMBIGUITY",
+        "HAND_OVERLAP",
+        "OCCLUSION",
+        "SELF_OCCLUSION",
+        "VISIBILITY_CONFLICT",
+        "KEYPOINT_MISPLACEMENT",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 512,
+        "height": 424,
+        "is_btc_960x540": false,
+        "is_ir": true,
+        "mean_luma": 17.85,
+        "dark_fraction": 0.8369,
+        "mean_saturation": 0.0,
+        "laplacian_var": 30.27
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 12,
+          "occluded": 3,
+          "outside": 2
+        },
+        "inside_outside_kps": [
+          17,
+          16
+        ],
+        "close_pairs": [
+          {
+            "pair": [
+              2,
+              4
+            ],
+            "dist_px": 11.14,
+            "states": [
+              "visible",
+              "occluded"
+            ]
+          },
+          {
+            "pair": [
+              3,
+              4
+            ],
+            "dist_px": 5.56,
+            "states": [
+              "visible",
+              "occluded"
+            ]
+          }
+        ],
+        "rl_x_inverted": [
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ]
+        ],
+        "vertical_sep_pairs": [
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            16,
+            17
+          ]
+        ],
+        "knee_ankle_inverted": [
+          [
+            14,
+            16
+          ]
+        ]
+      },
+      "vlm_status": "refine",
+      "vlm_reason": "Trùng toạ độ hai cổ tay visible; cần đánh lại trạng thái cổ tay trái, vị trí chính xác cần mentor xem lại.",
+      "visual_findings": "512x424 very dark IR (L=17.9, Dark=0.84), reclined side-view. Wrists 10Q and 11 overlap ~8.1 px on steering wheel (visibility conflict); 2/3/4Q collapsed on tiny face; 16O/17O on dashboard/gearshift inside frame; rlInv=4."
+    },
+    {
+      "frame": 113,
+      "image_name": "G06_114.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f113_G06_114.jpg",
+      "camera_view": "RGB_side_left_head",
+      "severity": "high",
+      "taxonomy": [
+        "SITTING_POSE",
+        "FISHEYE_ROTATION",
+        "LEFT_RIGHT_AMBIGUITY",
+        "MOTION_BLUR",
+        "CROSS_LIMB",
+        "SELF_OCCLUSION",
+        "OCCLUSION",
+        "VISIBILITY_CONFLICT",
+        "KEYPOINT_MISPLACEMENT",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 960,
+        "height": 540,
+        "is_btc_960x540": true,
+        "is_ir": false,
+        "mean_luma": 69.95,
+        "dark_fraction": 0.5232,
+        "mean_saturation": 85.3,
+        "laplacian_var": 218.93
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 14,
+          "occluded": 1,
+          "outside": 2
+        },
+        "inside_outside_kps": [
+          16,
+          17
+        ],
+        "close_pairs": [
+          {
+            "pair": [
+              2,
+              4
+            ],
+            "dist_px": 10.01,
+            "states": [
+              "visible",
+              "occluded"
+            ]
+          }
+        ],
+        "rl_x_inverted": [
+          [
+            14,
+            15
+          ]
+        ],
+        "vertical_sep_pairs": [
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            16,
+            17
+          ]
+        ],
+        "knee_ankle_inverted": []
+      },
+      "vlm_status": "uncertain",
+      "vlm_reason": "Người lái đúng, tay trên vô-lăng khớp; cổ chân nằm sai vị trí và cặp gối R/L mâu thuẫn quy ước nên chưa đủ chắc để đề xuất tọa độ.",
+      "visual_findings": "Putting on jacket: blurred raised left arm crossing torso; 2/4Q ~10.8 px; 16O/17O misplaced on yellow bag/door panel inside frame and marked outside."
+    },
+    {
+      "frame": 114,
+      "image_name": "G06_115.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f114_G06_115.jpg",
+      "camera_view": "IR_frontal",
+      "severity": "high",
+      "taxonomy": [
+        "SITTING_POSE",
+        "LOW_LIGHT",
+        "RESOLUTION_MISMATCH",
+        "OCCLUSION",
+        "SELF_OCCLUSION",
+        "HAND_OVERLAP",
+        "CROSS_LIMB",
+        "VISIBILITY_CONFLICT",
+        "KEYPOINT_MISPLACEMENT",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 1280,
+        "height": 1024,
+        "is_btc_960x540": false,
+        "is_ir": true,
+        "mean_luma": 22.23,
+        "dark_fraction": 0.8655,
+        "mean_saturation": 0.0,
+        "laplacian_var": 17.06
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 13,
+          "occluded": 2,
+          "outside": 2
+        },
+        "inside_outside_kps": [
+          16,
+          17
+        ],
+        "close_pairs": [],
+        "rl_x_inverted": [],
+        "vertical_sep_pairs": [],
+        "knee_ankle_inverted": []
+      },
+      "vlm_status": "uncertain",
+      "vlm_reason": "Vị trí đầu, vai trái, gối trái đúng; khuỷu/cổ tay phải và cổ tay trái sai chỗ, chưa chắc tọa độ đúng nên ghi uncertain.",
+      "visual_findings": "Very dark IR (L=22.2, Dark=0.87). Holding bottle at chest: 11 placed mid-forearm instead of wrist (~100 px off); 8 and 10Q close near bottle (~28 px); 16O/17O inside frame near bottom."
+    },
+    {
+      "frame": 115,
+      "image_name": "G06_116.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f115_G06_116.jpg",
+      "camera_view": "RGB_side_left_head",
+      "severity": "high",
+      "taxonomy": [
+        "SITTING_POSE",
+        "FISHEYE_ROTATION",
+        "LEFT_RIGHT_AMBIGUITY",
+        "OCCLUSION",
+        "SELF_OCCLUSION",
+        "KEYPOINT_MISPLACEMENT",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 960,
+        "height": 540,
+        "is_btc_960x540": true,
+        "is_ir": false,
+        "mean_luma": 60.31,
+        "dark_fraction": 0.5899,
+        "mean_saturation": 92.29,
+        "laplacian_var": 283.06
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 14,
+          "occluded": 3,
+          "outside": 0
+        },
+        "inside_outside_kps": [],
+        "close_pairs": [],
+        "rl_x_inverted": [
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            16,
+            17
+          ]
+        ],
+        "vertical_sep_pairs": [
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            16,
+            17
+          ]
+        ],
+        "knee_ankle_inverted": [
+          [
+            14,
+            16
+          ]
+        ]
+      },
+      "vlm_status": "refine",
+      "vlm_reason": "Skeleton đúng người lái, tay cầm điện thoại và vai khớp; cổ chân đặt trên viền cửa là sai, cần vẽ lại chân nhưng không chắc tọa độ.",
+      "visual_findings": "Side-view holding phone; 16Q/17Q placed way out on door/infotainment trim (x=800, shank ~215 px > thigh); rlInv=3."
+    },
+    {
+      "frame": 116,
+      "image_name": "G06_117.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f116_G06_117.jpg",
+      "camera_view": "IR_frontal",
+      "severity": "critical",
+      "taxonomy": [
+        "SITTING_POSE",
+        "LOW_LIGHT",
+        "RESOLUTION_MISMATCH",
+        "OUT_OF_FRAME",
+        "FORESHORTENING",
+        "OCCLUSION",
+        "VISIBILITY_CONFLICT",
+        "KEYPOINT_MISPLACEMENT",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 1280,
+        "height": 1024,
+        "is_btc_960x540": false,
+        "is_ir": true,
+        "mean_luma": 12.84,
+        "dark_fraction": 0.9137,
+        "mean_saturation": 0.0,
+        "laplacian_var": 3.5
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 10,
+          "occluded": 2,
+          "outside": 5
+        },
+        "inside_outside_kps": [
+          4,
+          8,
+          10,
+          16
+        ],
+        "close_pairs": [],
+        "rl_x_inverted": [],
+        "vertical_sep_pairs": [],
+        "knee_ankle_inverted": []
+      },
+      "vlm_status": "refine",
+      "vlm_reason": "Trái/phải nhất quán theo x và đầu, tay trái, hông đúng; cánh tay phải và cổ chân đặt sai vị trí, cần vẽ lại, chưa đủ chắc để đề xuất tọa độ.",
+      "visual_findings": "DARKEST frame in job (L=12.8, Dark=0.91, Lap=3.5). Driver leaning far right; 10O placed on nose/face (1173, 507); 8O floating outside right torso; 4O/2Q clustered on right temple; 16O/17O at bottom."
+    },
+    {
+      "frame": 117,
+      "image_name": "G06_118.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f117_G06_118.jpg",
+      "camera_view": "RGB_side_left_head",
+      "severity": "high",
+      "taxonomy": [
+        "SITTING_POSE",
+        "FISHEYE_ROTATION",
+        "LEFT_RIGHT_AMBIGUITY",
+        "OCCLUSION",
+        "SELF_OCCLUSION",
+        "HAND_OVERLAP",
+        "VISIBILITY_CONFLICT",
+        "KEYPOINT_MISPLACEMENT",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 960,
+        "height": 540,
+        "is_btc_960x540": true,
+        "is_ir": false,
+        "mean_luma": 70.53,
+        "dark_fraction": 0.4706,
+        "mean_saturation": 82.04,
+        "laplacian_var": 279.97
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 13,
+          "occluded": 1,
+          "outside": 3
+        },
+        "inside_outside_kps": [
+          17,
+          16,
+          4
+        ],
+        "close_pairs": [
+          {
+            "pair": [
+              1,
+              6
+            ],
+            "dist_px": 8.55,
+            "states": [
+              "visible",
+              "visible"
+            ]
+          }
+        ],
+        "rl_x_inverted": [
+          [
+            10,
+            11
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ]
+        ],
+        "vertical_sep_pairs": [
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            16,
+            17
+          ]
+        ],
+        "knee_ankle_inverted": []
+      },
+      "vlm_status": "uncertain",
+      "vlm_reason": "Đầu, tay cầm bút và gối đúng; cổ chân đặt sai vị trí và vai phải không chắc nên ghi uncertain.",
+      "visual_findings": "Writing on notepad: 6 (right shoulder) misplaced ON NOSE/CHIN (340, 171); 4O marked outside on forehead; 16O/17O misplaced on paper bag inside frame; rlInv=3."
+    },
+    {
+      "frame": 118,
+      "image_name": "G06_119.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f118_G06_119.jpg",
+      "camera_view": "RGB_side_left_head",
+      "severity": "critical",
+      "taxonomy": [
+        "SITTING_POSE",
+        "MISSING_ANNOTATION",
+        "OCCLUSION",
+        "SELF_OCCLUSION",
+        "HAND_OVERLAP",
+        "FISHEYE_ROTATION",
+        "LEFT_RIGHT_AMBIGUITY",
+        "OUT_OF_FRAME",
+        "TRUNCATION",
+        "MOTION_BLUR",
+        "JOINT_INFERENCE"
+      ],
+      "objective_metrics": {
+        "width": 960,
+        "height": 540,
+        "is_btc_960x540": true,
+        "is_ir": false,
+        "mean_luma": 56.76,
+        "dark_fraction": 0.6233,
+        "mean_saturation": 100.92,
+        "laplacian_var": 183.65
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 0,
+        "state_counts": {
+          "visible": 0,
+          "occluded": 0,
+          "outside": 0
+        },
+        "inside_outside_kps": [],
+        "close_pairs": [],
+        "rl_x_inverted": [],
+        "vertical_sep_pairs": [],
+        "knee_ankle_inverted": []
+      },
+      "vlm_status": "refine",
+      "vlm_reason": "Thiếu skeleton hoàn toàn; cần annotate mới 17 điểm, không đề xuất tọa độ vì tay đang che mặt và khung hình tối.",
+      "visual_findings": "MISSING SKELETON (0 shapes). Hands/cloth raised covering entire face, head near top-left frame border, legs under dashboard, mild motion blur on arm (Lap=183.7)."
+    },
+    {
+      "frame": 119,
+      "image_name": "G06_120.jpg",
+      "overlay_path": "artifacts/pose17_research/evidence/overlays/f119_G06_120.jpg",
+      "camera_view": "IR_frontal",
+      "severity": "medium",
+      "taxonomy": [
+        "SITTING_POSE",
+        "LOW_LIGHT",
+        "RESOLUTION_MISMATCH",
+        "HAND_OVERLAP",
+        "OCCLUSION",
+        "VISIBILITY_CONFLICT",
+        "KEYPOINT_MISPLACEMENT"
+      ],
+      "objective_metrics": {
+        "width": 1280,
+        "height": 1024,
+        "is_btc_960x540": false,
+        "is_ir": true,
+        "mean_luma": 36.39,
+        "dark_fraction": 0.7823,
+        "mean_saturation": 0.0,
+        "laplacian_var": 27.98
+      },
+      "annotation_diagnostics": {
+        "num_shapes": 1,
+        "state_counts": {
+          "visible": 15,
+          "occluded": 0,
+          "outside": 2
+        },
+        "inside_outside_kps": [
+          17,
+          16
+        ],
+        "close_pairs": [],
+        "rl_x_inverted": [],
+        "vertical_sep_pairs": [],
+        "knee_ankle_inverted": [
+          [
+            15,
+            17
+          ]
+        ]
+      },
+      "vlm_status": "refine",
+      "vlm_reason": "Mặt, vai, tay và hông khớp đúng, trái/phải nhất quán theo x; cổ chân trái sai thứ tự với gối và gối phải cần xét lại trạng thái.",
+      "visual_findings": "Clearest seated frontal IR overall, yet 17O (y=907) is placed ABOVE knee 15 (y=938) on visible shin and marked outside; 16O inside frame behind wheel; 11/13 close (~15 px)."
+    }
+  ]
+}

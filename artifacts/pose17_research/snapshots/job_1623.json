@@ -1,0 +1,46 @@
+{
+  "url": "https://cvat.edufun.ai/api/jobs/1623",
+  "id": 1623,
+  "task_id": 402,
+  "task_name": null,
+  "project_id": 159,
+  "project_name": null,
+  "assignee": {
+    "url": "https://cvat.edufun.ai/api/users/245",
+    "id": 245,
+    "username": "2A202604062",
+    "first_name": "2A202604062",
+    "last_name": "ACR"
+  },
+  "guide_id": null,
+  "dimension": "2d",
+  "mode": "annotation",
+  "media_type": "image",
+  "bug_tracker": "",
+  "status": "annotation",
+  "stage": "annotation",
+  "state": "in progress",
+  "frame_count": 30,
+  "start_frame": 90,
+  "stop_frame": 119,
+  "data_chunk_size": 56,
+  "data_compressed_chunk_type": "imageset",
+  "data_original_chunk_type": "imageset",
+  "created_date": "2026-11-16T05:30:22.801240Z",
+  "updated_date": "2026-11-18T02:01:44.204818Z",
+  "issues": {
+    "url": "https://cvat.edufun.ai/api/issues?job_id=1623",
+    "count": 0
+  },
+  "labels": {
+    "url": "https://cvat.edufun.ai/api/labels?job_id=1623"
+  },
+  "type": "annotation",
+  "organization": 1,
+  "target_storage": null,
+  "source_storage": null,
+  "assignee_updated_date": "2026-11-16T05:30:28.109665Z",
+  "parent_job_id": null,
+  "replicas_count": 0,
+  "consensus_replicas": 0
+}

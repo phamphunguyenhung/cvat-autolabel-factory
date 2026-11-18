@@ -469,6 +469,8 @@ def main(argv=None) -> int:
     _register_run(sub, add)
     from harness.cli_v3 import register as _register_harness
     _register_harness(sub, add)
+    from cvat_tools.pose.pose17_cli import register as _register_pose17
+    _register_pose17(sub, add)
 
     fb = add(sub, "full-bbox", cmd_full_bbox, help="xuat preview FULL BBOX (things + lanes + areas + stuff) cho job")
     fb.add_argument("--job", type=int, default=285, help="CVAT job ID (mac dinh 285)")

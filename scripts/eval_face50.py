@@ -17,6 +17,7 @@ from pathlib import Path
 
 import numpy as np
 
+sys.stdout.reconfigure(encoding="utf-8")  # console Windows cp1252 làm vỡ tiếng Việt
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from cvat_tools.core.client import Cvat  # noqa: E402
 from cvat_tools.pose import gold as G, week2  # noqa: E402

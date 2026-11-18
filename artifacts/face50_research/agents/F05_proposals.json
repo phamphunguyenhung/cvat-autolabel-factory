@@ -1,0 +1,1347 @@
+{
+  "agent": "F05",
+  "role": "Missing Frames & Extreme Profiles Drafter",
+  "job_id": 1975,
+  "task_id": 473,
+  "eligible_count": 6,
+  "review_queue_count": 3,
+  "eligible_proposals": [
+    {
+      "frame_index": 106,
+      "image_name": "G06_107.jpg",
+      "width": 1280,
+      "height": 1024,
+      "action": "create",
+      "qc_status": "AI_REVIEWED_ELIGIBLE",
+      "source_method": "FAN2D_rot90_CLAHE_BrowSnap_plus_moitrong_untangle",
+      "face_score": 0.9987,
+      "rot_deg": 90,
+      "validate_findings": [],
+      "keypoints": {
+        "0": {
+          "x": 1126.85,
+          "y": 511.95,
+          "state": "V"
+        },
+        "1": {
+          "x": 1128.88,
+          "y": 518.01,
+          "state": "V"
+        },
+        "2": {
+          "x": 1131.08,
+          "y": 530.24,
+          "state": "V"
+        },
+        "3": {
+          "x": 1130.75,
+          "y": 543.08,
+          "state": "V"
+        },
+        "4": {
+          "x": 1128.93,
+          "y": 552.19,
+          "state": "V"
+        },
+        "5": {
+          "x": 1133.72,
+          "y": 599.9,
+          "state": "V"
+        },
+        "6": {
+          "x": 1133.51,
+          "y": 613.27,
+          "state": "V"
+        },
+        "7": {
+          "x": 1134.52,
+          "y": 628.21,
+          "state": "V"
+        },
+        "8": {
+          "x": 1137.44,
+          "y": 646.03,
+          "state": "V"
+        },
+        "9": {
+          "x": 1142.17,
+          "y": 663.57,
+          "state": "V"
+        },
+        "10": {
+          "x": 1114.0,
+          "y": 576.0,
+          "state": "V"
+        },
+        "11": {
+          "x": 1100.97,
+          "y": 574.3,
+          "state": "V"
+        },
+        "12": {
+          "x": 1087.93,
+          "y": 572.6,
+          "state": "V"
+        },
+        "13": {
+          "x": 1074.9,
+          "y": 570.9,
+          "state": "V"
+        },
+        "14": {
+          "x": 1108.0,
+          "y": 530.0,
+          "state": "V"
+        },
+        "15": {
+          "x": 1116.21,
+          "y": 536.2,
+          "state": "V"
+        },
+        "16": {
+          "x": 1117.34,
+          "y": 543.16,
+          "state": "V"
+        },
+        "17": {
+          "x": 1115.57,
+          "y": 550.43,
+          "state": "V"
+        },
+        "18": {
+          "x": 1111.0,
+          "y": 558.0,
+          "state": "V"
+        },
+        "19": {
+          "x": 1106.11,
+          "y": 551.44,
+          "state": "V"
+        },
+        "20": {
+          "x": 1104.11,
+          "y": 544.58,
+          "state": "V"
+        },
+        "21": {
+          "x": 1104.88,
+          "y": 537.41,
+          "state": "V"
+        },
+        "22": {
+          "x": 1114.0,
+          "y": 609.0,
+          "state": "V"
+        },
+        "23": {
+          "x": 1119.3,
+          "y": 617.1,
+          "state": "V"
+        },
+        "24": {
+          "x": 1120.66,
+          "y": 625.54,
+          "state": "V"
+        },
+        "25": {
+          "x": 1119.34,
+          "y": 634.23,
+          "state": "V"
+        },
+        "26": {
+          "x": 1117.0,
+          "y": 643.0,
+          "state": "V"
+        },
+        "27": {
+          "x": 1111.38,
+          "y": 634.93,
+          "state": "V"
+        },
+        "28": {
+          "x": 1109.94,
+          "y": 626.49,
+          "state": "V"
+        },
+        "29": {
+          "x": 1111.29,
+          "y": 617.81,
+          "state": "V"
+        },
+        "30": {
+          "x": 1026.0,
+          "y": 552.0,
+          "state": "V"
+        },
+        "31": {
+          "x": 1035.0,
+          "y": 561.0,
+          "state": "V"
+        },
+        "32": {
+          "x": 1041.0,
+          "y": 570.0,
+          "state": "V"
+        },
+        "33": {
+          "x": 1038.0,
+          "y": 576.0,
+          "state": "V"
+        },
+        "34": {
+          "x": 1041.0,
+          "y": 582.0,
+          "state": "V"
+        },
+        "35": {
+          "x": 1032.0,
+          "y": 597.0,
+          "state": "V"
+        },
+        "36": {
+          "x": 1026.0,
+          "y": 609.0,
+          "state": "V"
+        },
+        "37": {
+          "x": 1020.0,
+          "y": 597.0,
+          "state": "V"
+        },
+        "38": {
+          "x": 1013.0,
+          "y": 585.0,
+          "state": "V"
+        },
+        "39": {
+          "x": 1013.0,
+          "y": 576.0,
+          "state": "V"
+        },
+        "40": {
+          "x": 1013.0,
+          "y": 567.0,
+          "state": "V"
+        },
+        "41": {
+          "x": 1020.0,
+          "y": 561.0,
+          "state": "V"
+        },
+        "42": {
+          "x": 1026.0,
+          "y": 555.0,
+          "state": "V"
+        },
+        "43": {
+          "x": 1029.6,
+          "y": 569.96,
+          "state": "V"
+        },
+        "44": {
+          "x": 1029.0,
+          "y": 576.0,
+          "state": "V"
+        },
+        "45": {
+          "x": 1029.6,
+          "y": 584.96,
+          "state": "V"
+        },
+        "46": {
+          "x": 1026.0,
+          "y": 606.0,
+          "state": "V"
+        },
+        "47": {
+          "x": 1028.4,
+          "y": 585.04,
+          "state": "V"
+        },
+        "48": {
+          "x": 1026.0,
+          "y": 576.0,
+          "state": "V"
+        },
+        "49": {
+          "x": 1028.4,
+          "y": 570.04,
+          "state": "V"
+        }
+      }
+    },
+    {
+      "frame_index": 102,
+      "image_name": "G06_103.jpg",
+      "width": 1280,
+      "height": 1024,
+      "action": "create",
+      "qc_status": "AI_REVIEWED_ELIGIBLE",
+      "source_method": "CLAHE_Gamma045_visual_landmarks_plus_w2_face_propose_splines",
+      "validate_findings": [],
+      "keypoints": {
+        "0": {
+          "x": 838,
+          "y": 198,
+          "state": "V"
+        },
+        "1": {
+          "x": 856,
+          "y": 196,
+          "state": "V"
+        },
+        "2": {
+          "x": 874,
+          "y": 197,
+          "state": "V"
+        },
+        "3": {
+          "x": 892,
+          "y": 202,
+          "state": "V"
+        },
+        "4": {
+          "x": 908,
+          "y": 210,
+          "state": "V"
+        },
+        "5": {
+          "x": 928,
+          "y": 214,
+          "state": "V"
+        },
+        "6": {
+          "x": 940,
+          "y": 214,
+          "state": "V"
+        },
+        "7": {
+          "x": 952,
+          "y": 216,
+          "state": "V"
+        },
+        "8": {
+          "x": 964,
+          "y": 218,
+          "state": "V"
+        },
+        "9": {
+          "x": 974,
+          "y": 222,
+          "state": "V"
+        },
+        "10": {
+          "x": 918,
+          "y": 220,
+          "state": "V"
+        },
+        "11": {
+          "x": 918,
+          "y": 240,
+          "state": "Q"
+        },
+        "12": {
+          "x": 918,
+          "y": 260,
+          "state": "Q"
+        },
+        "13": {
+          "x": 918,
+          "y": 282,
+          "state": "Q"
+        },
+        "14": {
+          "x": 858.37,
+          "y": 214.47,
+          "state": "Q"
+        },
+        "15": {
+          "x": 867.31,
+          "y": 213.3,
+          "state": "Q"
+        },
+        "16": {
+          "x": 875.83,
+          "y": 214.09,
+          "state": "Q"
+        },
+        "17": {
+          "x": 883.94,
+          "y": 216.83,
+          "state": "Q"
+        },
+        "18": {
+          "x": 891.63,
+          "y": 221.53,
+          "state": "Q"
+        },
+        "19": {
+          "x": 882.79,
+          "y": 222.21,
+          "state": "Q"
+        },
+        "20": {
+          "x": 874.38,
+          "y": 220.93,
+          "state": "Q"
+        },
+        "21": {
+          "x": 866.17,
+          "y": 218.68,
+          "state": "Q"
+        },
+        "22": {
+          "x": 934.31,
+          "y": 226.09,
+          "state": "V"
+        },
+        "23": {
+          "x": 941.78,
+          "y": 224.61,
+          "state": "V"
+        },
+        "24": {
+          "x": 948.83,
+          "y": 225.09,
+          "state": "V"
+        },
+        "25": {
+          "x": 955.47,
+          "y": 227.52,
+          "state": "V"
+        },
+        "26": {
+          "x": 961.69,
+          "y": 231.91,
+          "state": "V"
+        },
+        "27": {
+          "x": 954.33,
+          "y": 232.9,
+          "state": "V"
+        },
+        "28": {
+          "x": 947.38,
+          "y": 231.93,
+          "state": "V"
+        },
+        "29": {
+          "x": 940.63,
+          "y": 229.99,
+          "state": "V"
+        },
+        "30": {
+          "x": 896.1,
+          "y": 313.9,
+          "state": "Q"
+        },
+        "31": {
+          "x": 903.5,
+          "y": 310.2,
+          "state": "Q"
+        },
+        "32": {
+          "x": 910.7,
+          "y": 308.9,
+          "state": "Q"
+        },
+        "33": {
+          "x": 916.6,
+          "y": 310.5,
+          "state": "Q"
+        },
+        "34": {
+          "x": 922.6,
+          "y": 310.2,
+          "state": "Q"
+        },
+        "35": {
+          "x": 929.4,
+          "y": 312.9,
+          "state": "Q"
+        },
+        "36": {
+          "x": 935.9,
+          "y": 318.1,
+          "state": "Q"
+        },
+        "37": {
+          "x": 928.3,
+          "y": 323.3,
+          "state": "Q"
+        },
+        "38": {
+          "x": 921.1,
+          "y": 325.1,
+          "state": "Q"
+        },
+        "39": {
+          "x": 915.1,
+          "y": 325.0,
+          "state": "Q"
+        },
+        "40": {
+          "x": 909.1,
+          "y": 323.8,
+          "state": "Q"
+        },
+        "41": {
+          "x": 902.4,
+          "y": 320.6,
+          "state": "Q"
+        },
+        "42": {
+          "x": 902.0,
+          "y": 315.0,
+          "state": "Q"
+        },
+        "43": {
+          "x": 910.2,
+          "y": 313.4,
+          "state": "Q"
+        },
+        "44": {
+          "x": 916.2,
+          "y": 314.5,
+          "state": "Q"
+        },
+        "45": {
+          "x": 922.2,
+          "y": 314.6,
+          "state": "Q"
+        },
+        "46": {
+          "x": 929.9,
+          "y": 318.0,
+          "state": "Q"
+        },
+        "47": {
+          "x": 921.6,
+          "y": 320.1,
+          "state": "Q"
+        },
+        "48": {
+          "x": 915.6,
+          "y": 320.0,
+          "state": "Q"
+        },
+        "49": {
+          "x": 909.7,
+          "y": 318.9,
+          "state": "Q"
+        }
+      }
+    },
+    {
+      "frame_index": 94,
+      "image_name": "week2-human-face/G06/G06_095.jpg",
+      "width": 1280,
+      "height": 1024,
+      "action": "update",
+      "qc_status": "AI_REVIEWED_ELIGIBLE",
+      "source_method": "surgical_moitrong_containment_preserving_0_to_41",
+      "changed_kpts": [
+        42,
+        43,
+        46,
+        49
+      ],
+      "changes": [
+        {
+          "kp": 42,
+          "type": "inner_lip_containment_and_untangle",
+          "old_xy": [
+            806.0,
+            326.0
+          ],
+          "new_xy": [
+            809.08,
+            329.28
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 43,
+          "type": "inner_lip_containment_and_untangle",
+          "old_xy": [
+            825.0,
+            337.0
+          ],
+          "new_xy": [
+            825.17,
+            336.42
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 46,
+          "type": "inner_lip_containment_and_untangle",
+          "old_xy": [
+            862.0,
+            337.0
+          ],
+          "new_xy": [
+            857.86,
+            340.62
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 49,
+          "type": "inner_lip_containment_and_untangle",
+          "old_xy": [
+            825.0,
+            337.0
+          ],
+          "new_xy": [
+            824.83,
+            337.58
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        }
+      ],
+      "validate_findings": []
+    },
+    {
+      "frame_index": 95,
+      "image_name": "week2-human-face/G06/G06_096.jpg",
+      "width": 1280,
+      "height": 1024,
+      "action": "update",
+      "qc_status": "AI_REVIEWED_ELIGIBLE",
+      "source_method": "surgical_moitrong_containment_preserving_0_to_41",
+      "changed_kpts": [
+        42,
+        43,
+        45,
+        46,
+        49
+      ],
+      "changes": [
+        {
+          "kp": 42,
+          "type": "inner_lip_containment_and_untangle",
+          "old_xy": [
+            806.0,
+            294.0
+          ],
+          "new_xy": [
+            817.06,
+            301.74
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 43,
+          "type": "inner_lip_containment_and_untangle",
+          "old_xy": [
+            836.0,
+            307.0
+          ],
+          "new_xy": [
+            834.0,
+            306.4
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 45,
+          "type": "inner_lip_containment_and_untangle",
+          "old_xy": [
+            862.0,
+            311.0
+          ],
+          "new_xy": [
+            849.01,
+            310.61
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 46,
+          "type": "inner_lip_containment_and_untangle",
+          "old_xy": [
+            888.0,
+            298.0
+          ],
+          "new_xy": [
+            882.94,
+            302.83
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 49,
+          "type": "inner_lip_containment_and_untangle",
+          "old_xy": [
+            832.0,
+            307.0
+          ],
+          "new_xy": [
+            834.0,
+            307.6
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        }
+      ],
+      "validate_findings": []
+    },
+    {
+      "frame_index": 105,
+      "image_name": "week2-human-face/G06/G06_106.jpg",
+      "width": 960,
+      "height": 540,
+      "action": "update",
+      "qc_status": "AI_REVIEWED_ELIGIBLE",
+      "source_method": "surgical_moitrong_containment_preserving_0_to_41",
+      "changed_kpts": [
+        42,
+        43,
+        44,
+        45,
+        47,
+        48,
+        49
+      ],
+      "changes": [
+        {
+          "kp": 42,
+          "type": "inner_lip_containment_and_untangle",
+          "old_xy": [
+            222.0,
+            216.0
+          ],
+          "new_xy": [
+            223.25,
+            214.44
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 43,
+          "type": "inner_lip_containment_and_untangle",
+          "old_xy": [
+            229.0,
+            205.0
+          ],
+          "new_xy": [
+            228.49,
+            204.19
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 44,
+          "type": "inner_lip_containment_and_untangle",
+          "old_xy": [
+            231.0,
+            202.0
+          ],
+          "new_xy": [
+            230.49,
+            200.69
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 45,
+          "type": "inner_lip_containment_and_untangle",
+          "old_xy": [
+            232.0,
+            198.0
+          ],
+          "new_xy": [
+            231.49,
+            197.69
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 47,
+          "type": "inner_lip_containment_and_untangle",
+          "old_xy": [
+            232.0,
+            198.0
+          ],
+          "new_xy": [
+            232.51,
+            198.31
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 48,
+          "type": "inner_lip_containment_and_untangle",
+          "old_xy": [
+            231.0,
+            200.0
+          ],
+          "new_xy": [
+            231.51,
+            201.31
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 49,
+          "type": "inner_lip_containment_and_untangle",
+          "old_xy": [
+            229.0,
+            204.0
+          ],
+          "new_xy": [
+            229.51,
+            204.81
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        }
+      ],
+      "validate_findings": []
+    },
+    {
+      "frame_index": 118,
+      "image_name": "G06_119.jpg",
+      "width": 960,
+      "height": 540,
+      "action": "update",
+      "qc_status": "AI_REVIEWED_ELIGIBLE",
+      "source_method": "FAN2D_rot270_for_browR_eyeR_lips_preserving_browL_nose_eyeL",
+      "changed_kpts": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "changes": [
+        {
+          "kp": 5,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            231.0,
+            100.0
+          ],
+          "new_xy": [
+            232.15,
+            96.29
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 6,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            233.0,
+            98.0
+          ],
+          "new_xy": [
+            233.68,
+            92.9
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 7,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            239.0,
+            93.0
+          ],
+          "new_xy": [
+            237.23,
+            91.02
+          ],
+          "old_state": "Q",
+          "new_state": "V"
+        },
+        {
+          "kp": 8,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            267.0,
+            76.0
+          ],
+          "new_xy": [
+            238.91,
+            90.76
+          ],
+          "old_state": "Q",
+          "new_state": "V"
+        },
+        {
+          "kp": 9,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            282.0,
+            66.0
+          ],
+          "new_xy": [
+            239.69,
+            89.85
+          ],
+          "old_state": "Q",
+          "new_state": "V"
+        },
+        {
+          "kp": 22,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            250.0,
+            108.0
+          ],
+          "new_xy": [
+            245.0,
+            111.0
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 23,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            253.73,
+            103.05
+          ],
+          "new_xy": [
+            246.04,
+            109.1
+          ],
+          "old_state": "Q",
+          "new_state": "Q"
+        },
+        {
+          "kp": 24,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            254.33,
+            96.15
+          ],
+          "new_xy": [
+            246.79,
+            107.0
+          ],
+          "old_state": "Q",
+          "new_state": "Q"
+        },
+        {
+          "kp": 25,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            257.84,
+            91.07
+          ],
+          "new_xy": [
+            247.19,
+            104.63
+          ],
+          "old_state": "Q",
+          "new_state": "Q"
+        },
+        {
+          "kp": 26,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            263.0,
+            87.0
+          ],
+          "new_xy": [
+            250.0,
+            104.0
+          ],
+          "old_state": "Q",
+          "new_state": "Q"
+        },
+        {
+          "kp": 27,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            260.28,
+            92.58
+          ],
+          "new_xy": [
+            251.02,
+            107.37
+          ],
+          "old_state": "Q",
+          "new_state": "Q"
+        },
+        {
+          "kp": 28,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            257.28,
+            97.98
+          ],
+          "new_xy": [
+            248.93,
+            108.52
+          ],
+          "old_state": "Q",
+          "new_state": "Q"
+        },
+        {
+          "kp": 29,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            253.81,
+            103.1
+          ],
+          "new_xy": [
+            246.85,
+            109.68
+          ],
+          "old_state": "Q",
+          "new_state": "Q"
+        },
+        {
+          "kp": 30,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            269.0,
+            153.0
+          ],
+          "new_xy": [
+            271.0,
+            152.0
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 31,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            271.0,
+            146.0
+          ],
+          "new_xy": [
+            274.0,
+            144.0
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 32,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            273.0,
+            136.0
+          ],
+          "new_xy": [
+            276.0,
+            135.0
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 33,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            275.0,
+            134.0
+          ],
+          "new_xy": [
+            278.0,
+            133.0
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 34,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            275.0,
+            131.0
+          ],
+          "new_xy": [
+            279.0,
+            132.0
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 35,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            282.0,
+            129.0
+          ],
+          "new_xy": [
+            283.0,
+            132.0
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 36,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            288.0,
+            134.0
+          ],
+          "new_xy": [
+            285.0,
+            135.0
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 37,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            284.0,
+            131.0
+          ],
+          "new_xy": [
+            286.0,
+            135.0
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 38,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            284.0,
+            134.0
+          ],
+          "new_xy": [
+            286.0,
+            137.0
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 39,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            282.0,
+            140.0
+          ],
+          "new_xy": [
+            285.0,
+            138.0
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 40,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            278.0,
+            144.0
+          ],
+          "new_xy": [
+            283.0,
+            144.0
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 41,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            275.0,
+            151.0
+          ],
+          "new_xy": [
+            278.0,
+            147.0
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 42,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            271.0,
+            153.0
+          ],
+          "new_xy": [
+            273.44,
+            148.52
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 43,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            275.0,
+            140.0
+          ],
+          "new_xy": [
+            277.55,
+            139.61
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 44,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            278.0,
+            136.0
+          ],
+          "new_xy": [
+            279.55,
+            137.11
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 45,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            280.0,
+            134.0
+          ],
+          "new_xy": [
+            281.55,
+            134.61
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 46,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            286.0,
+            134.0
+          ],
+          "new_xy": [
+            283.0,
+            135.0
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 47,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            278.0,
+            134.0
+          ],
+          "new_xy": [
+            282.45,
+            135.39
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 48,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            275.0,
+            136.0
+          ],
+          "new_xy": [
+            280.45,
+            137.89
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        },
+        {
+          "kp": 49,
+          "type": "fan2d_sky_drift_and_lip_fix",
+          "old_xy": [
+            273.0,
+            140.0
+          ],
+          "new_xy": [
+            278.45,
+            140.39
+          ],
+          "old_state": "V",
+          "new_state": "V"
+        }
+      ],
+      "validate_findings": []
+    }
+  ],
+  "review_queue": [
+    {
+      "frame_index": 100,
+      "image_name": "week2-human-face/G06/G06_101.jpg",
+      "status": "NEEDS_HUMAN_REVIEW",
+      "reason": "Extreme profile (-35.8 deg): surgical moitrong fix resolves INNER_LIP_OUTSIDE_OUTER, but foreshortened longmayphai still triggers BROW_NON_MONOTONIC_LOCAL warning; FAN2D moingoai self-intersects."
+    },
+    {
+      "frame_index": 111,
+      "image_name": "week2-human-face/G06/G06_112.jpg",
+      "status": "NEEDS_HUMAN_REVIEW",
+      "reason": "Dark IR (luma=33.4): surgical moitrong fix resolves INNER_LIP_OUTSIDE_OUTER + LIP_SELF_INTERSECT, but CVAT kp 5 triggers BROW_BELOW_EYE; needs human review."
+    },
+    {
+      "frame_index": 112,
+      "image_name": "week2-human-face/G06/G06_113.jpg",
+      "status": "NEEDS_HUMAN_REVIEW",
+      "reason": "Very dark IR (luma=15.7) + tiny 47x38 face (512x424): BROW_NON_MONOTONIC_LOCAL and sub-pixel lip compression; needs human review."
+    }
+  ]
+}

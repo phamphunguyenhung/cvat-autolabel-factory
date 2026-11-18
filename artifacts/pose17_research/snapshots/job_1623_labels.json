@@ -1,0 +1,151 @@
+[
+  {
+    "id": 12322,
+    "name": "person_vf17",
+    "color": "#6184df",
+    "attributes": [],
+    "type": "skeleton",
+    "sublabels": [
+      {
+        "id": 12323,
+        "name": "1",
+        "color": "#d12345",
+        "attributes": [],
+        "type": "points",
+        "has_parent": true
+      },
+      {
+        "id": 12324,
+        "name": "2",
+        "color": "#350dea",
+        "attributes": [],
+        "type": "points",
+        "has_parent": true
+      },
+      {
+        "id": 12325,
+        "name": "3",
+        "color": "#479ffe",
+        "attributes": [],
+        "type": "points",
+        "has_parent": true
+      },
+      {
+        "id": 12326,
+        "name": "4",
+        "color": "#4a649f",
+        "attributes": [],
+        "type": "points",
+        "has_parent": true
+      },
+      {
+        "id": 12327,
+        "name": "5",
+        "color": "#478144",
+        "attributes": [],
+        "type": "points",
+        "has_parent": true
+      },
+      {
+        "id": 12328,
+        "name": "6",
+        "color": "#57236b",
+        "attributes": [],
+        "type": "points",
+        "has_parent": true
+      },
+      {
+        "id": 12329,
+        "name": "7",
+        "color": "#1cdda5",
+        "attributes": [],
+        "type": "points",
+        "has_parent": true
+      },
+      {
+        "id": 12330,
+        "name": "8",
+        "color": "#e2bc6e",
+        "attributes": [],
+        "type": "points",
+        "has_parent": true
+      },
+      {
+        "id": 12331,
+        "name": "9",
+        "color": "#f067db",
+        "attributes": [],
+        "type": "points",
+        "has_parent": true
+      },
+      {
+        "id": 12332,
+        "name": "10",
+        "color": "#63bbfa",
+        "attributes": [],
+        "type": "points",
+        "has_parent": true
+      },
+      {
+        "id": 12333,
+        "name": "11",
+        "color": "#22b16f",
+        "attributes": [],
+        "type": "points",
+        "has_parent": true
+      },
+      {
+        "id": 12334,
+        "name": "12",
+        "color": "#daddec",
+        "attributes": [],
+        "type": "points",
+        "has_parent": true
+      },
+      {
+        "id": 12335,
+        "name": "13",
+        "color": "#2ac791",
+        "attributes": [],
+        "type": "points",
+        "has_parent": true
+      },
+      {
+        "id": 12336,
+        "name": "14",
+        "color": "#de22a0",
+        "attributes": [],
+        "type": "points",
+        "has_parent": true
+      },
+      {
+        "id": 12337,
+        "name": "15",
+        "color": "#a7a570",
+        "attributes": [],
+        "type": "points",
+        "has_parent": true
+      },
+      {
+        "id": 12338,
+        "name": "16",
+        "color": "#74db1b",
+        "attributes": [],
+        "type": "points",
+        "has_parent": true
+      },
+      {
+        "id": 12339,
+        "name": "17",
+        "color": "#aaa246",
+        "attributes": [],
+        "type": "points",
+        "has_parent": true
+      }
+    ],
+    "project_id": 159,
+    "parent_id": null,
+    "has_parent": false,
+    "svg": "<line x1=\"50\" y1=\"15\" x2=\"55\" y2=\"14\" stroke=\"black\" stroke-width=\"0.5\" data-type=\"edge\" data-node-from=\"1\" data-node-to=\"2\"></line><line x1=\"50\" y1=\"15\" x2=\"45\" y2=\"14\" stroke=\"black\" stroke-width=\"0.5\" data-type=\"edge\" data-node-from=\"1\" data-node-to=\"3\"></line><line x1=\"55\" y1=\"14\" x2=\"60\" y2=\"18\" stroke=\"black\" stroke-width=\"0.5\" data-type=\"edge\" data-node-from=\"2\" data-node-to=\"4\"></line><line x1=\"45\" y1=\"14\" x2=\"40\" y2=\"18\" stroke=\"black\" stroke-width=\"0.5\" data-type=\"edge\" data-node-from=\"3\" data-node-to=\"5\"></line><line x1=\"60\" y1=\"18\" x2=\"60\" y2=\"30\" stroke=\"black\" stroke-width=\"0.5\" data-type=\"edge\" data-node-from=\"4\" data-node-to=\"6\"></line><line x1=\"40\" y1=\"18\" x2=\"40\" y2=\"30\" stroke=\"black\" stroke-width=\"0.5\" data-type=\"edge\" data-node-from=\"5\" data-node-to=\"7\"></line><line x1=\"60\" y1=\"30\" x2=\"40\" y2=\"30\" stroke=\"black\" stroke-width=\"0.5\" data-type=\"edge\" data-node-from=\"6\" data-node-to=\"7\"></line><line x1=\"60\" y1=\"30\" x2=\"68\" y2=\"45\" stroke=\"black\" stroke-width=\"0.5\" data-type=\"edge\" data-node-from=\"6\" data-node-to=\"8\"></line><line x1=\"68\" y1=\"45\" x2=\"74\" y2=\"60\" stroke=\"black\" stroke-width=\"0.5\" data-type=\"edge\" data-node-from=\"8\" data-node-to=\"10\"></line><line x1=\"40\" y1=\"30\" x2=\"32\" y2=\"45\" stroke=\"black\" stroke-width=\"0.5\" data-type=\"edge\" data-node-from=\"7\" data-node-to=\"9\"></line><line x1=\"32\" y1=\"45\" x2=\"26\" y2=\"60\" stroke=\"black\" stroke-width=\"0.5\" data-type=\"edge\" data-node-from=\"9\" data-node-to=\"11\"></line><line x1=\"60\" y1=\"30\" x2=\"55\" y2=\"62\" stroke=\"black\" stroke-width=\"0.5\" data-type=\"edge\" data-node-from=\"6\" data-node-to=\"12\"></line><line x1=\"40\" y1=\"30\" x2=\"45\" y2=\"62\" stroke=\"black\" stroke-width=\"0.5\" data-type=\"edge\" data-node-from=\"7\" data-node-to=\"13\"></line><line x1=\"55\" y1=\"62\" x2=\"45\" y2=\"62\" stroke=\"black\" stroke-width=\"0.5\" data-type=\"edge\" data-node-from=\"12\" data-node-to=\"13\"></line><line x1=\"55\" y1=\"62\" x2=\"58\" y2=\"80\" stroke=\"black\" stroke-width=\"0.5\" data-type=\"edge\" data-node-from=\"12\" data-node-to=\"14\"></line><line x1=\"58\" y1=\"80\" x2=\"60\" y2=\"97\" stroke=\"black\" stroke-width=\"0.5\" data-type=\"edge\" data-node-from=\"14\" data-node-to=\"16\"></line><line x1=\"45\" y1=\"62\" x2=\"42\" y2=\"80\" stroke=\"black\" stroke-width=\"0.5\" data-type=\"edge\" data-node-from=\"13\" data-node-to=\"15\"></line><line x1=\"42\" y1=\"80\" x2=\"40\" y2=\"97\" stroke=\"black\" stroke-width=\"0.5\" data-type=\"edge\" data-node-from=\"15\" data-node-to=\"17\"></line><circle r=\"1.5\" stroke=\"black\" fill=\"#b3b3b3\" cx=\"50\" cy=\"15\" stroke-width=\"0.1\" data-type=\"element node\" data-element-id=\"1\" data-node-id=\"1\" data-label-id=\"12323\"></circle><circle r=\"1.5\" stroke=\"black\" fill=\"#b3b3b3\" cx=\"55\" cy=\"14\" stroke-width=\"0.1\" data-type=\"element node\" data-element-id=\"2\" data-node-id=\"2\" data-label-id=\"12324\"></circle><circle r=\"1.5\" stroke=\"black\" fill=\"#b3b3b3\" cx=\"45\" cy=\"14\" stroke-width=\"0.1\" data-type=\"element node\" data-element-id=\"3\" data-node-id=\"3\" data-label-id=\"12325\"></circle><circle r=\"1.5\" stroke=\"black\" fill=\"#b3b3b3\" cx=\"60\" cy=\"18\" stroke-width=\"0.1\" data-type=\"element node\" data-element-id=\"4\" data-node-id=\"4\" data-label-id=\"12326\"></circle><circle r=\"1.5\" stroke=\"black\" fill=\"#b3b3b3\" cx=\"40\" cy=\"18\" stroke-width=\"0.1\" data-type=\"element node\" data-element-id=\"5\" data-node-id=\"5\" data-label-id=\"12327\"></circle><circle r=\"1.5\" stroke=\"black\" fill=\"#b3b3b3\" cx=\"60\" cy=\"30\" stroke-width=\"0.1\" data-type=\"element node\" data-element-id=\"6\" data-node-id=\"6\" data-label-id=\"12328\"></circle><circle r=\"1.5\" stroke=\"black\" fill=\"#b3b3b3\" cx=\"40\" cy=\"30\" stroke-width=\"0.1\" data-type=\"element node\" data-element-id=\"7\" data-node-id=\"7\" data-label-id=\"12329\"></circle><circle r=\"1.5\" stroke=\"black\" fill=\"#b3b3b3\" cx=\"68\" cy=\"45\" stroke-width=\"0.1\" data-type=\"element node\" data-element-id=\"8\" data-node-id=\"8\" data-label-id=\"12330\"></circle><circle r=\"1.5\" stroke=\"black\" fill=\"#b3b3b3\" cx=\"32\" cy=\"45\" stroke-width=\"0.1\" data-type=\"element node\" data-element-id=\"9\" data-node-id=\"9\" data-label-id=\"12331\"></circle><circle r=\"1.5\" stroke=\"black\" fill=\"#b3b3b3\" cx=\"74\" cy=\"60\" stroke-width=\"0.1\" data-type=\"element node\" data-element-id=\"10\" data-node-id=\"10\" data-label-id=\"12332\"></circle><circle r=\"1.5\" stroke=\"black\" fill=\"#b3b3b3\" cx=\"26\" cy=\"60\" stroke-width=\"0.1\" data-type=\"element node\" data-element-id=\"11\" data-node-id=\"11\" data-label-id=\"12333\"></circle><circle r=\"1.5\" stroke=\"black\" fill=\"#b3b3b3\" cx=\"55\" cy=\"62\" stroke-width=\"0.1\" data-type=\"element node\" data-element-id=\"12\" data-node-id=\"12\" data-label-id=\"12334\"></circle><circle r=\"1.5\" stroke=\"black\" fill=\"#b3b3b3\" cx=\"45\" cy=\"62\" stroke-width=\"0.1\" data-type=\"element node\" data-element-id=\"13\" data-node-id=\"13\" data-label-id=\"12335\"></circle><circle r=\"1.5\" stroke=\"black\" fill=\"#b3b3b3\" cx=\"58\" cy=\"80\" stroke-width=\"0.1\" data-type=\"element node\" data-element-id=\"14\" data-node-id=\"14\" data-label-id=\"12336\"></circle><circle r=\"1.5\" stroke=\"black\" fill=\"#b3b3b3\" cx=\"42\" cy=\"80\" stroke-width=\"0.1\" data-type=\"element node\" data-element-id=\"15\" data-node-id=\"15\" data-label-id=\"12337\"></circle><circle r=\"1.5\" stroke=\"black\" fill=\"#b3b3b3\" cx=\"60\" cy=\"97\" stroke-width=\"0.1\" data-type=\"element node\" data-element-id=\"16\" data-node-id=\"16\" data-label-id=\"12338\"></circle><circle r=\"1.5\" stroke=\"black\" fill=\"#b3b3b3\" cx=\"40\" cy=\"97\" stroke-width=\"0.1\" data-type=\"element node\" data-element-id=\"17\" data-node-id=\"17\" data-label-id=\"12339\"></circle>"
+  }
+]

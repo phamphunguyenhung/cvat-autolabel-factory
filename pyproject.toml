@@ -15,11 +15,12 @@ dev = ["pytest"]
 
 [project.scripts]
 cvat-tools = "cvat_tools.cli:main"
+cvat-factory = "cvat_tools.factory.cli:main"
 mtm = "mtm.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [tool.pytest.ini_options]
-pythonpath = ["src"]
+pythonpath = ["src", "."]
 testpaths = ["tests"]

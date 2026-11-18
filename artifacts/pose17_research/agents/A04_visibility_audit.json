@@ -1,0 +1,3890 @@
+{
+  "meta": {
+    "job_id": 1623,
+    "task_id": 402,
+    "frames_total": 30,
+    "frames_with_skeleton": 28,
+    "frames_empty": [
+      100,
+      118
+    ],
+    "keypoints_total": 476,
+    "generated_from": [
+      "artifacts/pose17_research/snapshots/job_1623_annotations_raw.json",
+      "artifacts/pose17_research/snapshots/job_1623_meta.json",
+      "artifacts/pose17_research/snapshots/keypoint_mapping.json",
+      "artifacts/pose17_research/snapshots/job_1623_labels.json"
+    ]
+  },
+  "global_counts": {
+    "occluded_only": 59,
+    "occluded_flag_total": 81,
+    "outside_flag_total": 58,
+    "hidden": 0,
+    "total": 476,
+    "outside_only": 36,
+    "visible": 359,
+    "both_occluded_and_outside": 22
+  },
+  "skeleton_level_flags": [
+    {
+      "frame": 93,
+      "image_name": "G06_094.jpg",
+      "skeleton_id": 1320580,
+      "skeleton_occluded": true,
+      "skeleton_outside": false
+    }
+  ],
+  "per_frame": [
+    {
+      "frame": 90,
+      "image_name": "G06_091.jpg",
+      "meta_name": "week2-human-pose/G06/G06_091.jpg",
+      "width": 1280,
+      "height": 1024,
+      "has_skeleton": true,
+      "skeleton_id": 1320579,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 14,
+        "occluded_only": 2,
+        "outside_only": 1,
+        "both_occluded_and_outside": 0,
+        "occluded_flag_total": 2,
+        "outside_flag_total": 1,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 91,
+      "image_name": "G06_092.jpg",
+      "meta_name": "week2-human-pose/G06/G06_092.jpg",
+      "width": 1280,
+      "height": 1024,
+      "has_skeleton": true,
+      "skeleton_id": 1319662,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 14,
+        "occluded_only": 1,
+        "outside_only": 0,
+        "both_occluded_and_outside": 2,
+        "occluded_flag_total": 3,
+        "outside_flag_total": 2,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 92,
+      "image_name": "G06_093.jpg",
+      "meta_name": "week2-human-pose/G06/G06_093.jpg",
+      "width": 1280,
+      "height": 1024,
+      "has_skeleton": true,
+      "skeleton_id": 1319663,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 11,
+        "occluded_only": 4,
+        "outside_only": 0,
+        "both_occluded_and_outside": 2,
+        "occluded_flag_total": 6,
+        "outside_flag_total": 2,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 93,
+      "image_name": "G06_094.jpg",
+      "meta_name": "week2-human-pose/G06/G06_094.jpg",
+      "width": 960,
+      "height": 540,
+      "has_skeleton": true,
+      "skeleton_id": 1320580,
+      "skeleton_occluded": true,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 0,
+        "occluded_only": 14,
+        "outside_only": 0,
+        "both_occluded_and_outside": 3,
+        "occluded_flag_total": 17,
+        "outside_flag_total": 3,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 94,
+      "image_name": "G06_095.jpg",
+      "meta_name": "week2-human-pose/G06/G06_095.jpg",
+      "width": 1280,
+      "height": 1024,
+      "has_skeleton": true,
+      "skeleton_id": 1320581,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 12,
+        "occluded_only": 1,
+        "outside_only": 4,
+        "both_occluded_and_outside": 0,
+        "occluded_flag_total": 1,
+        "outside_flag_total": 4,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 95,
+      "image_name": "G06_096.jpg",
+      "meta_name": "week2-human-pose/G06/G06_096.jpg",
+      "width": 1280,
+      "height": 1024,
+      "has_skeleton": true,
+      "skeleton_id": 1320582,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 15,
+        "occluded_only": 0,
+        "outside_only": 2,
+        "both_occluded_and_outside": 0,
+        "occluded_flag_total": 0,
+        "outside_flag_total": 2,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 96,
+      "image_name": "G06_097.jpg",
+      "meta_name": "week2-human-pose/G06/G06_097.jpg",
+      "width": 960,
+      "height": 540,
+      "has_skeleton": true,
+      "skeleton_id": 1320583,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 13,
+        "occluded_only": 1,
+        "outside_only": 2,
+        "both_occluded_and_outside": 1,
+        "occluded_flag_total": 2,
+        "outside_flag_total": 3,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 97,
+      "image_name": "G06_098.jpg",
+      "meta_name": "week2-human-pose/G06/G06_098.jpg",
+      "width": 960,
+      "height": 540,
+      "has_skeleton": true,
+      "skeleton_id": 1319664,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 13,
+        "occluded_only": 3,
+        "outside_only": 0,
+        "both_occluded_and_outside": 1,
+        "occluded_flag_total": 4,
+        "outside_flag_total": 1,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 98,
+      "image_name": "G06_099.jpg",
+      "meta_name": "week2-human-pose/G06/G06_099.jpg",
+      "width": 960,
+      "height": 540,
+      "has_skeleton": true,
+      "skeleton_id": 1319665,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 14,
+        "occluded_only": 2,
+        "outside_only": 0,
+        "both_occluded_and_outside": 1,
+        "occluded_flag_total": 3,
+        "outside_flag_total": 1,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 99,
+      "image_name": "G06_100.jpg",
+      "meta_name": "week2-human-pose/G06/G06_100.jpg",
+      "width": 1280,
+      "height": 1024,
+      "has_skeleton": true,
+      "skeleton_id": 1320584,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 12,
+        "occluded_only": 1,
+        "outside_only": 4,
+        "both_occluded_and_outside": 0,
+        "occluded_flag_total": 1,
+        "outside_flag_total": 4,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 100,
+      "image_name": "G06_101.jpg",
+      "meta_name": "week2-human-pose/G06/G06_101.jpg",
+      "width": 960,
+      "height": 540,
+      "has_skeleton": false,
+      "skeleton_id": null,
+      "skeleton_occluded": null,
+      "skeleton_outside": null,
+      "counts": {
+        "visible": 0,
+        "occluded_only": 0,
+        "outside_only": 0,
+        "both_occluded_and_outside": 0,
+        "occluded_flag_total": 0,
+        "outside_flag_total": 0,
+        "hidden": 0,
+        "total": 0
+      }
+    },
+    {
+      "frame": 101,
+      "image_name": "G06_102.jpg",
+      "meta_name": "week2-human-pose/G06/G06_102.jpg",
+      "width": 960,
+      "height": 540,
+      "has_skeleton": true,
+      "skeleton_id": 1320585,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 15,
+        "occluded_only": 1,
+        "outside_only": 1,
+        "both_occluded_and_outside": 0,
+        "occluded_flag_total": 1,
+        "outside_flag_total": 1,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 102,
+      "image_name": "G06_103.jpg",
+      "meta_name": "week2-human-pose/G06/G06_103.jpg",
+      "width": 1280,
+      "height": 1024,
+      "has_skeleton": true,
+      "skeleton_id": 1320586,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 14,
+        "occluded_only": 1,
+        "outside_only": 2,
+        "both_occluded_and_outside": 0,
+        "occluded_flag_total": 1,
+        "outside_flag_total": 2,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 103,
+      "image_name": "G06_104.jpg",
+      "meta_name": "week2-human-pose/G06/G06_104.jpg",
+      "width": 512,
+      "height": 424,
+      "has_skeleton": true,
+      "skeleton_id": 1319666,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 13,
+        "occluded_only": 3,
+        "outside_only": 1,
+        "both_occluded_and_outside": 0,
+        "occluded_flag_total": 3,
+        "outside_flag_total": 1,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 104,
+      "image_name": "G06_105.jpg",
+      "meta_name": "week2-human-pose/G06/G06_105.jpg",
+      "width": 512,
+      "height": 424,
+      "has_skeleton": true,
+      "skeleton_id": 1319667,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 15,
+        "occluded_only": 1,
+        "outside_only": 0,
+        "both_occluded_and_outside": 1,
+        "occluded_flag_total": 2,
+        "outside_flag_total": 1,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 105,
+      "image_name": "G06_106.jpg",
+      "meta_name": "week2-human-pose/G06/G06_106.jpg",
+      "width": 960,
+      "height": 540,
+      "has_skeleton": true,
+      "skeleton_id": 1320587,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 13,
+        "occluded_only": 3,
+        "outside_only": 0,
+        "both_occluded_and_outside": 1,
+        "occluded_flag_total": 4,
+        "outside_flag_total": 1,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 106,
+      "image_name": "G06_107.jpg",
+      "meta_name": "week2-human-pose/G06/G06_107.jpg",
+      "width": 1280,
+      "height": 1024,
+      "has_skeleton": true,
+      "skeleton_id": 1320588,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 13,
+        "occluded_only": 0,
+        "outside_only": 3,
+        "both_occluded_and_outside": 1,
+        "occluded_flag_total": 1,
+        "outside_flag_total": 4,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 107,
+      "image_name": "G06_108.jpg",
+      "meta_name": "week2-human-pose/G06/G06_108.jpg",
+      "width": 1280,
+      "height": 1024,
+      "has_skeleton": true,
+      "skeleton_id": 1320589,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 14,
+        "occluded_only": 1,
+        "outside_only": 2,
+        "both_occluded_and_outside": 0,
+        "occluded_flag_total": 1,
+        "outside_flag_total": 2,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 108,
+      "image_name": "G06_109.jpg",
+      "meta_name": "week2-human-pose/G06/G06_109.jpg",
+      "width": 960,
+      "height": 540,
+      "has_skeleton": true,
+      "skeleton_id": 1320590,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 14,
+        "occluded_only": 1,
+        "outside_only": 2,
+        "both_occluded_and_outside": 0,
+        "occluded_flag_total": 1,
+        "outside_flag_total": 2,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 109,
+      "image_name": "G06_110.jpg",
+      "meta_name": "week2-human-pose/G06/G06_110.jpg",
+      "width": 1280,
+      "height": 1024,
+      "has_skeleton": true,
+      "skeleton_id": 1319668,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 14,
+        "occluded_only": 2,
+        "outside_only": 0,
+        "both_occluded_and_outside": 1,
+        "occluded_flag_total": 3,
+        "outside_flag_total": 1,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 110,
+      "image_name": "G06_111.jpg",
+      "meta_name": "week2-human-pose/G06/G06_111.jpg",
+      "width": 1280,
+      "height": 1024,
+      "has_skeleton": true,
+      "skeleton_id": 1319669,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 13,
+        "occluded_only": 2,
+        "outside_only": 0,
+        "both_occluded_and_outside": 2,
+        "occluded_flag_total": 4,
+        "outside_flag_total": 2,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 111,
+      "image_name": "G06_112.jpg",
+      "meta_name": "week2-human-pose/G06/G06_112.jpg",
+      "width": 1280,
+      "height": 1024,
+      "has_skeleton": true,
+      "skeleton_id": 1320591,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 12,
+        "occluded_only": 3,
+        "outside_only": 2,
+        "both_occluded_and_outside": 0,
+        "occluded_flag_total": 3,
+        "outside_flag_total": 2,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 112,
+      "image_name": "G06_113.jpg",
+      "meta_name": "week2-human-pose/G06/G06_113.jpg",
+      "width": 512,
+      "height": 424,
+      "has_skeleton": true,
+      "skeleton_id": 1320592,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 12,
+        "occluded_only": 3,
+        "outside_only": 2,
+        "both_occluded_and_outside": 0,
+        "occluded_flag_total": 3,
+        "outside_flag_total": 2,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 113,
+      "image_name": "G06_114.jpg",
+      "meta_name": "week2-human-pose/G06/G06_114.jpg",
+      "width": 960,
+      "height": 540,
+      "has_skeleton": true,
+      "skeleton_id": 1320593,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 14,
+        "occluded_only": 1,
+        "outside_only": 2,
+        "both_occluded_and_outside": 0,
+        "occluded_flag_total": 1,
+        "outside_flag_total": 2,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 114,
+      "image_name": "G06_115.jpg",
+      "meta_name": "week2-human-pose/G06/G06_115.jpg",
+      "width": 1280,
+      "height": 1024,
+      "has_skeleton": true,
+      "skeleton_id": 1320594,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 13,
+        "occluded_only": 2,
+        "outside_only": 2,
+        "both_occluded_and_outside": 0,
+        "occluded_flag_total": 2,
+        "outside_flag_total": 2,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 115,
+      "image_name": "G06_116.jpg",
+      "meta_name": "week2-human-pose/G06/G06_116.jpg",
+      "width": 960,
+      "height": 540,
+      "has_skeleton": true,
+      "skeleton_id": 1319670,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 14,
+        "occluded_only": 3,
+        "outside_only": 0,
+        "both_occluded_and_outside": 0,
+        "occluded_flag_total": 3,
+        "outside_flag_total": 0,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 116,
+      "image_name": "G06_117.jpg",
+      "meta_name": "week2-human-pose/G06/G06_117.jpg",
+      "width": 1280,
+      "height": 1024,
+      "has_skeleton": true,
+      "skeleton_id": 1319671,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 10,
+        "occluded_only": 2,
+        "outside_only": 0,
+        "both_occluded_and_outside": 5,
+        "occluded_flag_total": 7,
+        "outside_flag_total": 5,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 117,
+      "image_name": "G06_118.jpg",
+      "meta_name": "week2-human-pose/G06/G06_118.jpg",
+      "width": 960,
+      "height": 540,
+      "has_skeleton": true,
+      "skeleton_id": 1320595,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 13,
+        "occluded_only": 1,
+        "outside_only": 2,
+        "both_occluded_and_outside": 1,
+        "occluded_flag_total": 2,
+        "outside_flag_total": 3,
+        "hidden": 0,
+        "total": 17
+      }
+    },
+    {
+      "frame": 118,
+      "image_name": "G06_119.jpg",
+      "meta_name": "week2-human-pose/G06/G06_119.jpg",
+      "width": 960,
+      "height": 540,
+      "has_skeleton": false,
+      "skeleton_id": null,
+      "skeleton_occluded": null,
+      "skeleton_outside": null,
+      "counts": {
+        "visible": 0,
+        "occluded_only": 0,
+        "outside_only": 0,
+        "both_occluded_and_outside": 0,
+        "occluded_flag_total": 0,
+        "outside_flag_total": 0,
+        "hidden": 0,
+        "total": 0
+      }
+    },
+    {
+      "frame": 119,
+      "image_name": "G06_120.jpg",
+      "meta_name": "week2-human-pose/G06/G06_120.jpg",
+      "width": 1280,
+      "height": 1024,
+      "has_skeleton": true,
+      "skeleton_id": 1320596,
+      "skeleton_occluded": false,
+      "skeleton_outside": false,
+      "counts": {
+        "visible": 15,
+        "occluded_only": 0,
+        "outside_only": 2,
+        "both_occluded_and_outside": 0,
+        "occluded_flag_total": 0,
+        "outside_flag_total": 2,
+        "hidden": 0,
+        "total": 17
+      }
+    }
+  ],
+  "per_keypoint": [
+    {
+      "kp": 1,
+      "name": "nose",
+      "visible": 27,
+      "occluded_only": 1,
+      "outside_only": 0,
+      "both_occluded_and_outside": 0,
+      "occluded_flag_total": 1,
+      "outside_flag_total": 0,
+      "hidden": 0,
+      "total": 28
+    },
+    {
+      "kp": 2,
+      "name": "eye_R",
+      "visible": 24,
+      "occluded_only": 3,
+      "outside_only": 0,
+      "both_occluded_and_outside": 1,
+      "occluded_flag_total": 4,
+      "outside_flag_total": 1,
+      "hidden": 0,
+      "total": 28
+    },
+    {
+      "kp": 3,
+      "name": "eye_L",
+      "visible": 26,
+      "occluded_only": 1,
+      "outside_only": 1,
+      "both_occluded_and_outside": 0,
+      "occluded_flag_total": 1,
+      "outside_flag_total": 1,
+      "hidden": 0,
+      "total": 28
+    },
+    {
+      "kp": 4,
+      "name": "ear_R",
+      "visible": 8,
+      "occluded_only": 14,
+      "outside_only": 1,
+      "both_occluded_and_outside": 5,
+      "occluded_flag_total": 19,
+      "outside_flag_total": 6,
+      "hidden": 0,
+      "total": 28
+    },
+    {
+      "kp": 5,
+      "name": "ear_L",
+      "visible": 24,
+      "occluded_only": 3,
+      "outside_only": 0,
+      "both_occluded_and_outside": 1,
+      "occluded_flag_total": 4,
+      "outside_flag_total": 1,
+      "hidden": 0,
+      "total": 28
+    },
+    {
+      "kp": 6,
+      "name": "shoulder_R",
+      "visible": 26,
+      "occluded_only": 2,
+      "outside_only": 0,
+      "both_occluded_and_outside": 0,
+      "occluded_flag_total": 2,
+      "outside_flag_total": 0,
+      "hidden": 0,
+      "total": 28
+    },
+    {
+      "kp": 7,
+      "name": "shoulder_L",
+      "visible": 27,
+      "occluded_only": 1,
+      "outside_only": 0,
+      "both_occluded_and_outside": 0,
+      "occluded_flag_total": 1,
+      "outside_flag_total": 0,
+      "hidden": 0,
+      "total": 28
+    },
+    {
+      "kp": 8,
+      "name": "elbow_R",
+      "visible": 24,
+      "occluded_only": 3,
+      "outside_only": 0,
+      "both_occluded_and_outside": 1,
+      "occluded_flag_total": 4,
+      "outside_flag_total": 1,
+      "hidden": 0,
+      "total": 28
+    },
+    {
+      "kp": 9,
+      "name": "elbow_L",
+      "visible": 26,
+      "occluded_only": 2,
+      "outside_only": 0,
+      "both_occluded_and_outside": 0,
+      "occluded_flag_total": 2,
+      "outside_flag_total": 0,
+      "hidden": 0,
+      "total": 28
+    },
+    {
+      "kp": 10,
+      "name": "wrist_R",
+      "visible": 22,
+      "occluded_only": 4,
+      "outside_only": 0,
+      "both_occluded_and_outside": 2,
+      "occluded_flag_total": 6,
+      "outside_flag_total": 2,
+      "hidden": 0,
+      "total": 28
+    },
+    {
+      "kp": 11,
+      "name": "wrist_L",
+      "visible": 25,
+      "occluded_only": 2,
+      "outside_only": 0,
+      "both_occluded_and_outside": 1,
+      "occluded_flag_total": 3,
+      "outside_flag_total": 1,
+      "hidden": 0,
+      "total": 28
+    },
+    {
+      "kp": 12,
+      "name": "hip_R",
+      "visible": 27,
+      "occluded_only": 1,
+      "outside_only": 0,
+      "both_occluded_and_outside": 0,
+      "occluded_flag_total": 1,
+      "outside_flag_total": 0,
+      "hidden": 0,
+      "total": 28
+    },
+    {
+      "kp": 13,
+      "name": "hip_L",
+      "visible": 27,
+      "occluded_only": 1,
+      "outside_only": 0,
+      "both_occluded_and_outside": 0,
+      "occluded_flag_total": 1,
+      "outside_flag_total": 0,
+      "hidden": 0,
+      "total": 28
+    },
+    {
+      "kp": 14,
+      "name": "knee_R",
+      "visible": 20,
+      "occluded_only": 4,
+      "outside_only": 2,
+      "both_occluded_and_outside": 2,
+      "occluded_flag_total": 6,
+      "outside_flag_total": 4,
+      "hidden": 0,
+      "total": 28
+    },
+    {
+      "kp": 15,
+      "name": "knee_L",
+      "visible": 24,
+      "occluded_only": 2,
+      "outside_only": 2,
+      "both_occluded_and_outside": 0,
+      "occluded_flag_total": 2,
+      "outside_flag_total": 2,
+      "hidden": 0,
+      "total": 28
+    },
+    {
+      "kp": 16,
+      "name": "ankle_R",
+      "visible": 2,
+      "occluded_only": 5,
+      "outside_only": 15,
+      "both_occluded_and_outside": 6,
+      "occluded_flag_total": 11,
+      "outside_flag_total": 21,
+      "hidden": 0,
+      "total": 28
+    },
+    {
+      "kp": 17,
+      "name": "ankle_L",
+      "visible": 0,
+      "occluded_only": 10,
+      "outside_only": 15,
+      "both_occluded_and_outside": 3,
+      "occluded_flag_total": 13,
+      "outside_flag_total": 18,
+      "hidden": 0,
+      "total": 28
+    }
+  ],
+  "face_shoulder_hip_outside": [
+    {
+      "frame": 93,
+      "image_name": "G06_094.jpg",
+      "frame_size": [
+        960,
+        540
+      ],
+      "skeleton_id": 1320580,
+      "keypoint_id": 1320627,
+      "kp": 2,
+      "name": "eye_R",
+      "x": 239.409,
+      "y": 186.964,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 186.9645,
+      "border_distances": {
+        "left": 239.4088,
+        "right": 720.5912,
+        "top": 186.9645,
+        "bottom": 353.0355
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 98,
+      "image_name": "G06_099.jpg",
+      "frame_size": [
+        960,
+        540
+      ],
+      "skeleton_id": 1319665,
+      "keypoint_id": 1319729,
+      "kp": 4,
+      "name": "ear_R",
+      "x": 187.647,
+      "y": 203.485,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 187.6471,
+      "border_distances": {
+        "left": 187.6471,
+        "right": 772.3529,
+        "top": 203.485,
+        "bottom": 336.515
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 103,
+      "image_name": "G06_104.jpg",
+      "frame_size": [
+        512,
+        424
+      ],
+      "skeleton_id": 1319666,
+      "keypoint_id": 1319745,
+      "kp": 4,
+      "name": "ear_R",
+      "x": 98.0,
+      "y": 105.6,
+      "occluded": false,
+      "outside": true,
+      "hidden": false,
+      "state": "outside_only",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 98.0,
+      "border_distances": {
+        "left": 98.0,
+        "right": 414.0,
+        "top": 105.6,
+        "bottom": 318.4
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 104,
+      "image_name": "G06_105.jpg",
+      "frame_size": [
+        512,
+        424
+      ],
+      "skeleton_id": 1319667,
+      "keypoint_id": 1319762,
+      "kp": 4,
+      "name": "ear_R",
+      "x": 78.976,
+      "y": 110.856,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 78.9758,
+      "border_distances": {
+        "left": 78.9758,
+        "right": 433.0242,
+        "top": 110.8559,
+        "bottom": 313.1441
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 105,
+      "image_name": "G06_106.jpg",
+      "frame_size": [
+        960,
+        540
+      ],
+      "skeleton_id": 1320587,
+      "keypoint_id": 1320748,
+      "kp": 4,
+      "name": "ear_R",
+      "x": 238.8,
+      "y": 150.53,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 150.5303,
+      "border_distances": {
+        "left": 238.7998,
+        "right": 721.2002,
+        "top": 150.5303,
+        "bottom": 389.4697
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 106,
+      "image_name": "G06_107.jpg",
+      "frame_size": [
+        1280,
+        1024
+      ],
+      "skeleton_id": 1320588,
+      "keypoint_id": 1320753,
+      "kp": 5,
+      "name": "ear_L",
+      "x": 1060.75,
+      "y": 522.864,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 219.2505,
+      "border_distances": {
+        "left": 1060.7495,
+        "right": 219.2505,
+        "top": 522.8637,
+        "bottom": 501.1363
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 106,
+      "image_name": "G06_107.jpg",
+      "frame_size": [
+        1280,
+        1024
+      ],
+      "skeleton_id": 1320588,
+      "keypoint_id": 1320751,
+      "kp": 3,
+      "name": "eye_L",
+      "x": 1053.18,
+      "y": 420.864,
+      "occluded": false,
+      "outside": true,
+      "hidden": false,
+      "state": "outside_only",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 226.8205,
+      "border_distances": {
+        "left": 1053.1795,
+        "right": 226.8205,
+        "top": 420.8637,
+        "bottom": 603.1363
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 116,
+      "image_name": "G06_117.jpg",
+      "frame_size": [
+        1280,
+        1024
+      ],
+      "skeleton_id": 1319671,
+      "keypoint_id": 1319835,
+      "kp": 4,
+      "name": "ear_R",
+      "x": 1221.923,
+      "y": 491.648,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 58.0775,
+      "border_distances": {
+        "left": 1221.9225,
+        "right": 58.0775,
+        "top": 491.6481,
+        "bottom": 532.3519
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 117,
+      "image_name": "G06_118.jpg",
+      "frame_size": [
+        960,
+        540
+      ],
+      "skeleton_id": 1320595,
+      "keypoint_id": 1320871,
+      "kp": 4,
+      "name": "ear_R",
+      "x": 309.53,
+      "y": 128.08,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 128.08,
+      "border_distances": {
+        "left": 309.53,
+        "right": 650.47,
+        "top": 128.08,
+        "bottom": 411.92
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    }
+  ],
+  "outside_spatial_audit": {
+    "summary": {
+      "on_exact_border_0px": 2,
+      "strictly_inside_ge_8px": 56
+    },
+    "outside_frame_bounds": [],
+    "on_exact_border_0px": [
+      {
+        "frame": 90,
+        "image_name": "G06_091.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1320579,
+        "keypoint_id": 1320612,
+        "kp": 16,
+        "name": "ankle_R",
+        "x": 1102.33,
+        "y": 1024.0,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 0.0,
+        "border_distances": {
+          "left": 1102.33,
+          "right": 177.67,
+          "top": 1024.0,
+          "bottom": 0.0
+        },
+        "geom_bucket": "on_exact_border_0px"
+      },
+      {
+        "frame": 102,
+        "image_name": "G06_103.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1320586,
+        "keypoint_id": 1320732,
+        "kp": 17,
+        "name": "ankle_L",
+        "x": 768.03,
+        "y": 1024.0,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 0.0,
+        "border_distances": {
+          "left": 768.03,
+          "right": 511.97,
+          "top": 1024.0,
+          "bottom": 0.0
+        },
+        "geom_bucket": "on_exact_border_0px"
+      }
+    ],
+    "near_border_lt_8px": [],
+    "strictly_inside_ge_8px": [
+      {
+        "frame": 91,
+        "image_name": "G06_092.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1319662,
+        "keypoint_id": 1319674,
+        "kp": 16,
+        "name": "ankle_R",
+        "x": 1156.2,
+        "y": 935.5,
+        "occluded": true,
+        "outside": true,
+        "hidden": false,
+        "state": "both_occluded_and_outside",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 88.5,
+        "border_distances": {
+          "left": 1156.2,
+          "right": 123.8,
+          "top": 935.5,
+          "bottom": 88.5
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 91,
+        "image_name": "G06_092.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1319662,
+        "keypoint_id": 1319676,
+        "kp": 14,
+        "name": "knee_R",
+        "x": 978.2,
+        "y": 864.9,
+        "occluded": true,
+        "outside": true,
+        "hidden": false,
+        "state": "both_occluded_and_outside",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 159.1,
+        "border_distances": {
+          "left": 978.2,
+          "right": 301.8,
+          "top": 864.9,
+          "bottom": 159.1
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 92,
+        "image_name": "G06_093.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1319663,
+        "keypoint_id": 1319696,
+        "kp": 11,
+        "name": "wrist_L",
+        "x": 360.5,
+        "y": 769.0,
+        "occluded": true,
+        "outside": true,
+        "hidden": false,
+        "state": "both_occluded_and_outside",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 255.0,
+        "border_distances": {
+          "left": 360.5,
+          "right": 919.5,
+          "top": 769.0,
+          "bottom": 255.0
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 92,
+        "image_name": "G06_093.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1319663,
+        "keypoint_id": 1319697,
+        "kp": 10,
+        "name": "wrist_R",
+        "x": 940.501,
+        "y": 539.958,
+        "occluded": true,
+        "outside": true,
+        "hidden": false,
+        "state": "both_occluded_and_outside",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 339.4988,
+        "border_distances": {
+          "left": 940.5012,
+          "right": 339.4988,
+          "top": 539.9582,
+          "bottom": 484.0418
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 93,
+        "image_name": "G06_094.jpg",
+        "frame_size": [
+          960,
+          540
+        ],
+        "skeleton_id": 1320580,
+        "keypoint_id": 1320627,
+        "kp": 2,
+        "name": "eye_R",
+        "x": 239.409,
+        "y": 186.964,
+        "occluded": true,
+        "outside": true,
+        "hidden": false,
+        "state": "both_occluded_and_outside",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 186.9645,
+        "border_distances": {
+          "left": 239.4088,
+          "right": 720.5912,
+          "top": 186.9645,
+          "bottom": 353.0355
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 93,
+        "image_name": "G06_094.jpg",
+        "frame_size": [
+          960,
+          540
+        ],
+        "skeleton_id": 1320580,
+        "keypoint_id": 1320630,
+        "kp": 16,
+        "name": "ankle_R",
+        "x": 747.22,
+        "y": 363.72,
+        "occluded": true,
+        "outside": true,
+        "hidden": false,
+        "state": "both_occluded_and_outside",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 176.28,
+        "border_distances": {
+          "left": 747.22,
+          "right": 212.78,
+          "top": 363.72,
+          "bottom": 176.28
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 93,
+        "image_name": "G06_094.jpg",
+        "frame_size": [
+          960,
+          540
+        ],
+        "skeleton_id": 1320580,
+        "keypoint_id": 1320629,
+        "kp": 17,
+        "name": "ankle_L",
+        "x": 694.56,
+        "y": 432.9,
+        "occluded": true,
+        "outside": true,
+        "hidden": false,
+        "state": "both_occluded_and_outside",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 107.1,
+        "border_distances": {
+          "left": 694.56,
+          "right": 265.44,
+          "top": 432.9,
+          "bottom": 107.1
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 94,
+        "image_name": "G06_095.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1320581,
+        "keypoint_id": 1320635,
+        "kp": 17,
+        "name": "ankle_L",
+        "x": 323.59,
+        "y": 728.97,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 295.03,
+        "border_distances": {
+          "left": 323.59,
+          "right": 956.41,
+          "top": 728.97,
+          "bottom": 295.03
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 94,
+        "image_name": "G06_095.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1320581,
+        "keypoint_id": 1320634,
+        "kp": 16,
+        "name": "ankle_R",
+        "x": 942.05,
+        "y": 885.8,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 138.2,
+        "border_distances": {
+          "left": 942.05,
+          "right": 337.95,
+          "top": 885.8,
+          "bottom": 138.2
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 94,
+        "image_name": "G06_095.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1320581,
+        "keypoint_id": 1320632,
+        "kp": 14,
+        "name": "knee_R",
+        "x": 1130.16,
+        "y": 715.65,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 149.84,
+        "border_distances": {
+          "left": 1130.16,
+          "right": 149.84,
+          "top": 715.65,
+          "bottom": 308.35
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 94,
+        "image_name": "G06_095.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1320581,
+        "keypoint_id": 1320633,
+        "kp": 15,
+        "name": "knee_L",
+        "x": 689.59,
+        "y": 877.43,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 146.57,
+        "border_distances": {
+          "left": 689.59,
+          "right": 590.41,
+          "top": 877.43,
+          "bottom": 146.57
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 95,
+        "image_name": "G06_096.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1320582,
+        "keypoint_id": 1320663,
+        "kp": 16,
+        "name": "ankle_R",
+        "x": 887.72,
+        "y": 738.1,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 285.9,
+        "border_distances": {
+          "left": 887.72,
+          "right": 392.28,
+          "top": 738.1,
+          "bottom": 285.9
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 95,
+        "image_name": "G06_096.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1320582,
+        "keypoint_id": 1320664,
+        "kp": 17,
+        "name": "ankle_L",
+        "x": 692.4,
+        "y": 995.81,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 28.19,
+        "border_distances": {
+          "left": 692.4,
+          "right": 587.6,
+          "top": 995.81,
+          "bottom": 28.19
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 96,
+        "image_name": "G06_097.jpg",
+        "frame_size": [
+          960,
+          540
+        ],
+        "skeleton_id": 1320583,
+        "keypoint_id": 1320668,
+        "kp": 14,
+        "name": "knee_R",
+        "x": 598.45,
+        "y": 130.89,
+        "occluded": true,
+        "outside": true,
+        "hidden": false,
+        "state": "both_occluded_and_outside",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 130.89,
+        "border_distances": {
+          "left": 598.45,
+          "right": 361.55,
+          "top": 130.89,
+          "bottom": 409.11
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 96,
+        "image_name": "G06_097.jpg",
+        "frame_size": [
+          960,
+          540
+        ],
+        "skeleton_id": 1320583,
+        "keypoint_id": 1320666,
+        "kp": 16,
+        "name": "ankle_R",
+        "x": 763.19,
+        "y": 239.25,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 196.81,
+        "border_distances": {
+          "left": 763.19,
+          "right": 196.81,
+          "top": 239.25,
+          "bottom": 300.75
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 96,
+        "image_name": "G06_097.jpg",
+        "frame_size": [
+          960,
+          540
+        ],
+        "skeleton_id": 1320583,
+        "keypoint_id": 1320665,
+        "kp": 17,
+        "name": "ankle_L",
+        "x": 764.12,
+        "y": 181.69,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 181.69,
+        "border_distances": {
+          "left": 764.12,
+          "right": 195.88,
+          "top": 181.69,
+          "bottom": 358.31
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 97,
+        "image_name": "G06_098.jpg",
+        "frame_size": [
+          960,
+          540
+        ],
+        "skeleton_id": 1319664,
+        "keypoint_id": 1319718,
+        "kp": 16,
+        "name": "ankle_R",
+        "x": 776.6,
+        "y": 260.5,
+        "occluded": true,
+        "outside": true,
+        "hidden": false,
+        "state": "both_occluded_and_outside",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 183.4,
+        "border_distances": {
+          "left": 776.6,
+          "right": 183.4,
+          "top": 260.5,
+          "bottom": 279.5
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 98,
+        "image_name": "G06_099.jpg",
+        "frame_size": [
+          960,
+          540
+        ],
+        "skeleton_id": 1319665,
+        "keypoint_id": 1319729,
+        "kp": 4,
+        "name": "ear_R",
+        "x": 187.647,
+        "y": 203.485,
+        "occluded": true,
+        "outside": true,
+        "hidden": false,
+        "state": "both_occluded_and_outside",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 187.6471,
+        "border_distances": {
+          "left": 187.6471,
+          "right": 772.3529,
+          "top": 203.485,
+          "bottom": 336.515
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 99,
+        "image_name": "G06_100.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1320584,
+        "keypoint_id": 1320683,
+        "kp": 17,
+        "name": "ankle_L",
+        "x": 715.67,
+        "y": 846.32,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 177.68,
+        "border_distances": {
+          "left": 715.67,
+          "right": 564.33,
+          "top": 846.32,
+          "bottom": 177.68
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 99,
+        "image_name": "G06_100.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1320584,
+        "keypoint_id": 1320690,
+        "kp": 14,
+        "name": "knee_R",
+        "x": 1085.76,
+        "y": 842.21,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 181.79,
+        "border_distances": {
+          "left": 1085.76,
+          "right": 194.24,
+          "top": 842.21,
+          "bottom": 181.79
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 99,
+        "image_name": "G06_100.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1320584,
+        "keypoint_id": 1320698,
+        "kp": 15,
+        "name": "knee_L",
+        "x": 678.3,
+        "y": 843.3,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 180.7,
+        "border_distances": {
+          "left": 678.3,
+          "right": 601.7,
+          "top": 843.3,
+          "bottom": 180.7
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 99,
+        "image_name": "G06_100.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1320584,
+        "keypoint_id": 1320682,
+        "kp": 16,
+        "name": "ankle_R",
+        "x": 839.52,
+        "y": 854.83,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 169.17,
+        "border_distances": {
+          "left": 839.52,
+          "right": 440.48,
+          "top": 854.83,
+          "bottom": 169.17
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 101,
+        "image_name": "G06_102.jpg",
+        "frame_size": [
+          960,
+          540
+        ],
+        "skeleton_id": 1320585,
+        "keypoint_id": 1320699,
+        "kp": 17,
+        "name": "ankle_L",
+        "x": 654.15,
+        "y": 295.1,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 244.9,
+        "border_distances": {
+          "left": 654.15,
+          "right": 305.85,
+          "top": 295.1,
+          "bottom": 244.9
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 102,
+        "image_name": "G06_103.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1320586,
+        "keypoint_id": 1320717,
+        "kp": 16,
+        "name": "ankle_R",
+        "x": 960.11,
+        "y": 1010.23,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 13.77,
+        "border_distances": {
+          "left": 960.11,
+          "right": 319.89,
+          "top": 1010.23,
+          "bottom": 13.77
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 103,
+        "image_name": "G06_104.jpg",
+        "frame_size": [
+          512,
+          424
+        ],
+        "skeleton_id": 1319666,
+        "keypoint_id": 1319745,
+        "kp": 4,
+        "name": "ear_R",
+        "x": 98.0,
+        "y": 105.6,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 98.0,
+        "border_distances": {
+          "left": 98.0,
+          "right": 414.0,
+          "top": 105.6,
+          "bottom": 318.4
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 104,
+        "image_name": "G06_105.jpg",
+        "frame_size": [
+          512,
+          424
+        ],
+        "skeleton_id": 1319667,
+        "keypoint_id": 1319762,
+        "kp": 4,
+        "name": "ear_R",
+        "x": 78.976,
+        "y": 110.856,
+        "occluded": true,
+        "outside": true,
+        "hidden": false,
+        "state": "both_occluded_and_outside",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 78.9758,
+        "border_distances": {
+          "left": 78.9758,
+          "right": 433.0242,
+          "top": 110.8559,
+          "bottom": 313.1441
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 105,
+        "image_name": "G06_106.jpg",
+        "frame_size": [
+          960,
+          540
+        ],
+        "skeleton_id": 1320587,
+        "keypoint_id": 1320748,
+        "kp": 4,
+        "name": "ear_R",
+        "x": 238.8,
+        "y": 150.53,
+        "occluded": true,
+        "outside": true,
+        "hidden": false,
+        "state": "both_occluded_and_outside",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 150.5303,
+        "border_distances": {
+          "left": 238.7998,
+          "right": 721.2002,
+          "top": 150.5303,
+          "bottom": 389.4697
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 106,
+        "image_name": "G06_107.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1320588,
+        "keypoint_id": 1320766,
+        "kp": 17,
+        "name": "ankle_L",
+        "x": 337.8,
+        "y": 480.874,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 337.7995,
+        "border_distances": {
+          "left": 337.7995,
+          "right": 942.2005,
+          "top": 480.8737,
+          "bottom": 543.1263
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 106,
+        "image_name": "G06_107.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1320588,
+        "keypoint_id": 1320764,
+        "kp": 16,
+        "name": "ankle_R",
+        "x": 256.38,
+        "y": 768.654,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 255.3463,
+        "border_distances": {
+          "left": 256.3795,
+          "right": 1023.6205,
+          "top": 768.6537,
+          "bottom": 255.3463
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 106,
+        "image_name": "G06_107.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1320588,
+        "keypoint_id": 1320753,
+        "kp": 5,
+        "name": "ear_L",
+        "x": 1060.75,
+        "y": 522.864,
+        "occluded": true,
+        "outside": true,
+        "hidden": false,
+        "state": "both_occluded_and_outside",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 219.2505,
+        "border_distances": {
+          "left": 1060.7495,
+          "right": 219.2505,
+          "top": 522.8637,
+          "bottom": 501.1363
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 106,
+        "image_name": "G06_107.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1320588,
+        "keypoint_id": 1320751,
+        "kp": 3,
+        "name": "eye_L",
+        "x": 1053.18,
+        "y": 420.864,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 226.8205,
+        "border_distances": {
+          "left": 1053.1795,
+          "right": 226.8205,
+          "top": 420.8637,
+          "bottom": 603.1363
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 107,
+        "image_name": "G06_108.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1320589,
+        "keypoint_id": 1320769,
+        "kp": 16,
+        "name": "ankle_R",
+        "x": 873.54,
+        "y": 870.43,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 153.57,
+        "border_distances": {
+          "left": 873.54,
+          "right": 406.46,
+          "top": 870.43,
+          "bottom": 153.57
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 107,
+        "image_name": "G06_108.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1320589,
+        "keypoint_id": 1320768,
+        "kp": 17,
+        "name": "ankle_L",
+        "x": 749.48,
+        "y": 958.0,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 66.0,
+        "border_distances": {
+          "left": 749.48,
+          "right": 530.52,
+          "top": 958.0,
+          "bottom": 66.0
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 108,
+        "image_name": "G06_109.jpg",
+        "frame_size": [
+          960,
+          540
+        ],
+        "skeleton_id": 1320590,
+        "keypoint_id": 1320789,
+        "kp": 17,
+        "name": "ankle_L",
+        "x": 624.543,
+        "y": 387.08,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 152.9202,
+        "border_distances": {
+          "left": 624.5425,
+          "right": 335.4575,
+          "top": 387.0798,
+          "bottom": 152.9202
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 108,
+        "image_name": "G06_109.jpg",
+        "frame_size": [
+          960,
+          540
+        ],
+        "skeleton_id": 1320590,
+        "keypoint_id": 1320788,
+        "kp": 16,
+        "name": "ankle_R",
+        "x": 590.783,
+        "y": 360.47,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 179.5302,
+        "border_distances": {
+          "left": 590.7825,
+          "right": 369.2175,
+          "top": 360.4698,
+          "bottom": 179.5302
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 109,
+        "image_name": "G06_110.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1319668,
+        "keypoint_id": 1319785,
+        "kp": 16,
+        "name": "ankle_R",
+        "x": 1043.99,
+        "y": 859.299,
+        "occluded": true,
+        "outside": true,
+        "hidden": false,
+        "state": "both_occluded_and_outside",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 164.7009,
+        "border_distances": {
+          "left": 1043.9905,
+          "right": 236.0095,
+          "top": 859.2991,
+          "bottom": 164.7009
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 110,
+        "image_name": "G06_111.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1319669,
+        "keypoint_id": 1319798,
+        "kp": 17,
+        "name": "ankle_L",
+        "x": 287.94,
+        "y": 353.211,
+        "occluded": true,
+        "outside": true,
+        "hidden": false,
+        "state": "both_occluded_and_outside",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 287.9404,
+        "border_distances": {
+          "left": 287.9404,
+          "right": 992.0596,
+          "top": 353.2109,
+          "bottom": 670.7891
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 110,
+        "image_name": "G06_111.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1319669,
+        "keypoint_id": 1319794,
+        "kp": 16,
+        "name": "ankle_R",
+        "x": 126.254,
+        "y": 550.081,
+        "occluded": true,
+        "outside": true,
+        "hidden": false,
+        "state": "both_occluded_and_outside",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 126.2539,
+        "border_distances": {
+          "left": 126.2539,
+          "right": 1153.7461,
+          "top": 550.081,
+          "bottom": 473.919
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 111,
+        "image_name": "G06_112.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1320591,
+        "keypoint_id": 1320816,
+        "kp": 16,
+        "name": "ankle_R",
+        "x": 851.29,
+        "y": 900.99,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 123.01,
+        "border_distances": {
+          "left": 851.29,
+          "right": 428.71,
+          "top": 900.99,
+          "bottom": 123.01
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 111,
+        "image_name": "G06_112.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1320591,
+        "keypoint_id": 1320817,
+        "kp": 17,
+        "name": "ankle_L",
+        "x": 730.41,
+        "y": 952.69,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 71.31,
+        "border_distances": {
+          "left": 730.41,
+          "right": 549.59,
+          "top": 952.69,
+          "bottom": 71.31
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 112,
+        "image_name": "G06_113.jpg",
+        "frame_size": [
+          512,
+          424
+        ],
+        "skeleton_id": 1320592,
+        "keypoint_id": 1320819,
+        "kp": 17,
+        "name": "ankle_L",
+        "x": 374.06,
+        "y": 337.98,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 86.02,
+        "border_distances": {
+          "left": 374.06,
+          "right": 137.94,
+          "top": 337.98,
+          "bottom": 86.02
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 112,
+        "image_name": "G06_113.jpg",
+        "frame_size": [
+          512,
+          424
+        ],
+        "skeleton_id": 1320592,
+        "keypoint_id": 1320818,
+        "kp": 16,
+        "name": "ankle_R",
+        "x": 455.51,
+        "y": 164.92,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 56.49,
+        "border_distances": {
+          "left": 455.51,
+          "right": 56.49,
+          "top": 164.92,
+          "bottom": 259.08
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 113,
+        "image_name": "G06_114.jpg",
+        "frame_size": [
+          960,
+          540
+        ],
+        "skeleton_id": 1320593,
+        "keypoint_id": 1320837,
+        "kp": 16,
+        "name": "ankle_R",
+        "x": 753.87,
+        "y": 157.58,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 157.58,
+        "border_distances": {
+          "left": 753.87,
+          "right": 206.13,
+          "top": 157.58,
+          "bottom": 382.42
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 113,
+        "image_name": "G06_114.jpg",
+        "frame_size": [
+          960,
+          540
+        ],
+        "skeleton_id": 1320593,
+        "keypoint_id": 1320836,
+        "kp": 17,
+        "name": "ankle_L",
+        "x": 750.76,
+        "y": 225.07,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 209.24,
+        "border_distances": {
+          "left": 750.76,
+          "right": 209.24,
+          "top": 225.07,
+          "bottom": 314.93
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 114,
+        "image_name": "G06_115.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1320594,
+        "keypoint_id": 1320867,
+        "kp": 16,
+        "name": "ankle_R",
+        "x": 992.994,
+        "y": 967.05,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 56.9502,
+        "border_distances": {
+          "left": 992.9943,
+          "right": 287.0057,
+          "top": 967.0498,
+          "bottom": 56.9502
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 114,
+        "image_name": "G06_115.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1320594,
+        "keypoint_id": 1320868,
+        "kp": 17,
+        "name": "ankle_L",
+        "x": 712.694,
+        "y": 977.73,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 46.2702,
+        "border_distances": {
+          "left": 712.6943,
+          "right": 567.3057,
+          "top": 977.7298,
+          "bottom": 46.2702
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 116,
+        "image_name": "G06_117.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1319671,
+        "keypoint_id": 1319835,
+        "kp": 4,
+        "name": "ear_R",
+        "x": 1221.923,
+        "y": 491.648,
+        "occluded": true,
+        "outside": true,
+        "hidden": false,
+        "state": "both_occluded_and_outside",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 58.0775,
+        "border_distances": {
+          "left": 1221.9225,
+          "right": 58.0775,
+          "top": 491.6481,
+          "bottom": 532.3519
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 116,
+        "image_name": "G06_117.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1319671,
+        "keypoint_id": 1319826,
+        "kp": 8,
+        "name": "elbow_R",
+        "x": 1185.9,
+        "y": 650.693,
+        "occluded": true,
+        "outside": true,
+        "hidden": false,
+        "state": "both_occluded_and_outside",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 94.1,
+        "border_distances": {
+          "left": 1185.9,
+          "right": 94.1,
+          "top": 650.6932,
+          "bottom": 373.3068
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 116,
+        "image_name": "G06_117.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1319671,
+        "keypoint_id": 1319827,
+        "kp": 10,
+        "name": "wrist_R",
+        "x": 1142.776,
+        "y": 523.429,
+        "occluded": true,
+        "outside": true,
+        "hidden": false,
+        "state": "both_occluded_and_outside",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 137.2239,
+        "border_distances": {
+          "left": 1142.7761,
+          "right": 137.2239,
+          "top": 523.4286,
+          "bottom": 500.5714
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 116,
+        "image_name": "G06_117.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1319671,
+        "keypoint_id": 1319830,
+        "kp": 16,
+        "name": "ankle_R",
+        "x": 1048.788,
+        "y": 994.115,
+        "occluded": true,
+        "outside": true,
+        "hidden": false,
+        "state": "both_occluded_and_outside",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 29.8853,
+        "border_distances": {
+          "left": 1048.7875,
+          "right": 231.2125,
+          "top": 994.1147,
+          "bottom": 29.8853
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 116,
+        "image_name": "G06_117.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1319671,
+        "keypoint_id": 1319828,
+        "kp": 17,
+        "name": "ankle_L",
+        "x": 824.61,
+        "y": 1012.043,
+        "occluded": true,
+        "outside": true,
+        "hidden": false,
+        "state": "both_occluded_and_outside",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 11.9566,
+        "border_distances": {
+          "left": 824.6098,
+          "right": 455.3902,
+          "top": 1012.0434,
+          "bottom": 11.9566
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 117,
+        "image_name": "G06_118.jpg",
+        "frame_size": [
+          960,
+          540
+        ],
+        "skeleton_id": 1320595,
+        "keypoint_id": 1320883,
+        "kp": 17,
+        "name": "ankle_L",
+        "x": 756.54,
+        "y": 296.17,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 203.46,
+        "border_distances": {
+          "left": 756.54,
+          "right": 203.46,
+          "top": 296.17,
+          "bottom": 243.83
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 117,
+        "image_name": "G06_118.jpg",
+        "frame_size": [
+          960,
+          540
+        ],
+        "skeleton_id": 1320595,
+        "keypoint_id": 1320882,
+        "kp": 16,
+        "name": "ankle_R",
+        "x": 758.5,
+        "y": 256.85,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 201.5,
+        "border_distances": {
+          "left": 758.5,
+          "right": 201.5,
+          "top": 256.85,
+          "bottom": 283.15
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 117,
+        "image_name": "G06_118.jpg",
+        "frame_size": [
+          960,
+          540
+        ],
+        "skeleton_id": 1320595,
+        "keypoint_id": 1320871,
+        "kp": 4,
+        "name": "ear_R",
+        "x": 309.53,
+        "y": 128.08,
+        "occluded": true,
+        "outside": true,
+        "hidden": false,
+        "state": "both_occluded_and_outside",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 128.08,
+        "border_distances": {
+          "left": 309.53,
+          "right": 650.47,
+          "top": 128.08,
+          "bottom": 411.92
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 119,
+        "image_name": "G06_120.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1320596,
+        "keypoint_id": 1320887,
+        "kp": 17,
+        "name": "ankle_L",
+        "x": 686.79,
+        "y": 906.95,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 117.05,
+        "border_distances": {
+          "left": 686.79,
+          "right": 593.21,
+          "top": 906.95,
+          "bottom": 117.05
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      },
+      {
+        "frame": 119,
+        "image_name": "G06_120.jpg",
+        "frame_size": [
+          1280,
+          1024
+        ],
+        "skeleton_id": 1320596,
+        "keypoint_id": 1320899,
+        "kp": 16,
+        "name": "ankle_R",
+        "x": 924.01,
+        "y": 967.55,
+        "occluded": false,
+        "outside": true,
+        "hidden": false,
+        "state": "outside_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 56.45,
+        "border_distances": {
+          "left": 924.01,
+          "right": 355.99,
+          "top": 967.55,
+          "bottom": 56.45
+        },
+        "geom_bucket": "strictly_inside_ge_8px"
+      }
+    ]
+  },
+  "visible_and_occluded_edge_or_oob": {
+    "visible_outside_frame": [],
+    "visible_within_2px_of_edge": [],
+    "occluded_only_outside_frame": [],
+    "occluded_only_within_2px_of_edge": [
+      {
+        "frame": 97,
+        "image_name": "G06_098.jpg",
+        "frame_size": [
+          960,
+          540
+        ],
+        "skeleton_id": 1319664,
+        "keypoint_id": 1319710,
+        "kp": 11,
+        "name": "wrist_L",
+        "x": 348.2,
+        "y": 539.0,
+        "occluded": true,
+        "outside": false,
+        "hidden": false,
+        "state": "occluded_only",
+        "in_frame_bounds": true,
+        "min_border_dist_px": 1.0,
+        "border_distances": {
+          "left": 348.2,
+          "right": 611.8,
+          "top": 539.0,
+          "bottom": 1.0
+        },
+        "geom_bucket": "near_border_lt_2px"
+      }
+    ]
+  },
+  "simultaneous_occluded_and_outside_conflicts": [
+    {
+      "frame": 91,
+      "image_name": "G06_092.jpg",
+      "frame_size": [
+        1280,
+        1024
+      ],
+      "skeleton_id": 1319662,
+      "keypoint_id": 1319674,
+      "kp": 16,
+      "name": "ankle_R",
+      "x": 1156.2,
+      "y": 935.5,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 88.5,
+      "border_distances": {
+        "left": 1156.2,
+        "right": 123.8,
+        "top": 935.5,
+        "bottom": 88.5
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 91,
+      "image_name": "G06_092.jpg",
+      "frame_size": [
+        1280,
+        1024
+      ],
+      "skeleton_id": 1319662,
+      "keypoint_id": 1319676,
+      "kp": 14,
+      "name": "knee_R",
+      "x": 978.2,
+      "y": 864.9,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 159.1,
+      "border_distances": {
+        "left": 978.2,
+        "right": 301.8,
+        "top": 864.9,
+        "bottom": 159.1
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 92,
+      "image_name": "G06_093.jpg",
+      "frame_size": [
+        1280,
+        1024
+      ],
+      "skeleton_id": 1319663,
+      "keypoint_id": 1319696,
+      "kp": 11,
+      "name": "wrist_L",
+      "x": 360.5,
+      "y": 769.0,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 255.0,
+      "border_distances": {
+        "left": 360.5,
+        "right": 919.5,
+        "top": 769.0,
+        "bottom": 255.0
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 92,
+      "image_name": "G06_093.jpg",
+      "frame_size": [
+        1280,
+        1024
+      ],
+      "skeleton_id": 1319663,
+      "keypoint_id": 1319697,
+      "kp": 10,
+      "name": "wrist_R",
+      "x": 940.501,
+      "y": 539.958,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 339.4988,
+      "border_distances": {
+        "left": 940.5012,
+        "right": 339.4988,
+        "top": 539.9582,
+        "bottom": 484.0418
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 93,
+      "image_name": "G06_094.jpg",
+      "frame_size": [
+        960,
+        540
+      ],
+      "skeleton_id": 1320580,
+      "keypoint_id": 1320627,
+      "kp": 2,
+      "name": "eye_R",
+      "x": 239.409,
+      "y": 186.964,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 186.9645,
+      "border_distances": {
+        "left": 239.4088,
+        "right": 720.5912,
+        "top": 186.9645,
+        "bottom": 353.0355
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 93,
+      "image_name": "G06_094.jpg",
+      "frame_size": [
+        960,
+        540
+      ],
+      "skeleton_id": 1320580,
+      "keypoint_id": 1320630,
+      "kp": 16,
+      "name": "ankle_R",
+      "x": 747.22,
+      "y": 363.72,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 176.28,
+      "border_distances": {
+        "left": 747.22,
+        "right": 212.78,
+        "top": 363.72,
+        "bottom": 176.28
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 93,
+      "image_name": "G06_094.jpg",
+      "frame_size": [
+        960,
+        540
+      ],
+      "skeleton_id": 1320580,
+      "keypoint_id": 1320629,
+      "kp": 17,
+      "name": "ankle_L",
+      "x": 694.56,
+      "y": 432.9,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 107.1,
+      "border_distances": {
+        "left": 694.56,
+        "right": 265.44,
+        "top": 432.9,
+        "bottom": 107.1
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 96,
+      "image_name": "G06_097.jpg",
+      "frame_size": [
+        960,
+        540
+      ],
+      "skeleton_id": 1320583,
+      "keypoint_id": 1320668,
+      "kp": 14,
+      "name": "knee_R",
+      "x": 598.45,
+      "y": 130.89,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 130.89,
+      "border_distances": {
+        "left": 598.45,
+        "right": 361.55,
+        "top": 130.89,
+        "bottom": 409.11
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 97,
+      "image_name": "G06_098.jpg",
+      "frame_size": [
+        960,
+        540
+      ],
+      "skeleton_id": 1319664,
+      "keypoint_id": 1319718,
+      "kp": 16,
+      "name": "ankle_R",
+      "x": 776.6,
+      "y": 260.5,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 183.4,
+      "border_distances": {
+        "left": 776.6,
+        "right": 183.4,
+        "top": 260.5,
+        "bottom": 279.5
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 98,
+      "image_name": "G06_099.jpg",
+      "frame_size": [
+        960,
+        540
+      ],
+      "skeleton_id": 1319665,
+      "keypoint_id": 1319729,
+      "kp": 4,
+      "name": "ear_R",
+      "x": 187.647,
+      "y": 203.485,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 187.6471,
+      "border_distances": {
+        "left": 187.6471,
+        "right": 772.3529,
+        "top": 203.485,
+        "bottom": 336.515
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 104,
+      "image_name": "G06_105.jpg",
+      "frame_size": [
+        512,
+        424
+      ],
+      "skeleton_id": 1319667,
+      "keypoint_id": 1319762,
+      "kp": 4,
+      "name": "ear_R",
+      "x": 78.976,
+      "y": 110.856,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 78.9758,
+      "border_distances": {
+        "left": 78.9758,
+        "right": 433.0242,
+        "top": 110.8559,
+        "bottom": 313.1441
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 105,
+      "image_name": "G06_106.jpg",
+      "frame_size": [
+        960,
+        540
+      ],
+      "skeleton_id": 1320587,
+      "keypoint_id": 1320748,
+      "kp": 4,
+      "name": "ear_R",
+      "x": 238.8,
+      "y": 150.53,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 150.5303,
+      "border_distances": {
+        "left": 238.7998,
+        "right": 721.2002,
+        "top": 150.5303,
+        "bottom": 389.4697
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 106,
+      "image_name": "G06_107.jpg",
+      "frame_size": [
+        1280,
+        1024
+      ],
+      "skeleton_id": 1320588,
+      "keypoint_id": 1320753,
+      "kp": 5,
+      "name": "ear_L",
+      "x": 1060.75,
+      "y": 522.864,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 219.2505,
+      "border_distances": {
+        "left": 1060.7495,
+        "right": 219.2505,
+        "top": 522.8637,
+        "bottom": 501.1363
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 109,
+      "image_name": "G06_110.jpg",
+      "frame_size": [
+        1280,
+        1024
+      ],
+      "skeleton_id": 1319668,
+      "keypoint_id": 1319785,
+      "kp": 16,
+      "name": "ankle_R",
+      "x": 1043.99,
+      "y": 859.299,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 164.7009,
+      "border_distances": {
+        "left": 1043.9905,
+        "right": 236.0095,
+        "top": 859.2991,
+        "bottom": 164.7009
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 110,
+      "image_name": "G06_111.jpg",
+      "frame_size": [
+        1280,
+        1024
+      ],
+      "skeleton_id": 1319669,
+      "keypoint_id": 1319798,
+      "kp": 17,
+      "name": "ankle_L",
+      "x": 287.94,
+      "y": 353.211,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 287.9404,
+      "border_distances": {
+        "left": 287.9404,
+        "right": 992.0596,
+        "top": 353.2109,
+        "bottom": 670.7891
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 110,
+      "image_name": "G06_111.jpg",
+      "frame_size": [
+        1280,
+        1024
+      ],
+      "skeleton_id": 1319669,
+      "keypoint_id": 1319794,
+      "kp": 16,
+      "name": "ankle_R",
+      "x": 126.254,
+      "y": 550.081,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 126.2539,
+      "border_distances": {
+        "left": 126.2539,
+        "right": 1153.7461,
+        "top": 550.081,
+        "bottom": 473.919
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 116,
+      "image_name": "G06_117.jpg",
+      "frame_size": [
+        1280,
+        1024
+      ],
+      "skeleton_id": 1319671,
+      "keypoint_id": 1319835,
+      "kp": 4,
+      "name": "ear_R",
+      "x": 1221.923,
+      "y": 491.648,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 58.0775,
+      "border_distances": {
+        "left": 1221.9225,
+        "right": 58.0775,
+        "top": 491.6481,
+        "bottom": 532.3519
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 116,
+      "image_name": "G06_117.jpg",
+      "frame_size": [
+        1280,
+        1024
+      ],
+      "skeleton_id": 1319671,
+      "keypoint_id": 1319826,
+      "kp": 8,
+      "name": "elbow_R",
+      "x": 1185.9,
+      "y": 650.693,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 94.1,
+      "border_distances": {
+        "left": 1185.9,
+        "right": 94.1,
+        "top": 650.6932,
+        "bottom": 373.3068
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 116,
+      "image_name": "G06_117.jpg",
+      "frame_size": [
+        1280,
+        1024
+      ],
+      "skeleton_id": 1319671,
+      "keypoint_id": 1319827,
+      "kp": 10,
+      "name": "wrist_R",
+      "x": 1142.776,
+      "y": 523.429,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 137.2239,
+      "border_distances": {
+        "left": 1142.7761,
+        "right": 137.2239,
+        "top": 523.4286,
+        "bottom": 500.5714
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 116,
+      "image_name": "G06_117.jpg",
+      "frame_size": [
+        1280,
+        1024
+      ],
+      "skeleton_id": 1319671,
+      "keypoint_id": 1319830,
+      "kp": 16,
+      "name": "ankle_R",
+      "x": 1048.788,
+      "y": 994.115,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 29.8853,
+      "border_distances": {
+        "left": 1048.7875,
+        "right": 231.2125,
+        "top": 994.1147,
+        "bottom": 29.8853
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 116,
+      "image_name": "G06_117.jpg",
+      "frame_size": [
+        1280,
+        1024
+      ],
+      "skeleton_id": 1319671,
+      "keypoint_id": 1319828,
+      "kp": 17,
+      "name": "ankle_L",
+      "x": 824.61,
+      "y": 1012.043,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 11.9566,
+      "border_distances": {
+        "left": 824.6098,
+        "right": 455.3902,
+        "top": 1012.0434,
+        "bottom": 11.9566
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    },
+    {
+      "frame": 117,
+      "image_name": "G06_118.jpg",
+      "frame_size": [
+        960,
+        540
+      ],
+      "skeleton_id": 1320595,
+      "keypoint_id": 1320871,
+      "kp": 4,
+      "name": "ear_R",
+      "x": 309.53,
+      "y": 128.08,
+      "occluded": true,
+      "outside": true,
+      "hidden": false,
+      "state": "both_occluded_and_outside",
+      "in_frame_bounds": true,
+      "min_border_dist_px": 128.08,
+      "border_distances": {
+        "left": 309.53,
+        "right": 650.47,
+        "top": 128.08,
+        "bottom": 411.92
+      },
+      "geom_bucket": "strictly_inside_ge_8px"
+    }
+  ],
+  "bilateral_outside_asymmetries": [
+    {
+      "frame": 90,
+      "image_name": "G06_091.jpg",
+      "frame_size": [
+        1280,
+        1024
+      ],
+      "pair": "ankles",
+      "outside_kp": {
+        "kp": 16,
+        "name": "ankle_R",
+        "x": 1102.33,
+        "y": 1024.0,
+        "occluded": false,
+        "outside": true,
+        "geom_bucket": "on_exact_border_0px",
+        "min_border_dist_px": 0.0
+      },
+      "non_outside_kp": {
+        "kp": 17,
+        "name": "ankle_L",
+        "x": 680.278,
+        "y": 1000.797,
+        "occluded": true,
+        "outside": false,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 23.2033
+      },
+      "frame_outside_count": 1,
+      "frame_visible_count": 14
+    },
+    {
+      "frame": 91,
+      "image_name": "G06_092.jpg",
+      "frame_size": [
+        1280,
+        1024
+      ],
+      "pair": "knees",
+      "outside_kp": {
+        "kp": 14,
+        "name": "knee_R",
+        "x": 978.2,
+        "y": 864.9,
+        "occluded": true,
+        "outside": true,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 159.1
+      },
+      "non_outside_kp": {
+        "kp": 15,
+        "name": "knee_L",
+        "x": 708.1,
+        "y": 871.1,
+        "occluded": false,
+        "outside": false,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 152.9
+      },
+      "frame_outside_count": 2,
+      "frame_visible_count": 14
+    },
+    {
+      "frame": 91,
+      "image_name": "G06_092.jpg",
+      "frame_size": [
+        1280,
+        1024
+      ],
+      "pair": "ankles",
+      "outside_kp": {
+        "kp": 16,
+        "name": "ankle_R",
+        "x": 1156.2,
+        "y": 935.5,
+        "occluded": true,
+        "outside": true,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 88.5
+      },
+      "non_outside_kp": {
+        "kp": 17,
+        "name": "ankle_L",
+        "x": 723.4,
+        "y": 1000.0,
+        "occluded": true,
+        "outside": false,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 24.0
+      },
+      "frame_outside_count": 2,
+      "frame_visible_count": 14
+    },
+    {
+      "frame": 93,
+      "image_name": "G06_094.jpg",
+      "frame_size": [
+        960,
+        540
+      ],
+      "pair": "eyes",
+      "outside_kp": {
+        "kp": 2,
+        "name": "eye_R",
+        "x": 239.409,
+        "y": 186.964,
+        "occluded": true,
+        "outside": true,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 186.9645
+      },
+      "non_outside_kp": {
+        "kp": 3,
+        "name": "eye_L",
+        "x": 227.03,
+        "y": 198.79,
+        "occluded": true,
+        "outside": false,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 198.79
+      },
+      "frame_outside_count": 3,
+      "frame_visible_count": 0
+    },
+    {
+      "frame": 96,
+      "image_name": "G06_097.jpg",
+      "frame_size": [
+        960,
+        540
+      ],
+      "pair": "knees",
+      "outside_kp": {
+        "kp": 14,
+        "name": "knee_R",
+        "x": 598.45,
+        "y": 130.89,
+        "occluded": true,
+        "outside": true,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 130.89
+      },
+      "non_outside_kp": {
+        "kp": 15,
+        "name": "knee_L",
+        "x": 624.45,
+        "y": 170.79,
+        "occluded": true,
+        "outside": false,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 170.79
+      },
+      "frame_outside_count": 3,
+      "frame_visible_count": 13
+    },
+    {
+      "frame": 97,
+      "image_name": "G06_098.jpg",
+      "frame_size": [
+        960,
+        540
+      ],
+      "pair": "ankles",
+      "outside_kp": {
+        "kp": 16,
+        "name": "ankle_R",
+        "x": 776.6,
+        "y": 260.5,
+        "occluded": true,
+        "outside": true,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 183.4
+      },
+      "non_outside_kp": {
+        "kp": 17,
+        "name": "ankle_L",
+        "x": 758.237,
+        "y": 255.472,
+        "occluded": true,
+        "outside": false,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 201.7629
+      },
+      "frame_outside_count": 1,
+      "frame_visible_count": 13
+    },
+    {
+      "frame": 98,
+      "image_name": "G06_099.jpg",
+      "frame_size": [
+        960,
+        540
+      ],
+      "pair": "ears",
+      "outside_kp": {
+        "kp": 4,
+        "name": "ear_R",
+        "x": 187.647,
+        "y": 203.485,
+        "occluded": true,
+        "outside": true,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 187.6471
+      },
+      "non_outside_kp": {
+        "kp": 5,
+        "name": "ear_L",
+        "x": 133.2,
+        "y": 269.0,
+        "occluded": false,
+        "outside": false,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 133.2
+      },
+      "frame_outside_count": 1,
+      "frame_visible_count": 14
+    },
+    {
+      "frame": 101,
+      "image_name": "G06_102.jpg",
+      "frame_size": [
+        960,
+        540
+      ],
+      "pair": "ankles",
+      "outside_kp": {
+        "kp": 17,
+        "name": "ankle_L",
+        "x": 654.15,
+        "y": 295.1,
+        "occluded": false,
+        "outside": true,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 244.9
+      },
+      "non_outside_kp": {
+        "kp": 16,
+        "name": "ankle_R",
+        "x": 693.004,
+        "y": 116.717,
+        "occluded": false,
+        "outside": false,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 116.7171
+      },
+      "frame_outside_count": 1,
+      "frame_visible_count": 15
+    },
+    {
+      "frame": 103,
+      "image_name": "G06_104.jpg",
+      "frame_size": [
+        512,
+        424
+      ],
+      "pair": "ears",
+      "outside_kp": {
+        "kp": 4,
+        "name": "ear_R",
+        "x": 98.0,
+        "y": 105.6,
+        "occluded": false,
+        "outside": true,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 98.0
+      },
+      "non_outside_kp": {
+        "kp": 5,
+        "name": "ear_L",
+        "x": 83.6,
+        "y": 163.4,
+        "occluded": false,
+        "outside": false,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 83.6
+      },
+      "frame_outside_count": 1,
+      "frame_visible_count": 13
+    },
+    {
+      "frame": 104,
+      "image_name": "G06_105.jpg",
+      "frame_size": [
+        512,
+        424
+      ],
+      "pair": "ears",
+      "outside_kp": {
+        "kp": 4,
+        "name": "ear_R",
+        "x": 78.976,
+        "y": 110.856,
+        "occluded": true,
+        "outside": true,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 78.9758
+      },
+      "non_outside_kp": {
+        "kp": 5,
+        "name": "ear_L",
+        "x": 39.3,
+        "y": 167.185,
+        "occluded": false,
+        "outside": false,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 39.2998
+      },
+      "frame_outside_count": 1,
+      "frame_visible_count": 15
+    },
+    {
+      "frame": 105,
+      "image_name": "G06_106.jpg",
+      "frame_size": [
+        960,
+        540
+      ],
+      "pair": "ears",
+      "outside_kp": {
+        "kp": 4,
+        "name": "ear_R",
+        "x": 238.8,
+        "y": 150.53,
+        "occluded": true,
+        "outside": true,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 150.5303
+      },
+      "non_outside_kp": {
+        "kp": 5,
+        "name": "ear_L",
+        "x": 177.351,
+        "y": 226.112,
+        "occluded": false,
+        "outside": false,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 177.3513
+      },
+      "frame_outside_count": 1,
+      "frame_visible_count": 13
+    },
+    {
+      "frame": 106,
+      "image_name": "G06_107.jpg",
+      "frame_size": [
+        1280,
+        1024
+      ],
+      "pair": "eyes",
+      "outside_kp": {
+        "kp": 3,
+        "name": "eye_L",
+        "x": 1053.18,
+        "y": 420.864,
+        "occluded": false,
+        "outside": true,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 226.8205
+      },
+      "non_outside_kp": {
+        "kp": 2,
+        "name": "eye_R",
+        "x": 1056.717,
+        "y": 466.942,
+        "occluded": false,
+        "outside": false,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 223.2831
+      },
+      "frame_outside_count": 4,
+      "frame_visible_count": 13
+    },
+    {
+      "frame": 106,
+      "image_name": "G06_107.jpg",
+      "frame_size": [
+        1280,
+        1024
+      ],
+      "pair": "ears",
+      "outside_kp": {
+        "kp": 5,
+        "name": "ear_L",
+        "x": 1060.75,
+        "y": 522.864,
+        "occluded": true,
+        "outside": true,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 219.2505
+      },
+      "non_outside_kp": {
+        "kp": 4,
+        "name": "ear_R",
+        "x": 1054.56,
+        "y": 593.674,
+        "occluded": false,
+        "outside": false,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 225.4405
+      },
+      "frame_outside_count": 4,
+      "frame_visible_count": 13
+    },
+    {
+      "frame": 109,
+      "image_name": "G06_110.jpg",
+      "frame_size": [
+        1280,
+        1024
+      ],
+      "pair": "ankles",
+      "outside_kp": {
+        "kp": 16,
+        "name": "ankle_R",
+        "x": 1043.99,
+        "y": 859.299,
+        "occluded": true,
+        "outside": true,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 164.7009
+      },
+      "non_outside_kp": {
+        "kp": 17,
+        "name": "ankle_L",
+        "x": 742.029,
+        "y": 1019.779,
+        "occluded": true,
+        "outside": false,
+        "geom_bucket": "near_border_2_to_8px",
+        "min_border_dist_px": 4.2214
+      },
+      "frame_outside_count": 1,
+      "frame_visible_count": 14
+    },
+    {
+      "frame": 116,
+      "image_name": "G06_117.jpg",
+      "frame_size": [
+        1280,
+        1024
+      ],
+      "pair": "ears",
+      "outside_kp": {
+        "kp": 4,
+        "name": "ear_R",
+        "x": 1221.923,
+        "y": 491.648,
+        "occluded": true,
+        "outside": true,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 58.0775
+      },
+      "non_outside_kp": {
+        "kp": 5,
+        "name": "ear_L",
+        "x": 1069.9,
+        "y": 403.593,
+        "occluded": false,
+        "outside": false,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 210.1
+      },
+      "frame_outside_count": 5,
+      "frame_visible_count": 10
+    },
+    {
+      "frame": 116,
+      "image_name": "G06_117.jpg",
+      "frame_size": [
+        1280,
+        1024
+      ],
+      "pair": "elbows",
+      "outside_kp": {
+        "kp": 8,
+        "name": "elbow_R",
+        "x": 1185.9,
+        "y": 650.693,
+        "occluded": true,
+        "outside": true,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 94.1
+      },
+      "non_outside_kp": {
+        "kp": 9,
+        "name": "elbow_L",
+        "x": 606.0,
+        "y": 471.693,
+        "occluded": false,
+        "outside": false,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 471.6932
+      },
+      "frame_outside_count": 5,
+      "frame_visible_count": 10
+    },
+    {
+      "frame": 116,
+      "image_name": "G06_117.jpg",
+      "frame_size": [
+        1280,
+        1024
+      ],
+      "pair": "wrists",
+      "outside_kp": {
+        "kp": 10,
+        "name": "wrist_R",
+        "x": 1142.776,
+        "y": 523.429,
+        "occluded": true,
+        "outside": true,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 137.2239
+      },
+      "non_outside_kp": {
+        "kp": 11,
+        "name": "wrist_L",
+        "x": 722.0,
+        "y": 617.893,
+        "occluded": false,
+        "outside": false,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 406.1068
+      },
+      "frame_outside_count": 5,
+      "frame_visible_count": 10
+    },
+    {
+      "frame": 117,
+      "image_name": "G06_118.jpg",
+      "frame_size": [
+        960,
+        540
+      ],
+      "pair": "ears",
+      "outside_kp": {
+        "kp": 4,
+        "name": "ear_R",
+        "x": 309.53,
+        "y": 128.08,
+        "occluded": true,
+        "outside": true,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 128.08
+      },
+      "non_outside_kp": {
+        "kp": 5,
+        "name": "ear_L",
+        "x": 238.23,
+        "y": 191.11,
+        "occluded": false,
+        "outside": false,
+        "geom_bucket": "strictly_inside_ge_8px",
+        "min_border_dist_px": 191.11
+      },
+      "frame_outside_count": 3,
+      "frame_visible_count": 13
+    }
+  ],
+  "chain_proximal_outside_distal_present": []
+}

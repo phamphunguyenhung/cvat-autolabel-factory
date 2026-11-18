@@ -1,0 +1,226 @@
+{
+  "chapters": null,
+  "chunks_updated_date": "2026-11-16T05:35:30.238286Z",
+  "chunk_size": 72,
+  "size": 30,
+  "image_quality": 70,
+  "start_frame": 90,
+  "stop_frame": 119,
+  "frame_filter": "",
+  "frames": [
+    {
+      "width": 640,
+      "height": 480,
+      "name": "week2-human-face/G06/G06_091.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 640,
+      "height": 480,
+      "name": "week2-human-face/G06/G06_092.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 1280,
+      "height": 1024,
+      "name": "week2-human-face/G06/G06_093.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "name": "week2-human-face/G06/G06_094.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 1280,
+      "height": 1024,
+      "name": "week2-human-face/G06/G06_095.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 1280,
+      "height": 1024,
+      "name": "week2-human-face/G06/G06_096.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 960,
+      "height": 540,
+      "name": "week2-human-face/G06/G06_097.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 960,
+      "height": 540,
+      "name": "week2-human-face/G06/G06_098.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 960,
+      "height": 540,
+      "name": "week2-human-face/G06/G06_099.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 640,
+      "height": 480,
+      "name": "week2-human-face/G06/G06_100.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 960,
+      "height": 540,
+      "name": "week2-human-face/G06/G06_101.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "name": "week2-human-face/G06/G06_102.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 1280,
+      "height": 1024,
+      "name": "week2-human-face/G06/G06_103.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 640,
+      "height": 480,
+      "name": "week2-human-face/G06/G06_104.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 512,
+      "height": 424,
+      "name": "week2-human-face/G06/G06_105.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 960,
+      "height": 540,
+      "name": "week2-human-face/G06/G06_106.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 1280,
+      "height": 1024,
+      "name": "week2-human-face/G06/G06_107.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 640,
+      "height": 480,
+      "name": "week2-human-face/G06/G06_108.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "name": "week2-human-face/G06/G06_109.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 640,
+      "height": 480,
+      "name": "week2-human-face/G06/G06_110.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 1280,
+      "height": 1024,
+      "name": "week2-human-face/G06/G06_111.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 1280,
+      "height": 1024,
+      "name": "week2-human-face/G06/G06_112.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 512,
+      "height": 424,
+      "name": "week2-human-face/G06/G06_113.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 640,
+      "height": 480,
+      "name": "week2-human-face/G06/G06_114.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 640,
+      "height": 480,
+      "name": "week2-human-face/G06/G06_115.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 640,
+      "height": 480,
+      "name": "week2-human-face/G06/G06_116.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 1280,
+      "height": 1024,
+      "name": "week2-human-face/G06/G06_117.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 640,
+      "height": 480,
+      "name": "week2-human-face/G06/G06_118.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 960,
+      "height": 540,
+      "name": "week2-human-face/G06/G06_119.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    },
+    {
+      "width": 640,
+      "height": 480,
+      "name": "week2-human-face/G06/G06_120.jpg",
+      "related_files": 0,
+      "has_related_context": false
+    }
+  ],
+  "deleted_frames": [],
+  "included_frames": null,
+  "storage": "share",
+  "cloud_storage_id": null
+}

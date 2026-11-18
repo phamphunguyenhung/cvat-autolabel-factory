@@ -13,3 +13,7 @@
    - Không gắn tag `[AI]` hoặc nét đứt làm rối mắt nếu quy trình xuất là `manual`-style preview.
 5. **Box lồng nhau & đèn giao thông giả ban đêm**:
    - Dùng `_iomin >= 0.72` để khử box con lồng trong box cha và loại `traffic light` có `cy > 0.55 * H`.
+6. **Pose17 Proposal & Sync (`pose17_sync.py`, Job 1623)**:
+   - Không bao giờ suy diễn đảo cổ tay/chi từ ảnh nhìn nghiêng để auto-swap tọa độ hay hardcode theo số frame (`f113`, `f093`).
+   - Khi người dùng bấm `O` (`outside`) trên tay/chân bị dính sẵn `Q` (`Q+O`), ý định là `O`: phải xóa `Q` giữ `O`, không ép ngược về `Q`.
+   - `propose` mặc định đọc live CVAT qua PAT token (chỉ đọc local khi `--offline`), và `sync --yes` phải có staleness guard kiểm tra CVAT live khớp `before_shape` trước khi ghi.

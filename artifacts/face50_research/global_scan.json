@@ -1,0 +1,446 @@
+[
+  {
+    "frame": 90,
+    "img": "G06_091.jpg",
+    "w": 640,
+    "h": 480,
+    "luma": 101.6,
+    "shapes": 7,
+    "V": 50,
+    "Q": 0,
+    "O": 0,
+    "QO": 0,
+    "face_box": "71x58",
+    "issues": []
+  },
+  {
+    "frame": 91,
+    "img": "G06_092.jpg",
+    "w": 640,
+    "h": 480,
+    "luma": 101.4,
+    "shapes": 7,
+    "V": 34,
+    "Q": 16,
+    "O": 0,
+    "QO": 0,
+    "face_box": "79x76",
+    "issues": []
+  },
+  {
+    "frame": 92,
+    "img": "G06_093.jpg",
+    "w": 1280,
+    "h": 1024,
+    "luma": 47.3,
+    "shapes": 7,
+    "V": 50,
+    "Q": 0,
+    "O": 0,
+    "QO": 0,
+    "face_box": "147x150",
+    "issues": [
+      "LIP_INVERSION([(32, 43)])"
+    ]
+  },
+  {
+    "frame": 93,
+    "img": "G06_094.jpg",
+    "w": 1280,
+    "h": 720,
+    "luma": 89.8,
+    "shapes": 7,
+    "V": 50,
+    "Q": 0,
+    "O": 0,
+    "QO": 0,
+    "face_box": "170x148",
+    "issues": []
+  },
+  {
+    "frame": 94,
+    "img": "G06_095.jpg",
+    "w": 1280,
+    "h": 1024,
+    "luma": 16.5,
+    "shapes": 7,
+    "V": 50,
+    "Q": 0,
+    "O": 0,
+    "QO": 0,
+    "face_box": "140x125",
+    "issues": [
+      "INNER_LIP_OUTSIDE_OUTER(1)"
+    ]
+  },
+  {
+    "frame": 95,
+    "img": "G06_096.jpg",
+    "w": 1280,
+    "h": 1024,
+    "luma": 27.1,
+    "shapes": 7,
+    "V": 50,
+    "Q": 0,
+    "O": 0,
+    "QO": 0,
+    "face_box": "191x112",
+    "issues": [
+      "INNER_LIP_OUTSIDE_OUTER(2)"
+    ]
+  },
+  {
+    "frame": 96,
+    "img": "G06_097.jpg",
+    "w": 960,
+    "h": 540,
+    "luma": 70.4,
+    "shapes": 7,
+    "V": 30,
+    "Q": 20,
+    "O": 0,
+    "QO": 0,
+    "face_box": "93x75",
+    "issues": []
+  },
+  {
+    "frame": 97,
+    "img": "G06_098.jpg",
+    "w": 960,
+    "h": 540,
+    "luma": 64.3,
+    "shapes": 7,
+    "V": 50,
+    "Q": 0,
+    "O": 0,
+    "QO": 0,
+    "face_box": "87x59",
+    "issues": []
+  },
+  {
+    "frame": 98,
+    "img": "G06_099.jpg",
+    "w": 960,
+    "h": 540,
+    "luma": 90.0,
+    "shapes": 7,
+    "V": 50,
+    "Q": 0,
+    "O": 0,
+    "QO": 0,
+    "face_box": "72x65",
+    "issues": []
+  },
+  {
+    "frame": 99,
+    "img": "G06_100.jpg",
+    "w": 640,
+    "h": 480,
+    "luma": 116.8,
+    "shapes": 7,
+    "V": 50,
+    "Q": 0,
+    "O": 0,
+    "QO": 0,
+    "face_box": "90x82",
+    "issues": [
+      "INNER_LIP_OUTSIDE_OUTER(1)"
+    ]
+  },
+  {
+    "frame": 100,
+    "img": "G06_101.jpg",
+    "w": 960,
+    "h": 540,
+    "luma": 98.5,
+    "shapes": 7,
+    "V": 50,
+    "Q": 0,
+    "O": 0,
+    "QO": 0,
+    "face_box": "91x72",
+    "issues": [
+      "INNER_LIP_OUTSIDE_OUTER(2)",
+      "BROW_ORDER"
+    ]
+  },
+  {
+    "frame": 101,
+    "img": "G06_102.jpg",
+    "w": 1280,
+    "h": 720,
+    "luma": 88.3,
+    "shapes": 7,
+    "V": 50,
+    "Q": 0,
+    "O": 0,
+    "QO": 0,
+    "face_box": "174x159",
+    "issues": [
+      "INNER_LIP_OUTSIDE_OUTER(1)"
+    ]
+  },
+  {
+    "frame": 102,
+    "img": "G06_103.jpg",
+    "w": 1280,
+    "h": 1024,
+    "luma": 29.9,
+    "shapes": 0,
+    "issues": [
+      "MISSING_ANNOTATION"
+    ]
+  },
+  {
+    "frame": 103,
+    "img": "G06_104.jpg",
+    "w": 640,
+    "h": 480,
+    "luma": 82.8,
+    "shapes": 7,
+    "V": 50,
+    "Q": 0,
+    "O": 0,
+    "QO": 0,
+    "face_box": "68x72",
+    "issues": []
+  },
+  {
+    "frame": 104,
+    "img": "G06_105.jpg",
+    "w": 512,
+    "h": 424,
+    "luma": 21.5,
+    "shapes": 7,
+    "V": 50,
+    "Q": 0,
+    "O": 0,
+    "QO": 0,
+    "face_box": "51x35",
+    "issues": [
+      "COMPACT_FACE(51x35)"
+    ]
+  },
+  {
+    "frame": 105,
+    "img": "G06_106.jpg",
+    "w": 960,
+    "h": 540,
+    "luma": 66.8,
+    "shapes": 7,
+    "V": 50,
+    "Q": 0,
+    "O": 0,
+    "QO": 0,
+    "face_box": "79x59",
+    "issues": []
+  },
+  {
+    "frame": 106,
+    "img": "G06_107.jpg",
+    "w": 1280,
+    "h": 1024,
+    "luma": 15.1,
+    "shapes": 0,
+    "issues": [
+      "MISSING_ANNOTATION"
+    ]
+  },
+  {
+    "frame": 107,
+    "img": "G06_108.jpg",
+    "w": 640,
+    "h": 480,
+    "luma": 104.9,
+    "shapes": 7,
+    "V": 40,
+    "Q": 10,
+    "O": 0,
+    "QO": 0,
+    "face_box": "59x50",
+    "issues": []
+  },
+  {
+    "frame": 108,
+    "img": "G06_109.jpg",
+    "w": 1280,
+    "h": 720,
+    "luma": 96.2,
+    "shapes": 7,
+    "V": 50,
+    "Q": 0,
+    "O": 0,
+    "QO": 0,
+    "face_box": "180x150",
+    "issues": [
+      "INNER_LIP_OUTSIDE_OUTER(1)"
+    ]
+  },
+  {
+    "frame": 109,
+    "img": "G06_110.jpg",
+    "w": 640,
+    "h": 480,
+    "luma": 90.5,
+    "shapes": 7,
+    "V": 50,
+    "Q": 0,
+    "O": 0,
+    "QO": 0,
+    "face_box": "78x79",
+    "issues": []
+  },
+  {
+    "frame": 110,
+    "img": "G06_111.jpg",
+    "w": 1280,
+    "h": 1024,
+    "luma": 29.2,
+    "shapes": 7,
+    "V": 50,
+    "Q": 0,
+    "O": 0,
+    "QO": 0,
+    "face_box": "91x128",
+    "issues": []
+  },
+  {
+    "frame": 111,
+    "img": "G06_112.jpg",
+    "w": 1280,
+    "h": 1024,
+    "luma": 33.4,
+    "shapes": 7,
+    "V": 50,
+    "Q": 0,
+    "O": 0,
+    "QO": 0,
+    "face_box": "121x123",
+    "issues": [
+      "INNER_LIP_OUTSIDE_OUTER(2)"
+    ]
+  },
+  {
+    "frame": 112,
+    "img": "G06_113.jpg",
+    "w": 512,
+    "h": 424,
+    "luma": 15.7,
+    "shapes": 7,
+    "V": 50,
+    "Q": 0,
+    "O": 0,
+    "QO": 0,
+    "face_box": "47x38",
+    "issues": [
+      "COMPACT_FACE(47x38)"
+    ]
+  },
+  {
+    "frame": 113,
+    "img": "G06_114.jpg",
+    "w": 640,
+    "h": 480,
+    "luma": 98.7,
+    "shapes": 7,
+    "V": 50,
+    "Q": 0,
+    "O": 0,
+    "QO": 0,
+    "face_box": "72x68",
+    "issues": []
+  },
+  {
+    "frame": 114,
+    "img": "G06_115.jpg",
+    "w": 640,
+    "h": 480,
+    "luma": 97.8,
+    "shapes": 7,
+    "V": 50,
+    "Q": 0,
+    "O": 0,
+    "QO": 0,
+    "face_box": "69x78",
+    "issues": []
+  },
+  {
+    "frame": 115,
+    "img": "G06_116.jpg",
+    "w": 640,
+    "h": 480,
+    "luma": 102.8,
+    "shapes": 7,
+    "V": 50,
+    "Q": 0,
+    "O": 0,
+    "QO": 0,
+    "face_box": "70x74",
+    "issues": []
+  },
+  {
+    "frame": 116,
+    "img": "G06_117.jpg",
+    "w": 1280,
+    "h": 1024,
+    "luma": 21.8,
+    "shapes": 7,
+    "V": 50,
+    "Q": 0,
+    "O": 0,
+    "QO": 0,
+    "face_box": "166x157",
+    "issues": [
+      "LIP_INVERSION([(32, 43), (47, 38)])",
+      "EYE_LID_INVERSION(2)",
+      "EYE_INNER_OVERLAP(18x=1108.3,22x=1109.5)",
+      "EYE_CORNER_LR_ORDER",
+      "BROW_ORDER",
+      "NOSE_NON_MONOTONIC"
+    ]
+  },
+  {
+    "frame": 117,
+    "img": "G06_118.jpg",
+    "w": 640,
+    "h": 480,
+    "luma": 90.5,
+    "shapes": 7,
+    "V": 50,
+    "Q": 0,
+    "O": 0,
+    "QO": 0,
+    "face_box": "72x72",
+    "issues": []
+  },
+  {
+    "frame": 118,
+    "img": "G06_119.jpg",
+    "w": 960,
+    "h": 540,
+    "luma": 60.5,
+    "shapes": 7,
+    "V": 40,
+    "Q": 10,
+    "O": 0,
+    "QO": 0,
+    "face_box": "85x87",
+    "issues": [
+      "INNER_LIP_OUTSIDE_OUTER(2)"
+    ]
+  },
+  {
+    "frame": 119,
+    "img": "G06_120.jpg",
+    "w": 640,
+    "h": 480,
+    "luma": 89.9,
+    "shapes": 7,
+    "V": 50,
+    "Q": 0,
+    "O": 0,
+    "QO": 0,
+    "face_box": "85x80",
+    "issues": []
+  }
+]

@@ -3,7 +3,7 @@ week: "2026-W47"
 profile: edufun
 jobs:
   - id: 1975
-    kind: pose             # face landmark 50 diem (7 skeleton), task 473 W2-FACE-G6-T1, frame 90-119
+    kind: pose             # face landmark 50 diem (7 skeleton), task 473 W2-FACE-G6-T1, frame 90-119. Schema chi nhan seg/det/pose/mot nen giu pose; mien face la ten note ben duoi
     note: "Face50. Leader task 473 (5 job 1972-1976). Guideline: weeks/guidelines/w2-face50-pose17.md"
     due: ""
     local_status: todo

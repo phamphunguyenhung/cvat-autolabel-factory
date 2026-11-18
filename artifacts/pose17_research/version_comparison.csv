@@ -1,0 +1,14 @@
+comparison_id,frames_compared,keypoints_compared,moved_keypoints,vis_changes,mean_euclidean_px,max_euclidean_px
+1_file_initial_1116_175014_vs_before_manual_1117_192910,1,17,2,2,3.4433,6.4457
+2_draft_1116_195704_vs_before_1117_101353,28,476,476,19,16.4076,421.7599
+3_before_1117_101353_vs_before_1117_102335,17,289,0,39,0.0,0.0
+4_before_1117_102335_vs_before_manual_1117_193049,5,85,0,5,0.0,0.0
+5_draft_1117_102313_vs_before_manual_1117_193049,18,306,306,2,0.6918,210.5592
+6_before_manual_all_vs_live_1118_manual_shapes,0,0,0,0,0.0,0.0
+7_before_manual_192910_vs_live_1118_file_shape_f92,1,17,5,1,101.8895,193.1228
+8_before_1116_175014_vs_live_1118_manual,1,17,2,2,3.4433,6.4457
+9_before_1116_175014_vs_live_1118_file_f92,1,17,5,1,101.8895,193.1228
+10_before_1116_175014_vs_draft_1117_102313_10_prelabel_frames,10,170,170,37,44.696,421.7599
+11_before_1117_100209_vs_before_manual_1117_193049,15,255,252,40,34.7175,428.5239
+before_manual_vs_raw,28,476,148,51,26.5407,312.457
+live_082415_vs_raw,28,476,145,49,25.6125,312.457

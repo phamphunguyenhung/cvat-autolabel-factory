@@ -20,4 +20,15 @@ data/backups/
 data/runs/
 data/store/
 data/drafts/
+data/
+checkpoints/
+reports/
+build/
+dist/
+*.pth
+*.bin
+*.sqlite
+*.db
+*.zip
+*.whl
 *.log
